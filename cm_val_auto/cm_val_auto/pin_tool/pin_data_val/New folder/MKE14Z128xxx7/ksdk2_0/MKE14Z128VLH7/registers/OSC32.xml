@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="8" name="CR" description="RTC Oscillator Control Register">
+    <alias type="CMSIS" value="CR"/>
+    <reserved_bit_field offset="0" width="1" reset_value="0"/>
+    <reserved_bit_field offset="1" width="3" reset_value="0"/>
+    <bit_field offset="4" width="1" name="ROSCEREFS" access="RW" reset_value="0" description="RTC 32k Oscillator external reference clcok selection">
+      <alias type="CMSIS" value="OSC32_CR_ROSCEREFS(x)"/>
+      <bit_field_value name="CR_ROSCEREFS_EXTERNAL" value="0b0" description="Bypass mode. RTC oscillator selects the external 32k clock."/>
+      <bit_field_value name="CR_ROSCEREFS_CRYSTAL" value="0b1" description="Crystal mode."/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="ROSCSTB" access="RO" reset_value="0" description="RTC 32k Oscillator stable flag">
+      <alias type="CMSIS" value="OSC32_CR_ROSCSTB(x)"/>
+      <bit_field_value name="CR_ROSCSTB_STABLE" value="0b0" description="RTC 32k oscillator is unstable now and no clock will go out of the block."/>
+      <bit_field_value name="CR_ROSCSTB_UNSTABLE" value="0b1" description="RTC 32k oscillator is stable."/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ROSCSTPEN" access="RW" reset_value="0" description="RTC 32k Oscillator stop mode enable">
+      <alias type="CMSIS" value="OSC32_CR_ROSCSTPEN(x)"/>
+      <bit_field_value name="CR_ROSCSTPEN_DISABLE" value="0b0" description="Oscillator is disabled regardless the state of ROSCEN."/>
+      <bit_field_value name="CR_ROSCSTPEN_ENABLE" value="0b1" description="Oscillator is enabled in Stop mode when ROSCEN is set."/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ROSCEN" access="RW" reset_value="0" description="RTC 32k Oscillator enable">
+      <alias type="CMSIS" value="OSC32_CR_ROSCEN(x)"/>
+      <bit_field_value name="CR_ROSCEN_DISABLE" value="0b0" description="Oscillator is disabled."/>
+      <bit_field_value name="CR_ROSCEN_ENABLE" value="0b1" description="Oscillator is enabled."/>
+    </bit_field>
+  </register>
+</regs:peripheral>

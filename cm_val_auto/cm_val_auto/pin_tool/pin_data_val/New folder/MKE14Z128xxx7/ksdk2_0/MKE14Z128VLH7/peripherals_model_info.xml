@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<pinsmodel:peripherals_model_info xsi:schemaLocation="http://www.freescale.com/ProcessorExpert/PeripheralsModelInfo.xsd http://swtools.freescale.net/XSD/pinsModel/2.0/PeripheralsModelInfo.xsd" xmlns:pinsmodel="http://www.freescale.com/ProcessorExpert/PeripheralsModelInfo.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <configuration_sequence>
+    <configuration_step id="init_DMAMUX"/>
+    <configuration_step id="init_PORTA"/>
+    <configuration_step id="init_PORTB"/>
+    <configuration_step id="init_PORTC"/>
+    <configuration_step id="init_PORTD"/>
+    <configuration_step id="init_PORTE"/>
+    <configuration_step id="init_SIM"/>
+    <configuration_step id="init_TRGMUX0"/>
+    <configuration_step id="init_TRGMUX1"/>
+  </configuration_sequence>
+</pinsmodel:peripherals_model_info>

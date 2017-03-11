@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="POSITION" description="MTB Position Register">
+    <alias type="CMSIS" value="POSITION"/>
+    <reserved_bit_field offset="0" width="2" reset_value="0"/>
+    <bit_field offset="2" width="1" name="WRAP" access="RW" reset_value="0" reset_mask="0" description="WRAP">
+      <alias type="CMSIS" value="MTB_POSITION_WRAP(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="29" name="POINTER" access="RW" reset_value="0" reset_mask="0" description="Trace Packet Address Pointer[28:0]">
+      <alias type="CMSIS" value="MTB_POSITION_POINTER(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x4" width="32" name="MASTER" description="MTB Master Register">
+    <alias type="CMSIS" value="MASTER"/>
+    <bit_field offset="0" width="5" name="MASK" access="RW" reset_value="0" reset_mask="0" description="Mask">
+      <alias type="CMSIS" value="MTB_MASTER_MASK(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="TSTARTEN" access="RW" reset_value="0" description="Trace Start Input Enable">
+      <alias type="CMSIS" value="MTB_MASTER_TSTARTEN(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TSTOPEN" access="RW" reset_value="0" description="Trace Stop Input Enable">
+      <alias type="CMSIS" value="MTB_MASTER_TSTOPEN(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="SFRWPRIV" access="RW" reset_value="0x1" description="Special Function Register Write Privilege">
+      <alias type="CMSIS" value="MTB_MASTER_SFRWPRIV(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="1" name="RAMPRIV" access="RW" reset_value="0" description="RAM Privilege">
+      <alias type="CMSIS" value="MTB_MASTER_RAMPRIV(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="HALTREQ" access="RW" reset_value="0" description="Halt Request">
+      <alias type="CMSIS" value="MTB_MASTER_HALTREQ(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="10" width="21" reset_value="0"/>
+    <bit_field offset="31" width="1" name="EN" access="RW" reset_value="0" description="Main Trace Enable">
+      <alias type="CMSIS" value="MTB_MASTER_EN(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x8" width="32" name="FLOW" description="MTB Flow Register">
+    <alias type="CMSIS" value="FLOW"/>
+    <bit_field offset="0" width="1" name="AUTOSTOP" access="RW" reset_value="0" reset_mask="0" description="AUTOSTOP">
+      <alias type="CMSIS" value="MTB_FLOW_AUTOSTOP(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="AUTOHALT" access="RW" reset_value="0" reset_mask="0" description="AUTOHALT">
+      <alias type="CMSIS" value="MTB_FLOW_AUTOHALT(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="2" width="1" reset_value="0"/>
+    <bit_field offset="3" width="29" name="WATERMARK" access="RW" reset_value="0" reset_mask="0" description="WATERMARK[28:0]">
+      <alias type="CMSIS" value="MTB_FLOW_WATERMARK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xC" width="32" name="BASE" description="MTB Base Register">
+    <alias type="CMSIS" value="BASE"/>
+    <bit_field offset="0" width="32" name="BASEADDR" access="RO" reset_value="0" reset_mask="0" description="BASEADDR">
+      <alias type="CMSIS" value="MTB_BASE_BASEADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xF00" width="32" name="MODECTRL" description="Integration Mode Control Register">
+    <alias type="CMSIS" value="MODECTRL"/>
+    <bit_field offset="0" width="32" name="MODECTRL" access="RO" reset_value="0" description="MODECTRL">
+      <alias type="CMSIS" value="MTB_MODECTRL_MODECTRL(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFA0" width="32" name="TAGSET" description="Claim TAG Set Register">
+    <alias type="CMSIS" value="TAGSET"/>
+    <bit_field offset="0" width="32" name="TAGSET" access="RO" reset_value="0" description="TAGSET">
+      <alias type="CMSIS" value="MTB_TAGSET_TAGSET(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFA4" width="32" name="TAGCLEAR" description="Claim TAG Clear Register">
+    <alias type="CMSIS" value="TAGCLEAR"/>
+    <bit_field offset="0" width="32" name="TAGCLEAR" access="RO" reset_value="0" description="TAGCLEAR">
+      <alias type="CMSIS" value="MTB_TAGCLEAR_TAGCLEAR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFB0" width="32" name="LOCKACCESS" description="Lock Access Register">
+    <alias type="CMSIS" value="LOCKACCESS"/>
+    <bit_field offset="0" width="32" name="LOCKACCESS" access="RO" reset_value="0" description="Hardwired to 0x0000_0000">
+      <alias type="CMSIS" value="MTB_LOCKACCESS_LOCKACCESS(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFB4" width="32" name="LOCKSTAT" description="Lock Status Register">
+    <alias type="CMSIS" value="LOCKSTAT"/>
+    <bit_field offset="0" width="32" name="LOCKSTAT" access="RO" reset_value="0" description="LOCKSTAT">
+      <alias type="CMSIS" value="MTB_LOCKSTAT_LOCKSTAT(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFB8" width="32" name="AUTHSTAT" description="Authentication Status Register">
+    <alias type="CMSIS" value="AUTHSTAT"/>
+    <bit_field offset="0" width="1" name="BIT0" access="RO" reset_value="0" description="Connected to DBGEN.">
+      <alias type="CMSIS" value="MTB_AUTHSTAT_BIT0(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="BIT1" access="ROO" reset_value="0" description="BIT1">
+      <alias type="CMSIS" value="MTB_AUTHSTAT_BIT1(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="BIT2" access="RO" reset_value="0" description="BIT2">
+      <alias type="CMSIS" value="MTB_AUTHSTAT_BIT2(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="BIT3" access="ROO" reset_value="0" description="BIT3">
+      <alias type="CMSIS" value="MTB_AUTHSTAT_BIT3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="28" reset_value="0"/>
+  </register>
+  <register offset="0xFBC" width="32" name="DEVICEARCH" description="Device Architecture Register">
+    <alias type="CMSIS" value="DEVICEARCH"/>
+    <bit_field offset="0" width="32" name="DEVICEARCH" access="RO" reset_value="0x47700A31" description="DEVICEARCH">
+      <alias type="CMSIS" value="MTB_DEVICEARCH_DEVICEARCH(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFC8" width="32" name="DEVICECFG" description="Device Configuration Register">
+    <alias type="CMSIS" value="DEVICECFG"/>
+    <bit_field offset="0" width="32" name="DEVICECFG" access="RO" reset_value="0" description="DEVICECFG">
+      <alias type="CMSIS" value="MTB_DEVICECFG_DEVICECFG(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFCC" width="32" name="DEVICETYPID" description="Device Type Identifier Register">
+    <alias type="CMSIS" value="DEVICETYPID"/>
+    <bit_field offset="0" width="32" name="DEVICETYPID" access="RO" reset_value="0x31" description="DEVICETYPID">
+      <alias type="CMSIS" value="MTB_DEVICETYPID_DEVICETYPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFD0" width="32" name="PERIPHID4" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID4"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTB_PERIPHID4_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFD4" width="32" name="PERIPHID5" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID5"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTB_PERIPHID5_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFD8" width="32" name="PERIPHID6" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID6"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTB_PERIPHID6_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFDC" width="32" name="PERIPHID7" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID7"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTB_PERIPHID7_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFE0" width="32" name="PERIPHID0" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID0"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTB_PERIPHID0_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFE4" width="32" name="PERIPHID1" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID1"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTB_PERIPHID1_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFE8" width="32" name="PERIPHID2" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID2"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTB_PERIPHID2_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFEC" width="32" name="PERIPHID3" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID3"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTB_PERIPHID3_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFF0" width="32" name="COMPID0" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[0]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="MTB_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFF4" width="32" name="COMPID1" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[1]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="MTB_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFF8" width="32" name="COMPID2" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[2]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="MTB_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFFC" width="32" name="COMPID3" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[3]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="MTB_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

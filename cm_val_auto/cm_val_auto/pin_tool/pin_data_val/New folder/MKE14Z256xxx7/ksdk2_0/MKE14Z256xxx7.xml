@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<part:processor xmlns:part="http://swtools.freescale.net/XSD/processor/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/processor/1.0 http://swtools.freescale.net/XSD/processor/1.0/processor.xsd">
+  <basic_facts id="MKE14Z256xxx7" producer="Freescale" family="Kinetis" series="Kinetis E" default_part="MKE14Z256VLL7"/>
+</part:processor>

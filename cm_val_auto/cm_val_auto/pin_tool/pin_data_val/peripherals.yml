@@ -1,0 +1,176 @@
+---
+ADC:
+- '["Analog-to-Digital Converter"]'
+AIPS:
+- '[""]'
+ANT:
+- '[""]'
+ATX:
+- '[""]'
+AXBS:
+- '[""]'
+BTLE_RF:
+- '[""]'
+CRC:
+- '[""]'
+CoreDebug:
+- '["Core Debug Registers"]'
+DAC:
+- '["12-Bit Digital-to-Analog Converter"]'
+DMA:
+- '["Enhanced direct memory access controller"]'
+DMAMUX:
+- '["Direct Memory Access Multiplexer"]'
+DWT:
+- '["Data Watchpoint and Trace Unit Registers"]'
+D_IP_CTI_SYN:
+- '[""]'
+EMVSIM:
+- '["Euro/Mastercard/Visa/SIM Serial Interface Module"]'
+ETM:
+- '["Embedded Trace Macrocell Registers"]'
+EWM:
+- '["External Watchdog Monitor"]'
+FB:
+- '["FlexBus external bus interface"]'
+FGPIO:
+- '["General Purpose Input/Output"]'
+FLEXIO:
+- '["Flexible I/O"]'
+FMC:
+- '[""]'
+FPB:
+- '["Flash Patch and Breakpoint Unit Registers"]'
+Flash:
+- '[""]'
+GENFSK:
+- '[""]'
+GPIO:
+- '["General Purpose Input/Output"]'
+I2S:
+- '["Intergrated Interchip Sound / Synchronous Audio Interface, Inter-IC Sound / Synchronous
+  Audio Interface"]'
+INTMUX:
+- '[""]'
+ITM:
+- '["Instrumentation Trace Macrocell Registers"]'
+JTAG:
+- '["JTAG interface"]'
+JTAG2IPS:
+- '[""]'
+JTAGC:
+- '[""]'
+LLWU:
+- '["Low leakage wakeup unit"]'
+LPCMP:
+- '["Low Power Comparator"]'
+LPDAC:
+- '[""]'
+LPI2C:
+- '["Low Power Inter-Integrated Circuit"]'
+LPIT:
+- '["Low Power Interrupt Timer"]'
+LPSPI:
+- '["Low Power Serial Peripheral Interface"]'
+LPTMR:
+- '["Low Power Timer"]'
+LPUART:
+- '["Low Power Universal Asynchronous Receiver/Transmitter"]'
+MCM:
+- '[""]'
+MMDVSQ:
+- '[""]'
+MSCM:
+- '[""]'
+MTB:
+- '[""]'
+MUA:
+- '[""]'
+MUB:
+- '[""]'
+NVIC:
+- '["Nested Vectored Interrupt Controller"]'
+PCC:
+- '[""]'
+PORT:
+- '[""]'
+RADIO:
+- '[""]'
+RCM:
+- '["Reset Control Module"]'
+RF:
+- '["Radio Frequency"]'
+RSIM:
+- '[""]'
+RTC:
+- '["Real Time Clock"]'
+SA-TRNG-L5K:
+- '["SA-TRNG-L5K"]'
+SCB:
+- '["System Control Block"]'
+SCG:
+- '["System Clock Generator"]'
+SDHC:
+- '["Secured Digital Host Controller"]'
+SIM:
+- '["System Integration Module"]'
+SMC:
+- '[""]'
+SPM:
+- '["System Power Manager"]'
+SUPPLY:
+- '["Power supply"]'
+SWD:
+- '["Serial Wire Debug"]'
+SysTick:
+- '["System timer"]'
+TPIU:
+- '["Trace Port Interface Unit"]'
+TPM:
+- '["Timer/PWM Module"]'
+TRGMUX:
+- '[""]'
+TSI:
+- '["Touch Sensing Input"]'
+TSTMRA:
+- '[""]'
+TSTMRB:
+- '[""]'
+USB:
+- '["Universal Serial Bus, Universal Serial Bus, OTG Capable Controller"]'
+USB_VREG:
+- '[""]'
+VREF:
+- '["Voltage Reference"]'
+WDOG:
+- '[""]'
+XCVR_ANALOG:
+- '[""]'
+XCVR_CTRL:
+- '[""]'
+XCVR_PHY:
+- '[""]'
+XCVR_PKT_RAM:
+- '[""]'
+XCVR_PLL_DIG:
+- '[""]'
+XCVR_RX_DIG:
+- '[""]'
+XCVR_TSM:
+- '[""]'
+XCVR_TX_DIG:
+- '[""]'
+XCVR_WOR:
+- '[""]'
+XCVR_ZBDEM:
+- '[""]'
+XRDC:
+- '[""]'
+ZLL:
+- '[""]'
+cau3:
+- '[""]'
+sema42_ips:
+- '[""]'
+uSDHC:
+- '[""]'

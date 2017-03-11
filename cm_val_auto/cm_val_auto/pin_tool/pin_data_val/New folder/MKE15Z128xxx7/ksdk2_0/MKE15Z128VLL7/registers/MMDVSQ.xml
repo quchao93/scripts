@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="DEND" description="Dividend Register">
+    <alias type="CMSIS" value="DEND"/>
+    <bit_field offset="0" width="32" name="DIVIDEND" access="RW" reset_value="0" reset_mask="0" description="Dividend">
+      <alias type="CMSIS" value="MMDVSQ_DEND_DIVIDEND(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x4" width="32" name="DSOR" description="Divisor Register">
+    <alias type="CMSIS" value="DSOR"/>
+    <bit_field offset="0" width="32" name="DIVISOR" access="RW" reset_value="0" reset_mask="0" description="Divisor">
+      <alias type="CMSIS" value="MMDVSQ_DSOR_DIVISOR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x8" width="32" name="CSR" description="Control/Status Register">
+    <alias type="CMSIS" value="CSR"/>
+    <bit_field offset="0" width="1" name="SRT" access="WORZ" reset_value="0" description="Start">
+      <alias type="CMSIS" value="MMDVSQ_CSR_SRT(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="USGN" access="RW" reset_value="0" description="Unsigned calculation">
+      <alias type="CMSIS" value="MMDVSQ_CSR_USGN(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="REM" access="RW" reset_value="0" description="REMainder calculation">
+      <alias type="CMSIS" value="MMDVSQ_CSR_REM(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="DZE" access="RW" reset_value="0" description="Divide-by-Zero-Enable">
+      <alias type="CMSIS" value="MMDVSQ_CSR_DZE(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="DZ" access="RO" reset_value="0" description="Divide-by-Zero">
+      <alias type="CMSIS" value="MMDVSQ_CSR_DZ(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="DFS" access="RW" reset_value="0" description="Disable Fast Start">
+      <alias type="CMSIS" value="MMDVSQ_CSR_DFS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="23" reset_value="0"/>
+    <bit_field offset="29" width="1" name="SQRT" access="RO" reset_value="0" reset_mask="0" description="SQUARE ROOT">
+      <alias type="CMSIS" value="MMDVSQ_CSR_SQRT(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DIV" access="RO" reset_value="0" reset_mask="0" description="DIVIDE">
+      <alias type="CMSIS" value="MMDVSQ_CSR_DIV(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="BUSY" access="RO" reset_value="0" description="BUSY">
+      <alias type="CMSIS" value="MMDVSQ_CSR_BUSY(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xC" width="32" name="RES" description="Result Register">
+    <alias type="CMSIS" value="RES"/>
+    <bit_field offset="0" width="32" name="RESULT" access="RW" reset_value="0" reset_mask="0" description="Result">
+      <alias type="CMSIS" value="MMDVSQ_RES_RESULT(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10" width="32" name="RCND" description="Radicand Register">
+    <alias type="CMSIS" value="RCND"/>
+    <bit_field offset="0" width="32" name="RADICAND" access="RW" reset_value="0" reset_mask="0" description="Radicand">
+      <alias type="CMSIS" value="MMDVSQ_RCND_RADICAND(x)"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

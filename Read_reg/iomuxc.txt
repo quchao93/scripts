@@ -1,0 +1,2973 @@
+#iomuxc:iomuxc Register
+0h IOMUXC_OBSERVE_MUX_0 32 RW 00000000h
+4h IOMUXC_OBSERVE_MUX_1 32 RW 00000000h
+8h IOMUXC_OBSERVE_MUX_2 32 RW 00000000h
+ch IOMUXC_OBSERVE_MUX_3 32 RW 00000000h
+10h IOMUXC_OBSERVE_MUX_4 32 RW 00000000h
+14h IOMUXC_SW_MUX_CTL_PAD_PMIC_STBY_REQ 32 RW 00000000h
+18h IOMUXC_SW_MUX_CTL_PAD_PMIC_ON_REQ 32 RW 00000000h
+1ch IOMUXC_SW_MUX_CTL_PAD_ONOFF 32 RW 00000000h
+20h IOMUXC_SW_MUX_CTL_PAD_POR_B 32 RW 00000000h
+24h IOMUXC_SW_MUX_CTL_PAD_RTC_RESET_B 32 RW 00000000h
+28h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO00 32 RW 00000000h
+2ch IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO01 32 RW 00000000h
+30h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO02 32 RW 00000000h
+34h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO03 32 RW 00000000h
+38h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO04 32 RW 00000000h
+3ch IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO05 32 RW 00000000h
+40h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO06 32 RW 00000000h
+44h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO07 32 RW 00000000h
+48h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO08 32 RW 00000000h
+4ch IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO09 32 RW 00000000h
+50h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO10 32 RW 00000000h
+54h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO11 32 RW 00000000h
+58h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO12 32 RW 00000000h
+5ch IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO13 32 RW 00000000h
+60h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO14 32 RW 00000000h
+64h IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO15 32 RW 00000000h
+68h IOMUXC_SW_MUX_CTL_PAD_ENET_MDC 32 RW 00000000h
+6ch IOMUXC_SW_MUX_CTL_PAD_ENET_MDIO 32 RW 00000000h
+70h IOMUXC_SW_MUX_CTL_PAD_ENET_TD3 32 RW 00000000h
+74h IOMUXC_SW_MUX_CTL_PAD_ENET_TD2 32 RW 00000000h
+78h IOMUXC_SW_MUX_CTL_PAD_ENET_TD1 32 RW 00000000h
+7ch IOMUXC_SW_MUX_CTL_PAD_ENET_TD0 32 RW 00000000h
+80h IOMUXC_SW_MUX_CTL_PAD_ENET_TX_CTL 32 RW 00000000h
+84h IOMUXC_SW_MUX_CTL_PAD_ENET_TXC 32 RW 00000000h
+88h IOMUXC_SW_MUX_CTL_PAD_ENET_RX_CTL 32 RW 00000000h
+8ch IOMUXC_SW_MUX_CTL_PAD_ENET_RXC 32 RW 00000000h
+90h IOMUXC_SW_MUX_CTL_PAD_ENET_RD0 32 RW 00000000h
+94h IOMUXC_SW_MUX_CTL_PAD_ENET_RD1 32 RW 00000000h
+98h IOMUXC_SW_MUX_CTL_PAD_ENET_RD2 32 RW 00000000h
+9ch IOMUXC_SW_MUX_CTL_PAD_ENET_RD3 32 RW 00000000h
+a0h IOMUXC_SW_MUX_CTL_PAD_SD1_CLK 32 RW 00000000h
+a4h IOMUXC_SW_MUX_CTL_PAD_SD1_CMD 32 RW 00000000h
+a8h IOMUXC_SW_MUX_CTL_PAD_SD1_DATA0 32 RW 00000000h
+ach IOMUXC_SW_MUX_CTL_PAD_SD1_DATA1 32 RW 00000000h
+b0h IOMUXC_SW_MUX_CTL_PAD_SD1_DATA2 32 RW 00000000h
+b4h IOMUXC_SW_MUX_CTL_PAD_SD1_DATA3 32 RW 00000000h
+b8h IOMUXC_SW_MUX_CTL_PAD_SD1_DATA4 32 RW 00000000h
+bch IOMUXC_SW_MUX_CTL_PAD_SD1_DATA5 32 RW 00000000h
+c0h IOMUXC_SW_MUX_CTL_PAD_SD1_DATA6 32 RW 00000000h
+c4h IOMUXC_SW_MUX_CTL_PAD_SD1_DATA7 32 RW 00000000h
+c8h IOMUXC_SW_MUX_CTL_PAD_SD1_RESET_B 32 RW 00000000h
+cch IOMUXC_SW_MUX_CTL_PAD_SD1_STROBE 32 RW 00000000h
+d0h IOMUXC_SW_MUX_CTL_PAD_SD2_CD_B 32 RW 00000000h
+d4h IOMUXC_SW_MUX_CTL_PAD_SD2_CLK 32 RW 00000000h
+d8h IOMUXC_SW_MUX_CTL_PAD_SD2_CMD 32 RW 00000000h
+dch IOMUXC_SW_MUX_CTL_PAD_SD2_DATA0 32 RW 00000000h
+e0h IOMUXC_SW_MUX_CTL_PAD_SD2_DATA1 32 RW 00000000h
+e4h IOMUXC_SW_MUX_CTL_PAD_SD2_DATA2 32 RW 00000000h
+e8h IOMUXC_SW_MUX_CTL_PAD_SD2_DATA3 32 RW 00000000h
+ech IOMUXC_SW_MUX_CTL_PAD_SD2_RESET_B 32 RW 00000000h
+f0h IOMUXC_SW_MUX_CTL_PAD_SD2_WP 32 RW 00000000h
+f4h IOMUXC_SW_MUX_CTL_PAD_NAND_ALE 32 RW 00000000h
+f8h IOMUXC_SW_MUX_CTL_PAD_NAND_CE0_B 32 RW 00000000h
+fch IOMUXC_SW_MUX_CTL_PAD_NAND_CE1_B 32 RW 00000000h
+100h IOMUXC_SW_MUX_CTL_PAD_NAND_CE2_B 32 RW 00000000h
+104h IOMUXC_SW_MUX_CTL_PAD_NAND_CE3_B 32 RW 00000000h
+108h IOMUXC_SW_MUX_CTL_PAD_NAND_CLE 32 RW 00000000h
+10ch IOMUXC_SW_MUX_CTL_PAD_NAND_DATA00 32 RW 00000000h
+110h IOMUXC_SW_MUX_CTL_PAD_NAND_DATA01 32 RW 00000000h
+114h IOMUXC_SW_MUX_CTL_PAD_NAND_DATA02 32 RW 00000000h
+118h IOMUXC_SW_MUX_CTL_PAD_NAND_DATA03 32 RW 00000000h
+11ch IOMUXC_SW_MUX_CTL_PAD_NAND_DATA04 32 RW 00000000h
+120h IOMUXC_SW_MUX_CTL_PAD_NAND_DATA05 32 RW 00000000h
+124h IOMUXC_SW_MUX_CTL_PAD_NAND_DATA06 32 RW 00000000h
+128h IOMUXC_SW_MUX_CTL_PAD_NAND_DATA07 32 RW 00000000h
+12ch IOMUXC_SW_MUX_CTL_PAD_NAND_DQS 32 RW 00000000h
+130h IOMUXC_SW_MUX_CTL_PAD_NAND_RE_B 32 RW 00000000h
+134h IOMUXC_SW_MUX_CTL_PAD_NAND_READY_B 32 RW 00000000h
+138h IOMUXC_SW_MUX_CTL_PAD_NAND_WE_B 32 RW 00000000h
+13ch IOMUXC_SW_MUX_CTL_PAD_NAND_WP_B 32 RW 00000000h
+140h IOMUXC_SW_MUX_CTL_PAD_SAI5_RXFS 32 RW 00000000h
+144h IOMUXC_SW_MUX_CTL_PAD_SAI5_RXC 32 RW 00000000h
+148h IOMUXC_SW_MUX_CTL_PAD_SAI5_RXD0 32 RW 00000000h
+14ch IOMUXC_SW_MUX_CTL_PAD_SAI5_RXD1 32 RW 00000000h
+150h IOMUXC_SW_MUX_CTL_PAD_SAI5_RXD2 32 RW 00000000h
+154h IOMUXC_SW_MUX_CTL_PAD_SAI5_RXD3 32 RW 00000000h
+158h IOMUXC_SW_MUX_CTL_PAD_SAI5_MCLK 32 RW 00000000h
+15ch IOMUXC_SW_MUX_CTL_PAD_SAI1_RXFS 32 RW 00000000h
+160h IOMUXC_SW_MUX_CTL_PAD_SAI1_RXC 32 RW 00000000h
+164h IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD0 32 RW 00000000h
+168h IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD1 32 RW 00000000h
+16ch IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD2 32 RW 00000000h
+170h IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD3 32 RW 00000000h
+174h IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD4 32 RW 00000000h
+178h IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD5 32 RW 00000000h
+17ch IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD6 32 RW 00000000h
+180h IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD7 32 RW 00000000h
+184h IOMUXC_SW_MUX_CTL_PAD_SAI1_TXFS 32 RW 00000000h
+188h IOMUXC_SW_MUX_CTL_PAD_SAI1_TXC 32 RW 00000000h
+18ch IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD0 32 RW 00000000h
+190h IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD1 32 RW 00000000h
+194h IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD2 32 RW 00000000h
+198h IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD3 32 RW 00000000h
+19ch IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD4 32 RW 00000000h
+1a0h IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD5 32 RW 00000000h
+1a4h IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD6 32 RW 00000000h
+1a8h IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD7 32 RW 00000000h
+1ach IOMUXC_SW_MUX_CTL_PAD_SAI1_MCLK 32 RW 00000000h
+1b0h IOMUXC_SW_MUX_CTL_PAD_SAI2_RXFS 32 RW 00000000h
+1b4h IOMUXC_SW_MUX_CTL_PAD_SAI2_RXC 32 RW 00000000h
+1b8h IOMUXC_SW_MUX_CTL_PAD_SAI2_RXD0 32 RW 00000000h
+1bch IOMUXC_SW_MUX_CTL_PAD_SAI2_TXFS 32 RW 00000000h
+1c0h IOMUXC_SW_MUX_CTL_PAD_SAI2_TXC 32 RW 00000000h
+1c4h IOMUXC_SW_MUX_CTL_PAD_SAI2_TXD0 32 RW 00000000h
+1c8h IOMUXC_SW_MUX_CTL_PAD_SAI2_MCLK 32 RW 00000000h
+1cch IOMUXC_SW_MUX_CTL_PAD_SAI3_RXFS 32 RW 00000000h
+1d0h IOMUXC_SW_MUX_CTL_PAD_SAI3_RXC 32 RW 00000000h
+1d4h IOMUXC_SW_MUX_CTL_PAD_SAI3_RXD 32 RW 00000000h
+1d8h IOMUXC_SW_MUX_CTL_PAD_SAI3_TXFS 32 RW 00000000h
+1dch IOMUXC_SW_MUX_CTL_PAD_SAI3_TXC 32 RW 00000000h
+1e0h IOMUXC_SW_MUX_CTL_PAD_SAI3_TXD 32 RW 00000000h
+1e4h IOMUXC_SW_MUX_CTL_PAD_SAI3_MCLK 32 RW 00000000h
+1e8h IOMUXC_SW_MUX_CTL_PAD_SPDIF_TX 32 RW 00000000h
+1ech IOMUXC_SW_MUX_CTL_PAD_SPDIF_RX 32 RW 00000000h
+1f0h IOMUXC_SW_MUX_CTL_PAD_SPDIF_EXT_CLK 32 RW 00000000h
+1f4h IOMUXC_SW_MUX_CTL_PAD_ECSPI1_SCLK 32 RW 00000000h
+1f8h IOMUXC_SW_MUX_CTL_PAD_ECSPI1_MOSI 32 RW 00000000h
+1fch IOMUXC_SW_MUX_CTL_PAD_ECSPI1_MISO 32 RW 00000000h
+200h IOMUXC_SW_MUX_CTL_PAD_ECSPI1_SS0 32 RW 00000000h
+204h IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SCLK 32 RW 00000000h
+208h IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MOSI 32 RW 00000000h
+20ch IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MISO 32 RW 00000000h
+210h IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SS0 32 RW 00000000h
+214h IOMUXC_SW_MUX_CTL_PAD_I2C1_SCL 32 RW 00000000h
+218h IOMUXC_SW_MUX_CTL_PAD_I2C1_SDA 32 RW 00000000h
+21ch IOMUXC_SW_MUX_CTL_PAD_I2C2_SCL 32 RW 00000000h
+220h IOMUXC_SW_MUX_CTL_PAD_I2C2_SDA 32 RW 00000000h
+224h IOMUXC_SW_MUX_CTL_PAD_I2C3_SCL 32 RW 00000000h
+228h IOMUXC_SW_MUX_CTL_PAD_I2C3_SDA 32 RW 00000000h
+22ch IOMUXC_SW_MUX_CTL_PAD_I2C4_SCL 32 RW 00000000h
+230h IOMUXC_SW_MUX_CTL_PAD_I2C4_SDA 32 RW 00000000h
+234h IOMUXC_SW_MUX_CTL_PAD_UART1_RXD 32 RW 00000000h
+238h IOMUXC_SW_MUX_CTL_PAD_UART1_TXD 32 RW 00000000h
+23ch IOMUXC_SW_MUX_CTL_PAD_UART2_RXD 32 RW 00000000h
+240h IOMUXC_SW_MUX_CTL_PAD_UART2_TXD 32 RW 00000000h
+244h IOMUXC_SW_MUX_CTL_PAD_UART3_RXD 32 RW 00000000h
+248h IOMUXC_SW_MUX_CTL_PAD_UART3_TXD 32 RW 00000000h
+24ch IOMUXC_SW_MUX_CTL_PAD_UART4_RXD 32 RW 00000000h
+250h IOMUXC_SW_MUX_CTL_PAD_UART4_TXD 32 RW 00000000h
+254h IOMUXC_SW_PAD_CTL_PAD_TEST_MODE 32 RW 00000000h
+258h IOMUXC_SW_PAD_CTL_PAD_BOOT_MODE0 32 RW 00000000h
+25ch IOMUXC_SW_PAD_CTL_PAD_BOOT_MODE1 32 RW 00000000h
+260h IOMUXC_SW_PAD_CTL_PAD_JTAG_MOD 32 RW 00000000h
+264h IOMUXC_SW_PAD_CTL_PAD_JTAG_TRST_B 32 RW 00000000h
+268h IOMUXC_SW_PAD_CTL_PAD_JTAG_TDI 32 RW 00000000h
+26ch IOMUXC_SW_PAD_CTL_PAD_JTAG_TMS 32 RW 00000000h
+270h IOMUXC_SW_PAD_CTL_PAD_JTAG_TCK 32 RW 00000000h
+274h IOMUXC_SW_PAD_CTL_PAD_JTAG_TDO 32 RW 00000000h
+278h IOMUXC_SW_PAD_CTL_PAD_RTC 32 RW 00000000h
+27ch IOMUXC_SW_PAD_CTL_PAD_PMIC_STBY_REQ 32 RW 00000000h
+280h IOMUXC_SW_PAD_CTL_PAD_PMIC_ON_REQ 32 RW 00000000h
+284h IOMUXC_SW_PAD_CTL_PAD_ONOFF 32 RW 00000000h
+288h IOMUXC_SW_PAD_CTL_PAD_POR_B 32 RW 00000000h
+28ch IOMUXC_SW_PAD_CTL_PAD_RTC_RESET_B 32 RW 00000000h
+290h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO00 32 RW 00000000h
+294h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO01 32 RW 00000000h
+298h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO02 32 RW 00000000h
+29ch IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO03 32 RW 00000000h
+2a0h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO04 32 RW 00000000h
+2a4h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO05 32 RW 00000000h
+2a8h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO06 32 RW 00000000h
+2ach IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO07 32 RW 00000000h
+2b0h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO08 32 RW 00000000h
+2b4h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO09 32 RW 00000000h
+2b8h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO10 32 RW 00000000h
+2bch IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO11 32 RW 00000000h
+2c0h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO12 32 RW 00000000h
+2c4h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO13 32 RW 00000000h
+2c8h IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO14 32 RW 00000000h
+2cch IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO15 32 RW 00000000h
+2d0h IOMUXC_SW_PAD_CTL_PAD_ENET_MDC 32 RW 00000000h
+2d4h IOMUXC_SW_PAD_CTL_PAD_ENET_MDIO 32 RW 00000000h
+2d8h IOMUXC_SW_PAD_CTL_PAD_ENET_TD3 32 RW 00000000h
+2dch IOMUXC_SW_PAD_CTL_PAD_ENET_TD2 32 RW 00000000h
+2e0h IOMUXC_SW_PAD_CTL_PAD_ENET_TD1 32 RW 00000000h
+2e4h IOMUXC_SW_PAD_CTL_PAD_ENET_TD0 32 RW 00000000h
+2e8h IOMUXC_SW_PAD_CTL_PAD_ENET_TX_CTL 32 RW 00000000h
+2ech IOMUXC_SW_PAD_CTL_PAD_ENET_TXC 32 RW 00000000h
+2f0h IOMUXC_SW_PAD_CTL_PAD_ENET_RX_CTL 32 RW 00000000h
+2f4h IOMUXC_SW_PAD_CTL_PAD_ENET_RXC 32 RW 00000000h
+2f8h IOMUXC_SW_PAD_CTL_PAD_ENET_RD0 32 RW 00000000h
+2fch IOMUXC_SW_PAD_CTL_PAD_ENET_RD1 32 RW 00000000h
+300h IOMUXC_SW_PAD_CTL_PAD_ENET_RD2 32 RW 00000000h
+304h IOMUXC_SW_PAD_CTL_PAD_ENET_RD3 32 RW 00000000h
+308h IOMUXC_SW_PAD_CTL_PAD_SD1_CLK 32 RW 00000000h
+30ch IOMUXC_SW_PAD_CTL_PAD_SD1_CMD 32 RW 00000000h
+310h IOMUXC_SW_PAD_CTL_PAD_SD1_DATA0 32 RW 00000000h
+314h IOMUXC_SW_PAD_CTL_PAD_SD1_DATA1 32 RW 00000000h
+318h IOMUXC_SW_PAD_CTL_PAD_SD1_DATA2 32 RW 00000000h
+31ch IOMUXC_SW_PAD_CTL_PAD_SD1_DATA3 32 RW 00000000h
+320h IOMUXC_SW_PAD_CTL_PAD_SD1_DATA4 32 RW 00000000h
+324h IOMUXC_SW_PAD_CTL_PAD_SD1_DATA5 32 RW 00000000h
+328h IOMUXC_SW_PAD_CTL_PAD_SD1_DATA6 32 RW 00000000h
+32ch IOMUXC_SW_PAD_CTL_PAD_SD1_DATA7 32 RW 00000000h
+330h IOMUXC_SW_PAD_CTL_PAD_SD1_RESET_B 32 RW 00000000h
+334h IOMUXC_SW_PAD_CTL_PAD_SD1_STROBE 32 RW 00000000h
+338h IOMUXC_SW_PAD_CTL_PAD_SD2_CD_B 32 RW 00000000h
+33ch IOMUXC_SW_PAD_CTL_PAD_SD2_CLK 32 RW 00000000h
+340h IOMUXC_SW_PAD_CTL_PAD_SD2_CMD 32 RW 00000000h
+344h IOMUXC_SW_PAD_CTL_PAD_SD2_DATA0 32 RW 00000000h
+348h IOMUXC_SW_PAD_CTL_PAD_SD2_DATA1 32 RW 00000000h
+34ch IOMUXC_SW_PAD_CTL_PAD_SD2_DATA2 32 RW 00000000h
+350h IOMUXC_SW_PAD_CTL_PAD_SD2_DATA3 32 RW 00000000h
+354h IOMUXC_SW_PAD_CTL_PAD_SD2_RESET_B 32 RW 00000000h
+358h IOMUXC_SW_PAD_CTL_PAD_SD2_WP 32 RW 00000000h
+35ch IOMUXC_SW_PAD_CTL_PAD_NAND_ALE 32 RW 00000000h
+360h IOMUXC_SW_PAD_CTL_PAD_NAND_CE0_B 32 RW 00000000h
+364h IOMUXC_SW_PAD_CTL_PAD_NAND_CE1_B 32 RW 00000000h
+368h IOMUXC_SW_PAD_CTL_PAD_NAND_CE2_B 32 RW 00000000h
+36ch IOMUXC_SW_PAD_CTL_PAD_NAND_CE3_B 32 RW 00000000h
+370h IOMUXC_SW_PAD_CTL_PAD_NAND_CLE 32 RW 00000000h
+374h IOMUXC_SW_PAD_CTL_PAD_NAND_DATA00 32 RW 00000000h
+378h IOMUXC_SW_PAD_CTL_PAD_NAND_DATA01 32 RW 00000000h
+37ch IOMUXC_SW_PAD_CTL_PAD_NAND_DATA02 32 RW 00000000h
+380h IOMUXC_SW_PAD_CTL_PAD_NAND_DATA03 32 RW 00000000h
+384h IOMUXC_SW_PAD_CTL_PAD_NAND_DATA04 32 RW 00000000h
+388h IOMUXC_SW_PAD_CTL_PAD_NAND_DATA05 32 RW 00000000h
+38ch IOMUXC_SW_PAD_CTL_PAD_NAND_DATA06 32 RW 00000000h
+390h IOMUXC_SW_PAD_CTL_PAD_NAND_DATA07 32 RW 00000000h
+394h IOMUXC_SW_PAD_CTL_PAD_NAND_DQS 32 RW 00000000h
+398h IOMUXC_SW_PAD_CTL_PAD_NAND_RE_B 32 RW 00000000h
+39ch IOMUXC_SW_PAD_CTL_PAD_NAND_READY_B 32 RW 00000000h
+3a0h IOMUXC_SW_PAD_CTL_PAD_NAND_WE_B 32 RW 00000000h
+3a4h IOMUXC_SW_PAD_CTL_PAD_NAND_WP_B 32 RW 00000000h
+3a8h IOMUXC_SW_PAD_CTL_PAD_SAI5_RXFS 32 RW 00000000h
+3ach IOMUXC_SW_PAD_CTL_PAD_SAI5_RXC 32 RW 00000000h
+3b0h IOMUXC_SW_PAD_CTL_PAD_SAI5_RXD0 32 RW 00000000h
+3b4h IOMUXC_SW_PAD_CTL_PAD_SAI5_RXD1 32 RW 00000000h
+3b8h IOMUXC_SW_PAD_CTL_PAD_SAI5_RXD2 32 RW 00000000h
+3bch IOMUXC_SW_PAD_CTL_PAD_SAI5_RXD3 32 RW 00000000h
+3c0h IOMUXC_SW_PAD_CTL_PAD_SAI5_MCLK 32 RW 00000000h
+3c4h IOMUXC_SW_PAD_CTL_PAD_SAI1_RXFS 32 RW 00000000h
+3c8h IOMUXC_SW_PAD_CTL_PAD_SAI1_RXC 32 RW 00000000h
+3cch IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD0 32 RW 00000000h
+3d0h IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD1 32 RW 00000000h
+3d4h IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD2 32 RW 00000000h
+3d8h IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD3 32 RW 00000000h
+3dch IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD4 32 RW 00000000h
+3e0h IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD5 32 RW 00000000h
+3e4h IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD6 32 RW 00000000h
+3e8h IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD7 32 RW 00000000h
+3ech IOMUXC_SW_PAD_CTL_PAD_SAI1_TXFS 32 RW 00000000h
+3f0h IOMUXC_SW_PAD_CTL_PAD_SAI1_TXC 32 RW 00000000h
+3f4h IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD0 32 RW 00000000h
+3f8h IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD1 32 RW 00000000h
+3fch IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD2 32 RW 00000000h
+400h IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD3 32 RW 00000000h
+404h IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD4 32 RW 00000000h
+408h IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD5 32 RW 00000000h
+40ch IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD6 32 RW 00000000h
+410h IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD7 32 RW 00000000h
+414h IOMUXC_SW_PAD_CTL_PAD_SAI1_MCLK 32 RW 00000000h
+418h IOMUXC_SW_PAD_CTL_PAD_SAI2_RXFS 32 RW 00000000h
+41ch IOMUXC_SW_PAD_CTL_PAD_SAI2_RXC 32 RW 00000000h
+420h IOMUXC_SW_PAD_CTL_PAD_SAI2_RXD0 32 RW 00000000h
+424h IOMUXC_SW_PAD_CTL_PAD_SAI2_TXFS 32 RW 00000000h
+428h IOMUXC_SW_PAD_CTL_PAD_SAI2_TXC 32 RW 00000000h
+42ch IOMUXC_SW_PAD_CTL_PAD_SAI2_TXD0 32 RW 00000000h
+430h IOMUXC_SW_PAD_CTL_PAD_SAI2_MCLK 32 RW 00000000h
+434h IOMUXC_SW_PAD_CTL_PAD_SAI3_RXFS 32 RW 00000000h
+438h IOMUXC_SW_PAD_CTL_PAD_SAI3_RXC 32 RW 00000000h
+43ch IOMUXC_SW_PAD_CTL_PAD_SAI3_RXD 32 RW 00000000h
+440h IOMUXC_SW_PAD_CTL_PAD_SAI3_TXFS 32 RW 00000000h
+444h IOMUXC_SW_PAD_CTL_PAD_SAI3_TXC 32 RW 00000000h
+448h IOMUXC_SW_PAD_CTL_PAD_SAI3_TXD 32 RW 00000000h
+44ch IOMUXC_SW_PAD_CTL_PAD_SAI3_MCLK 32 RW 00000000h
+450h IOMUXC_SW_PAD_CTL_PAD_SPDIF_TX 32 RW 00000000h
+454h IOMUXC_SW_PAD_CTL_PAD_SPDIF_RX 32 RW 00000000h
+458h IOMUXC_SW_PAD_CTL_PAD_SPDIF_EXT_CLK 32 RW 00000000h
+45ch IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SCLK 32 RW 00000000h
+460h IOMUXC_SW_PAD_CTL_PAD_ECSPI1_MOSI 32 RW 00000000h
+464h IOMUXC_SW_PAD_CTL_PAD_ECSPI1_MISO 32 RW 00000000h
+468h IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SS0 32 RW 00000000h
+46ch IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SCLK 32 RW 00000000h
+470h IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MOSI 32 RW 00000000h
+474h IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MISO 32 RW 00000000h
+478h IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SS0 32 RW 00000000h
+47ch IOMUXC_SW_PAD_CTL_PAD_I2C1_SCL 32 RW 00000000h
+480h IOMUXC_SW_PAD_CTL_PAD_I2C1_SDA 32 RW 00000000h
+484h IOMUXC_SW_PAD_CTL_PAD_I2C2_SCL 32 RW 00000000h
+488h IOMUXC_SW_PAD_CTL_PAD_I2C2_SDA 32 RW 00000000h
+48ch IOMUXC_SW_PAD_CTL_PAD_I2C3_SCL 32 RW 00000000h
+490h IOMUXC_SW_PAD_CTL_PAD_I2C3_SDA 32 RW 00000000h
+494h IOMUXC_SW_PAD_CTL_PAD_I2C4_SCL 32 RW 00000000h
+498h IOMUXC_SW_PAD_CTL_PAD_I2C4_SDA 32 RW 00000000h
+49ch IOMUXC_SW_PAD_CTL_PAD_UART1_RXD 32 RW 00000000h
+4a0h IOMUXC_SW_PAD_CTL_PAD_UART1_TXD 32 RW 00000000h
+4a4h IOMUXC_SW_PAD_CTL_PAD_UART2_RXD 32 RW 00000000h
+4a8h IOMUXC_SW_PAD_CTL_PAD_UART2_TXD 32 RW 00000000h
+4ach IOMUXC_SW_PAD_CTL_PAD_UART3_RXD 32 RW 00000000h
+4b0h IOMUXC_SW_PAD_CTL_PAD_UART3_TXD 32 RW 00000000h
+4b4h IOMUXC_SW_PAD_CTL_PAD_UART4_RXD 32 RW 00000000h
+4b8h IOMUXC_SW_PAD_CTL_PAD_UART4_TXD 32 RW 00000000h
+4bch IOMUXC_CCMSRCGPCMIX_GPC_PMIC_VFUNCTIONAL_READY_SELECT_INPUT 32 RW 00000000h
+4c0h IOMUXC_ENET1_IPP_IND_MAC0_MDIO_SELECT_INPUT 32 RW 00000000h
+4c4h IOMUXC_SAI1_IPP_IND_SAI_RXSYNC_SELECT_INPUT 32 RW 00000000h
+4c8h IOMUXC_SAI1_IPP_IND_SAI_TXBCLK_SELECT_INPUT 32 RW 00000000h
+4cch IOMUXC_SAI1_IPP_IND_SAI_TXSYNC_SELECT_INPUT 32 RW 00000000h
+4d0h IOMUXC_SAI5_IPP_IND_SAI_RXBCLK_SELECT_INPUT 32 RW 00000000h
+4d4h IOMUXC_SAI5_IPP_IND_SAI_RXDATA_SELECT_INPUT_0 32 RW 00000000h
+4d8h IOMUXC_SAI5_IPP_IND_SAI_RXDATA_SELECT_INPUT_1 32 RW 00000000h
+4dch IOMUXC_SAI5_IPP_IND_SAI_RXDATA_SELECT_INPUT_2 32 RW 00000000h
+4e0h IOMUXC_SAI5_IPP_IND_SAI_RXDATA_SELECT_INPUT_3 32 RW 00000000h
+4e4h IOMUXC_SAI5_IPP_IND_SAI_RXSYNC_SELECT_INPUT 32 RW 00000000h
+4e8h IOMUXC_SAI5_IPP_IND_SAI_TXBCLK_SELECT_INPUT 32 RW 00000000h
+4ech IOMUXC_SAI5_IPP_IND_SAI_TXSYNC_SELECT_INPUT 32 RW 00000000h
+4f0h IOMUXC_UART1_IPP_UART_RTS_B_SELECT_INPUT 32 RW 00000000h
+4f4h IOMUXC_UART1_IPP_UART_RXD_MUX_SELECT_INPUT 32 RW 00000000h
+4f8h IOMUXC_UART2_IPP_UART_RTS_B_SELECT_INPUT 32 RW 00000000h
+4fch IOMUXC_UART2_IPP_UART_RXD_MUX_SELECT_INPUT 32 RW 00000000h
+500h IOMUXC_UART3_IPP_UART_RTS_B_SELECT_INPUT 32 RW 00000000h
+504h IOMUXC_UART3_IPP_UART_RXD_MUX_SELECT_INPUT 32 RW 00000000h
+508h IOMUXC_UART4_IPP_UART_RTS_B_SELECT_INPUT 32 RW 00000000h
+50ch IOMUXC_UART4_IPP_UART_RXD_MUX_SELECT_INPUT 32 RW 00000000h
+510h IOMUXC_SAI6_IPP_IND_SAI_RXBCLK_SELECT_INPUT 32 RW 00000000h
+514h IOMUXC_SAI6_IPP_IND_SAI_RXDATA_SELECT_INPUT_0 32 RW 00000000h
+518h IOMUXC_SAI6_IPP_IND_SAI_RXSYNC_SELECT_INPUT 32 RW 00000000h
+51ch IOMUXC_SAI6_IPP_IND_SAI_TXBCLK_SELECT_INPUT 32 RW 00000000h
+520h IOMUXC_SAI6_IPP_IND_SAI_TXSYNC_SELECT_INPUT 32 RW 00000000h
+524h IOMUXC_PCIE1_CLKREQ_IN_N_SELECT_INPUT 32 RW 00000000h
+528h IOMUXC_PCIE2_CLKREQ_IN_N_SELECT_INPUT 32 RW 00000000h
+52ch IOMUXC_SAI5_EXT_MCLK_SELECT_INPUT 32 RW 00000000h
+530h IOMUXC_SAI6_EXT_MCLK_SELECT_INPUT 32 RW 00000000h
+
+#Register
+
+#IOMUXC_OBSERVE_MUX_0
+!31:6 reserved reserved
+!5:0 observe_mux TBD.
+
+#IOMUXC_OBSERVE_MUX_1
+!31:6 reserved reserved
+!5:0 observe_mux TBD.
+
+#IOMUXC_OBSERVE_MUX_2
+!31:6 reserved reserved
+!5:0 observe_mux TBD.
+
+#IOMUXC_OBSERVE_MUX_3
+!31:6 reserved reserved
+!5:0 observe_mux TBD.
+
+#IOMUXC_OBSERVE_MUX_4
+!31:4 reserved reserved
+!3:0 observe_mux TBD.
+
+#IOMUXC_SW_MUX_CTL_PAD_PMIC_STBY_REQ
+!31:7 reserved reserved
+!6 SION force the pad as input when set.
+!5:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_MUX_CTL_PAD_PMIC_ON_REQ
+!31:7 reserved reserved
+!6 SION force the pad as input when set.
+!5:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_MUX_CTL_PAD_ONOFF
+!31:7 reserved reserved
+!6 SION force the pad as input when set.
+!5:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_MUX_CTL_PAD_POR_B
+!31:7 reserved reserved
+!6 SION force the pad as input when set.
+!5:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_MUX_CTL_PAD_RTC_RESET_B
+!31:7 reserved reserved
+!6 SION force the pad as input when set.
+!5:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO00
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO01
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO02
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO03
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO04
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO05
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO06
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO07
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO08
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO09
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO10
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO11
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO12
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO13
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO14
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO15
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_MDC
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_MDIO
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_TD3
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_TD2
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_TD1
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_TD0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_TX_CTL
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_TXC
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_RX_CTL
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_RXC
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_RD0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_RD1
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_RD2
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ENET_RD3
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_CLK
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_CMD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_DATA0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_DATA1
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_DATA2
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_DATA3
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_DATA4
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_DATA5
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_DATA6
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_DATA7
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_RESET_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD1_STROBE
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD2_CD_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD2_CLK
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD2_CMD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD2_DATA0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD2_DATA1
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD2_DATA2
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD2_DATA3
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD2_RESET_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SD2_WP
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_ALE
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_CE0_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_CE1_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_CE2_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_CE3_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_CLE
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_DATA00
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_DATA01
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_DATA02
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_DATA03
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_DATA04
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_DATA05
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_DATA06
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_DATA07
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_DQS
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_RE_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_READY_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_WE_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_NAND_WP_B
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI5_RXFS
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI5_RXC
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI5_RXD0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI5_RXD1
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI5_RXD2
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI5_RXD3
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI5_MCLK
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_RXFS
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_RXC
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD1
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD2
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD3
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD4
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD5
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD6
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_RXD7
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_TXFS
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_TXC
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD1
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD2
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD3
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD4
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD5
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD6
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_TXD7
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI1_MCLK
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI2_RXFS
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI2_RXC
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI2_RXD0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI2_TXFS
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI2_TXC
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI2_TXD0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI2_MCLK
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI3_RXFS
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI3_RXC
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI3_RXD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI3_TXFS
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI3_TXC
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI3_TXD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SAI3_MCLK
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SPDIF_TX
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SPDIF_RX
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_SPDIF_EXT_CLK
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ECSPI1_SCLK
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ECSPI1_MOSI
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ECSPI1_MISO
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ECSPI1_SS0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SCLK
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MOSI
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MISO
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SS0
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_I2C1_SCL
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_I2C1_SDA
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_I2C2_SCL
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_I2C2_SDA
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_I2C3_SCL
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_I2C3_SDA
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_I2C4_SCL
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_I2C4_SDA
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_UART1_RXD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_UART1_TXD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_UART2_RXD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_UART2_TXD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_UART3_RXD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_UART3_TXD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_UART4_RXD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_MUX_CTL_PAD_UART4_TXD
+!31:5 reserved reserved
+!4 SION force the pad as input when set.
+!3 reserved reserved
+!2:0 mux_mode ALT function sharing control bits.
+
+#IOMUXC_SW_PAD_CTL_PAD_TEST_MODE
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 reserved reserved
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_PAD_CTL_PAD_BOOT_MODE0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 reserved reserved
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_PAD_CTL_PAD_BOOT_MODE1
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 reserved reserved
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_PAD_CTL_PAD_JTAG_MOD
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_PAD_CTL_PAD_JTAG_TRST_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_PAD_CTL_PAD_JTAG_TDI
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_PAD_CTL_PAD_JTAG_TMS
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_PAD_CTL_PAD_JTAG_TCK
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_PAD_CTL_PAD_JTAG_TDO
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_PAD_CTL_PAD_RTC
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 reserved reserved
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 reserved reserved
+!2:0 reserved reserved
+
+#IOMUXC_SW_PAD_CTL_PAD_PMIC_STBY_REQ
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_PMIC_ON_REQ
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ONOFF
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_POR_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!6 pue this bit does not work since the pue of the por_b is tied to 1;.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_RTC_RESET_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO00
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO01
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO02
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO03
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO04
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO05
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO06
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO07
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO08
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO09
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO10
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO11
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO12
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO13
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO14
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO15
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_MDC
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_MDIO
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_TD3
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_TD2
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_TD1
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_TD0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_TX_CTL
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_TXC
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_RX_CTL
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_RXC
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_RD0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_RD1
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_RD2
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ENET_RD3
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_CLK
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_CMD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_DATA0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_DATA1
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_DATA2
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_DATA3
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_DATA4
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_DATA5
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_DATA6
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_DATA7
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_RESET_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD1_STROBE
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD2_CD_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD2_CLK
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD2_CMD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD2_DATA0
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD2_DATA1
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD2_DATA2
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD2_DATA3
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD2_RESET_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SD2_WP
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_ALE
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_CE0_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_CE1_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_CE2_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_CE3_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_CLE
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_DATA00
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_DATA01
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_DATA02
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_DATA03
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_DATA04
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_DATA05
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_DATA06
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_DATA07
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_DQS
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_RE_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_READY_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_WE_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_NAND_WP_B
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI5_RXFS
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI5_RXC
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI5_RXD0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI5_RXD1
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI5_RXD2
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI5_RXD3
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI5_MCLK
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_RXFS
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_RXC
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD1
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD2
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD3
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD4
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD5
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD6
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_RXD7
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_TXFS
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_TXC
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD1
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD2
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD3
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD4
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD5
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD6
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_TXD7
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI1_MCLK
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI2_RXFS
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI2_RXC
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI2_RXD0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI2_TXFS
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI2_TXC
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI2_TXD0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI2_MCLK
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI3_RXFS
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI3_RXC
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI3_RXD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI3_TXFS
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI3_TXC
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI3_TXD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SAI3_MCLK
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SPDIF_TX
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SPDIF_RX
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_SPDIF_EXT_CLK
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SCLK
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ECSPI1_MOSI
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ECSPI1_MISO
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SS0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SCLK
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MOSI
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MISO
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SS0
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_I2C1_SCL
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_I2C1_SDA
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_I2C2_SCL
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_I2C2_SDA
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_I2C3_SCL
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_I2C3_SDA
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_I2C4_SCL
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_I2C4_SDA
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_UART1_RXD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_UART1_TXD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_UART2_RXD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_UART2_TXD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_UART3_RXD
+!31:14 reserved reserved
+!13:11 vsel control the pad ports vsel.
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_UART3_TXD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_UART4_RXD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_SW_PAD_CTL_PAD_UART4_TXD
+!31:11 reserved reserved
+!10:9 reserved reserved
+!8 lvttl control the pad ports lvttl.
+!7 hys control the pad ports hys; this can be overwritten by ipt if ipt control is enabled.
+!6 pue control the pad ports pue; this can be overwritten by ipt if ipt control is enabled.
+!5 ode control the pad ports ode; this can be overwritten by ipt if ipt control is enabled.
+!4:3 fsel control the pad ports fsel.
+!2:0 dse control the pad ports dse.
+
+#IOMUXC_CCMSRCGPCMIX_GPC_PMIC_VFUNCTIONAL_READY_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select CCM.gpc_pmic_vfunctional_ready from GPIO1_IO01.alt5_in;
+1: select CCM.gpc_pmic_vfunctional_ready from GPIO1_IO11.alt5_in.
+
+#IOMUXC_ENET1_IPP_IND_MAC0_MDIO_SELECT_INPUT
+!31:2 reserved reserved
+!1:0 DAISY 0: select enet1.ipp_ind_mac0_mdio from GPIO01_IO01.alt1_in;
+1: select enet1.ipp_ind_mac0_mdio from ENET_MDIO.altl0_in;
+2: select enet1.ipp_ind_mac0_mdio from I2C1_SDA.alt1_in;
+3: same as 0;.
+
+#IOMUXC_SAI1_IPP_IND_SAI_RXSYNC_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select sai1.ipp_ind_sai_rxsync from pad sai1_rxfs.alt0_in;
+1: select sai1.ipp_ind_sai_rxsync from pad sai1_rxd5.alt3_in;.
+
+#IOMUXC_SAI1_IPP_IND_SAI_TXBCLK_SELECT_INPUT
+!31:2 reserved reserved
+!0 DAISY 0: select sai1.ipp_ind_sai_txbclk from pad sai5_mclk.alt1_in;
+1: select sai1.ipp_ind_sai_txbclk from pad sai1_txc.alt0_in;.
+!1:0 DAISY 0: select sai1.ipp_ind_sai_txbclk from pad sai5_mclk.alt1_in;
+1: select sai1.ipp_ind_sai_txbclk from pad sai1_txc.alt0_in;
+2: select sai1.ipp_ind_sai_txbclk from pad sai1_mclk.alt2_in;
+3: same as 0.
+
+#IOMUXC_SAI1_IPP_IND_SAI_TXSYNC_SELECT_INPUT
+!31:3 reserved reserved
+!1:0 DAISY 0: select sai1.ipp_ind_sai_txsync from pad sai5_rxd1.alt2_in;
+1: select sai1.ipp_ind_sai_txsync from pad sai5_rxd2.alt2_in;
+2: select sai1.ipp_ind_sai_txsync from pad sai5_rxd3.alt2_in;
+3: select sai1.ipp_ind_sai_txsync from pad sai1_txfs.alt0_in;.
+!2:0 DAISY 0: select sai1.ipp_ind_sai_txsync from pad sai5_rxd1.alt2_in;
+1: select sai1.ipp_ind_sai_txsync from pad sai5_rxd2.alt2_in;
+2: select sai1.ipp_ind_sai_txsync from pad sai5_rxd3.alt2_in;
+3: select sai1.ipp_ind_sai_txsync from pad sai1_txfs.alt0_in;
+4: select sai1.ipp_ind_sai_txsync from pad sai1_rxd7.alt2_in;
+OTHERS: same as 0;.
+
+#IOMUXC_SAI5_IPP_IND_SAI_RXBCLK_SELECT_INPUT
+!31:2 reserved reserved
+!0 DAISY 0: select sai5.ipp_ind_sai_rxbclk from pad_sai5_rxc.alt0_in;
+1: select sai5.ipp_ind_sai_rxbclk from pad_sai1_rxc.alt1_in.
+!1:0 DAISY 0: select sai5.ipp_ind_sai_rxbclk from pad_sai5_rxc.alt0_in;
+1: select sai5.ipp_ind_sai_rxbclk from pad_sai1_rxc.alt1_in;
+2: select sai5.ipp_ind_sai_rxbclk from pad_sai3_rxc.alt2_in;
+3: same as 0;.
+
+#IOMUXC_SAI5_IPP_IND_SAI_RXDATA_SELECT_INPUT_0
+!31:2 reserved reserved
+!0 DAISY 0: select sai5.ipp_ind_sai_rxdata[0] from pad sai5_rxd0.alt0_in;
+1: select sai5.ipp_ind_sai_rxdata[0] from pad sai1_rxd0.alt1_in;.
+!1:0 DAISY 0: select sai5.ipp_ind_sai_rxdata[0] from pad sai5_rxd0.alt0_in;
+1: select sai5.ipp_ind_sai_rxdata[0] from pad sai1_rxd0.alt1_in;
+2: select sai5.ipp_ind_sai_rxdata[0] from pad sai3_rxd.alt2_in;
+3: same as 0.
+
+#IOMUXC_SAI5_IPP_IND_SAI_RXDATA_SELECT_INPUT_1
+!31:2 reserved reserved
+!0 DAISY 0: select sai5.ipp_ind_sai_rxdata[1] from pad sai5_rxd1.alt0_in;
+1: select sai5.ipp_ind_sai_rxdata[1] from pad sai1_rxd1.alt1_in;.
+!1:0 DAISY 0: select sai5.ipp_ind_sai_rxdata[1] from pad sai5_rxd1.alt0_in;
+1: select sai5.ipp_ind_sai_rxdata[1] from pad sai1_rxd1.alt1_in;
+2: select sai5.ipp_ind_sai_rxdata[1] from pad sai3_txfs.alt1_in;
+3: same as 0.
+
+#IOMUXC_SAI5_IPP_IND_SAI_RXDATA_SELECT_INPUT_2
+!31:1 reserved reserved
+!0 DAISY 0: select sai5.ipp_ind_sai_rxdata[2] from pad sai5_rxd2.alt0_in;
+1: select sai5.ipp_ind_sai_rxdata[2] from pad sai1_rxd2.alt1_in;.
+!1:0 DAISY 0: select sai5.ipp_ind_sai_rxdata[2] from pad sai5_rxd2.alt0_in;
+1: select sai5.ipp_ind_sai_rxdata[2] from pad sai1_rxd2.alt1_in;
+2: select sai5.ipp_ind_sai_rxdata[2] from pad sai3_txc.alt2_in;
+3: same as 0;.
+
+#IOMUXC_SAI5_IPP_IND_SAI_RXDATA_SELECT_INPUT_3
+!31:1 reserved reserved
+!0 DAISY 0: select sai5.ipp_ind_sai_rxdata[3] from pad sai5_rxd3.alt0_in;
+1: select sai5.ipp_ind_sai_rxdata[3] from pad sai1_rxd3.alt1_in;.
+!1:0 DAISY 0: select sai5.ipp_ind_sai_rxdata[3] from pad sai5_rxd3.alt0_in;
+1: select sai5.ipp_ind_sai_rxdata[3] from pad sai1_rxd3.alt1_in;
+2: select sai5.ipp_ind_sai_rxdata[3] from pad sai3_txd.alt2_in;
+3: same as 0;.
+
+#IOMUXC_SAI5_IPP_IND_SAI_RXSYNC_SELECT_INPUT
+!31:2 reserved reserved
+!0 DAISY 0: select sai5.ipp_ind_sai_rxsync from pad_sai5_rxfs.alt0_in;
+1: select sai5.ipp_ind_sai_rxsync from pad_sai1_rxfs.alt1_in;.
+!1:0 DAISY 0: select sai5.ipp_ind_sai_rxsync from pad_sai5_rxfs.alt0_in;
+1: select sai5.ipp_ind_sai_rxsync from pad_sai1_rxfs.alt1_in;
+2: select sai5.ipp_ind_sai_rxsync from pad_sai3_rxfs.alt2_in;
+3: same as 0.
+
+#IOMUXC_SAI5_IPP_IND_SAI_TXBCLK_SELECT_INPUT
+!31:2 reserved reserved
+!1:0 DAISY 0: select sai5.ipp_ind_sai_txbclk from pad sai5_rxd2.alt3_in;
+1: select sai5.ipp_ind_sai_txbclk from pad sai1_txc.alt1_in;
+2: select sai5.ipp_ind_sai_txbclk from pad sai2_rxc.alt1_in;
+3: same as 0;.
+
+#IOMUXC_SAI5_IPP_IND_SAI_TXSYNC_SELECT_INPUT
+!31:2 reserved reserved
+!1:0 DAISY 0: select sai5.ipp_ind_sai_txsync from pad sai5_rxd1.alt3_in;
+1: select sai5.ipp_ind_sai_txsync from pad sai1_txfs.alt1_in;
+2: select sai5.ipp_ind_sai_txsync from pad sai2_rxfs.alt1_in;
+3: same as 0.
+
+#IOMUXC_UART1_IPP_UART_RTS_B_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select uart1.ipp_uart_rts_b from pad UART3_RXD.alt1_in;
+1: select uart1.ipp_uart_rts_b from pad UART3_TXD.alt1_in;.
+
+#IOMUXC_UART1_IPP_UART_RXD_MUX_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select uart1.ipp_uart_rxd_mux from pad UART1_RXD.alt0_in;
+1: select uart1.ipp_uart_rxd_mux from pad UART1_TXD.alt0_in;.
+
+#IOMUXC_UART2_IPP_UART_RTS_B_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select uart2.ipp_uart_rts_b from pad UART4_RXD.alt1_in;
+1: select uart2.ipp_uart_rts_b from pad UART4_TXD.alt1_in;.
+
+#IOMUXC_UART2_IPP_UART_RXD_MUX_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select uart2.ipp_uart_rxd_mux from pad UART2_RXD.alt0_in;
+1: select uart2.ipp_uart_rxd_mux from pad UART2_TXD.alt0_in;.
+
+#IOMUXC_UART3_IPP_UART_RTS_B_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select uart3.rts_b from pad ECSPI1_MISO.alt1_in;
+1: select uart3.rts_b from pad ECSPI1_SS0.alt1_in;.
+
+#IOMUXC_UART3_IPP_UART_RXD_MUX_SELECT_INPUT
+!31:2 reserved reserved
+!1:0 DAISY 0: select uart3.ipp_uart_rxd_mux from pad ECSPI1_SCLK.alt1_in;
+1: select uart3.ipp_uart_rxd_mux from pad ECSPI1_MOSI.alt1_in;
+2: select uart3.ipp_uart_rxd_mux from pad UART3_RXD.alt0_in;
+3: select uart3.ipp_uart_rxd_mux from pad UART3_TXD.alt0_in;.
+
+#IOMUXC_UART4_IPP_UART_RTS_B_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select uart4.rts_b from pad ECSPI2_MISO.alt1_in;
+1: select uart4.rts_b from pad ECSPI2_SS0.alt1_in;.
+
+#IOMUXC_UART4_IPP_UART_RXD_MUX_SELECT_INPUT
+!31:2 reserved reserved
+!1:0 DAISY 0: select uart4.ipp_uart_rxd_mux from pad ECSPI2_SCLK.alt1_in;
+1: select uart4.ipp_uart_rxd_mux from pad ECSPI2_MOSI.alt1_in;
+2: select uart4.ipp_uart_rxd_mux from pad UART4_RXD.alt0_in;
+3: select uart4.ipp_uart_rxd_mux from pad UART4_TXD..alt0_in;.
+
+#IOMUXC_SAI6_IPP_IND_SAI_RXBCLK_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select sai6.ipp_ind_sai_rxbclk from pad_sai1_rxd4.alt2_in;
+1: select sai6.ipp_ind_sai_rxbclk from pad_sai1_txd4.alt1_in.
+
+#IOMUXC_SAI6_IPP_IND_SAI_RXDATA_SELECT_INPUT_0
+!31:1 reserved reserved
+!0 DAISY 0: select sai6.ipp_ind_sai_rxdata[0] from pad sai1_rxd5.alt2_in;
+1: select sai6.ipp_ind_sai_rxdata[0] from pad sai1_txd5.alt1_in;.
+
+#IOMUXC_SAI6_IPP_IND_SAI_RXSYNC_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select sai6.ipp_ind_sai_rxsync from pad_sai1_rxd6.alt2_in;
+1: select sai6.ipp_ind_sai_rxsync from pad_sai1_txd6.alt1_in;.
+
+#IOMUXC_SAI6_IPP_IND_SAI_TXBCLK_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select sai6.ipp_ind_sai_txbclk from pad sai1_rxd4.alt1_in;
+1: select sai6.ipp_ind_sai_txbclk from pad sai1_txd4.alt2_in;.
+
+#IOMUXC_SAI6_IPP_IND_SAI_TXSYNC_SELECT_INPUT
+!31:1 reserved reserved
+!0 DAISY 0: select sai6.ipp_ind_sai_txsync from pad sai1_rxd6.alt1_in;
+1: select sai6.ipp_ind_sai_txsync from pad sai1_txd6.alt2_in;.
+
+#IOMUXC_PCIE1_CLKREQ_IN_N_SELECT_INPUT
+!31:1  .
+!0 DAISY 0: select pcie1_clkreq_in_n from pad i2c4_scl.alt2_in;
+1: select pcie1_clkreq_in_n from pad uart4_rxd.alt2_in;.
+
+#IOMUXC_PCIE2_CLKREQ_IN_N_SELECT_INPUT
+!31:1  .
+!0 DAISY 0: select pcie2_clkreq_in_n from pad i2c4_sda.alt2_in;
+1: select pcie2_clkreq_in_n from pad uart4_txd.alt2_in;.
+
+#IOMUXC_SAI5_EXT_MCLK_SELECT_INPUT
+!31:4  .
+!3:0 DAISY 0: select sai5_ext_mclk from pad sai5_mclk.alt0_in;
+1: select sai5_ext_mclk from pad sai1_mclk.alt1_in;
+2: select sai5_ext_mclk from pad sai2_mclk.alt1_in;
+3: select sai5_ext_mclk from pad sai3_mclk.alt2_in;.
+
+#IOMUXC_SAI6_EXT_MCLK_SELECT_INPUT
+!31:1  .
+!0 DAISY 0: select sai6_ext_mclk from pad sai1_rxd7.alt1_in;
+1: select sai6_ext_mclk from pad sai1_txd7.alt1_in;.

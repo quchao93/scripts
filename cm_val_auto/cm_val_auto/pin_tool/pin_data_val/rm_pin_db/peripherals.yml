@@ -1,0 +1,167 @@
+---
+ADC:
+- Analog-to-Digital Converter
+AIPS:
+- AIPS-Lite Bridge
+AIPS-Lite:
+- Peripheral Bridge
+AXBS:
+- Crossbar switch
+BME2:
+- Bit Manipulation Engine2
+CAN:
+- Flex Controller Area Network module
+CAU:
+- Memory Mapped Cryptographic Acceleration Unit (MMCAU)
+CMP:
+- High-Speed Comparator (CMP), Voltage Reference (VREF) Digital-to-Analog Converter
+  (DAC), and Analog Mux (ANMUX)
+CMT:
+- Carrier Modulator Transmitter
+CRC:
+- Cyclic Redundancy Check
+CoreDebug:
+- Core Debug Registers
+DAC:
+- 12-Bit Digital-to-Analog Converter
+DMA:
+- Enhanced direct memory access controller
+DMAMUX:
+- Direct Memory Access Multiplexer
+DRY:
+- DryIce
+DWT:
+- Data Watchpoint and Trace Unit Registers
+eDMA:
+- Enhanced Direct Memory Access
+ENET:
+- Ethernet MAC-NET Core
+ETB:
+- Embedded Trace Buffer Registers
+ETF:
+- Embedded Trace Funnel Registers
+ETM:
+- Embedded Trace Macrocell Registers
+EWM:
+- External Watchdog Monitor
+FB:
+- FlexBus external bus interface
+EzPort:
+- EzPort interface
+FlexBus:
+- External Bus Interface
+FMC:
+- Flash Memory Controller
+- Flash Memory Controller-greg
+FPB:
+- Flash Patch and Breakpoint Unit Registers
+FTFE:
+- Flash Memory Module
+FTFL:
+- Flash Memory Interface
+FTM:
+- FlexTimer Module
+GPIO:
+- General Purpose Input/Output
+I2C:
+- Inter-Integrated Circuit
+I2S:
+- Intergrated Interchip Sound / Synchronous Audio Interface
+- Inter-IC Sound / Synchronous Audio Interface
+ITM:
+- Instrumentation Trace Macrocell Registers
+JTAG:
+- JTAG interface
+JTAGC:
+- JTAG Controller
+LLWU:
+- Low leakage wakeup unit
+LMEM:
+- Local Memory Controller
+LPTMR:
+- Low Power Timer
+LPUART:
+- Low Power Universal Asynchronous Receiver/Transmitter
+MCG:
+- Multipurpose Clock Generator 
+MCM:
+- Miscellaneous Control Module
+MMCAU:
+- Memory-Mapped Cryptographic Acceleration Unit
+MPU:
+- Memory protection unit
+NV:
+- Flash configuration field
+NVIC:
+- Nested Vectored Interrupt Controller
+OSC:
+- Oscillator
+OSC32K:
+- RTC Oscillator
+PDB:
+- Programmable Delay Block
+PIT:
+- Periodic Interrupt Timer
+PMC:
+- Power Management Controller
+PORT:
+- Pin Control and Interrupts
+QuadSPI:
+- Quad Serial Peripheral Interface
+RCM:
+- Reset Control Module
+RFSYS:
+- System register file
+RFVBAT:
+- VBAT register file
+RNG:
+- Random Number Generator Accelerator
+RTC:
+- Real Time Clock
+SAI:
+- Synchronous Audio Interface
+SCB:
+- System Control Block
+SDHC:
+- Secured Digital Host Controller
+SDRAM:
+- Synchronous DRAM Controller Module
+SIM:
+- System Integration Module
+SMC:
+- System Mode Controller
+SPI:
+- Serial Peripheral Interface
+SUPPLY:
+- Power supply
+SWD:
+- Serial Wire Debug
+SysTick:
+- System timer
+TPIU:
+- Trace Port Interface Unit Registers
+TPM:
+- Timer/PWM Module
+TSI:
+- Touch Sensing Input
+UART:
+- Serial Communication Interface
+USB:
+- Universal Serial Bus
+- Universal Serial Bus, OTG Capable Controller
+USBDCD:
+- USB Device Charger Detection module
+USBFSOTG:
+- Universal Serial Bus Full Speed OTG Controller
+USBHS:
+- USB High Speed OTG Controller
+USBHSDCD:
+- USB Device Charger Detection module
+USB-PHY:
+- Universal Serial Bus 2.0 Integrated PHY
+VREFV1:
+- Voltage Reference
+WDOG:
+- Watchdog Timer
+ZigBee:
+- ZigBee module

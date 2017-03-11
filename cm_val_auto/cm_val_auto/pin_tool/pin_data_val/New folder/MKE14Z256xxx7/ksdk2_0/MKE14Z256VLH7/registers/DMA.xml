@@ -1,0 +1,1754 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="CR" description="Control Register">
+    <alias type="CMSIS" value="CR"/>
+    <reserved_bit_field offset="0" width="1" reset_value="0"/>
+    <bit_field offset="1" width="1" name="EDBG" access="RW" reset_value="0" description="Enable Debug">
+      <alias type="CMSIS" value="DMA_CR_EDBG(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="ERCA" access="RW" reset_value="0" description="Enable Round Robin Channel Arbitration">
+      <alias type="CMSIS" value="DMA_CR_ERCA(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="HOE" access="RW" reset_value="0" description="Halt On Error">
+      <alias type="CMSIS" value="DMA_CR_HOE(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="HALT" access="RW" reset_value="0" description="Halt DMA Operations">
+      <alias type="CMSIS" value="DMA_CR_HALT(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="CLM" access="RW" reset_value="0" description="Continuous Link Mode">
+      <alias type="CMSIS" value="DMA_CR_CLM(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="EMLM" access="RW" reset_value="0" description="Enable Minor Loop Mapping">
+      <alias type="CMSIS" value="DMA_CR_EMLM(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="8" reset_value="0"/>
+    <bit_field offset="16" width="1" name="ECX" access="RW" reset_value="0" description="Error Cancel Transfer">
+      <alias type="CMSIS" value="DMA_CR_ECX(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="CX" access="RW" reset_value="0" description="Cancel Transfer">
+      <alias type="CMSIS" value="DMA_CR_CX(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="18" width="6" reset_value="0"/>
+    <reserved_bit_field offset="24" width="7" reset_value="0"/>
+    <bit_field offset="31" width="1" name="ACTIVE" access="RO" reset_value="0" description="DMA Active Status">
+      <alias type="CMSIS" value="DMA_CR_ACTIVE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x4" width="32" name="ES" description="Error Status Register">
+    <alias type="CMSIS" value="ES"/>
+    <bit_field offset="0" width="1" name="DBE" access="RO" reset_value="0" description="Destination Bus Error">
+      <alias type="CMSIS" value="DMA_ES_DBE(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="SBE" access="RO" reset_value="0" description="Source Bus Error">
+      <alias type="CMSIS" value="DMA_ES_SBE(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SGE" access="RO" reset_value="0" description="Scatter/Gather Configuration Error">
+      <alias type="CMSIS" value="DMA_ES_SGE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="NCE" access="RO" reset_value="0" description="NBYTES/CITER Configuration Error">
+      <alias type="CMSIS" value="DMA_ES_NCE(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="DOE" access="RO" reset_value="0" description="Destination Offset Error">
+      <alias type="CMSIS" value="DMA_ES_DOE(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="DAE" access="RO" reset_value="0" description="Destination Address Error">
+      <alias type="CMSIS" value="DMA_ES_DAE(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SOE" access="RO" reset_value="0" description="Source Offset Error">
+      <alias type="CMSIS" value="DMA_ES_SOE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="SAE" access="RO" reset_value="0" description="Source Address Error">
+      <alias type="CMSIS" value="DMA_ES_SAE(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="ERRCHN" access="RO" reset_value="0" description="Error Channel Number or Canceled Channel Number">
+      <alias type="CMSIS" value="DMA_ES_ERRCHN(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="3" reset_value="0"/>
+    <bit_field offset="14" width="1" name="CPE" access="RO" reset_value="0" description="Channel Priority Error">
+      <alias type="CMSIS" value="DMA_ES_CPE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="ECX" access="RO" reset_value="0" description="Transfer Canceled">
+      <alias type="CMSIS" value="DMA_ES_ECX(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="17" width="14" reset_value="0"/>
+    <bit_field offset="31" width="1" name="VLD" access="RO" reset_value="0" description="Logical OR of all ERR status bits">
+      <alias type="CMSIS" value="DMA_ES_VLD(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xC" width="32" name="ERQ" description="Enable Request Register">
+    <alias type="CMSIS" value="ERQ"/>
+    <bit_field offset="0" width="1" name="ERQ0" access="RW" reset_value="0" description="Enable DMA Request 0">
+      <alias type="CMSIS" value="DMA_ERQ_ERQ0(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="ERQ1" access="RW" reset_value="0" description="Enable DMA Request 1">
+      <alias type="CMSIS" value="DMA_ERQ_ERQ1(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="ERQ2" access="RW" reset_value="0" description="Enable DMA Request 2">
+      <alias type="CMSIS" value="DMA_ERQ_ERQ2(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="ERQ3" access="RW" reset_value="0" description="Enable DMA Request 3">
+      <alias type="CMSIS" value="DMA_ERQ_ERQ3(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="ERQ4" access="RW" reset_value="0" description="Enable DMA Request 4">
+      <alias type="CMSIS" value="DMA_ERQ_ERQ4(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="ERQ5" access="RW" reset_value="0" description="Enable DMA Request 5">
+      <alias type="CMSIS" value="DMA_ERQ_ERQ5(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ERQ6" access="RW" reset_value="0" description="Enable DMA Request 6">
+      <alias type="CMSIS" value="DMA_ERQ_ERQ6(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ERQ7" access="RW" reset_value="0" description="Enable DMA Request 7">
+      <alias type="CMSIS" value="DMA_ERQ_ERQ7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="24" reset_value="0"/>
+  </register>
+  <register offset="0x14" width="32" name="EEI" description="Enable Error Interrupt Register">
+    <alias type="CMSIS" value="EEI"/>
+    <bit_field offset="0" width="1" name="EEI0" access="RW" reset_value="0" description="Enable Error Interrupt 0">
+      <alias type="CMSIS" value="DMA_EEI_EEI0(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="EEI1" access="RW" reset_value="0" description="Enable Error Interrupt 1">
+      <alias type="CMSIS" value="DMA_EEI_EEI1(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="EEI2" access="RW" reset_value="0" description="Enable Error Interrupt 2">
+      <alias type="CMSIS" value="DMA_EEI_EEI2(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="EEI3" access="RW" reset_value="0" description="Enable Error Interrupt 3">
+      <alias type="CMSIS" value="DMA_EEI_EEI3(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="EEI4" access="RW" reset_value="0" description="Enable Error Interrupt 4">
+      <alias type="CMSIS" value="DMA_EEI_EEI4(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="EEI5" access="RW" reset_value="0" description="Enable Error Interrupt 5">
+      <alias type="CMSIS" value="DMA_EEI_EEI5(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="EEI6" access="RW" reset_value="0" description="Enable Error Interrupt 6">
+      <alias type="CMSIS" value="DMA_EEI_EEI6(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="EEI7" access="RW" reset_value="0" description="Enable Error Interrupt 7">
+      <alias type="CMSIS" value="DMA_EEI_EEI7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="24" reset_value="0"/>
+  </register>
+  <register offset="0x18" width="8" name="CEEI" description="Clear Enable Error Interrupt Register">
+    <alias type="CMSIS" value="CEEI"/>
+    <bit_field offset="0" width="3" name="CEEI" access="WORZ" reset_value="0" description="Clear Enable Error Interrupt">
+      <alias type="CMSIS" value="DMA_CEEI_CEEI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="CAEE" access="WORZ" reset_value="0" description="Clear All Enable Error Interrupts">
+      <alias type="CMSIS" value="DMA_CEEI_CAEE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="NOP" access="WORZ" reset_value="0" description="No Op enable">
+      <alias type="CMSIS" value="DMA_CEEI_NOP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x19" width="8" name="SEEI" description="Set Enable Error Interrupt Register">
+    <alias type="CMSIS" value="SEEI"/>
+    <bit_field offset="0" width="3" name="SEEI" access="WORZ" reset_value="0" description="Set Enable Error Interrupt">
+      <alias type="CMSIS" value="DMA_SEEI_SEEI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="SAEE" access="WORZ" reset_value="0" description="Sets All Enable Error Interrupts">
+      <alias type="CMSIS" value="DMA_SEEI_SAEE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="NOP" access="WORZ" reset_value="0" description="No Op enable">
+      <alias type="CMSIS" value="DMA_SEEI_NOP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1A" width="8" name="CERQ" description="Clear Enable Request Register">
+    <alias type="CMSIS" value="CERQ"/>
+    <alias type="id" value="EDMA_CERQ"/>
+    <bit_field offset="0" width="3" name="CERQ" access="WORZ" reset_value="0" description="Clear Enable Request">
+      <alias type="CMSIS" value="DMA_CERQ_CERQ(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="CAER" access="WORZ" reset_value="0" description="Clear All Enable Requests">
+      <alias type="CMSIS" value="DMA_CERQ_CAER(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="NOP" access="WORZ" reset_value="0" description="No Op enable">
+      <alias type="CMSIS" value="DMA_CERQ_NOP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1B" width="8" name="SERQ" description="Set Enable Request Register">
+    <alias type="CMSIS" value="SERQ"/>
+    <bit_field offset="0" width="3" name="SERQ" access="WORZ" reset_value="0" description="Set Enable Request">
+      <alias type="CMSIS" value="DMA_SERQ_SERQ(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="SAER" access="WORZ" reset_value="0" description="Set All Enable Requests">
+      <alias type="CMSIS" value="DMA_SERQ_SAER(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="NOP" access="WORZ" reset_value="0" description="No Op enable">
+      <alias type="CMSIS" value="DMA_SERQ_NOP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1C" width="8" name="CDNE" description="Clear DONE Status Bit Register">
+    <alias type="CMSIS" value="CDNE"/>
+    <bit_field offset="0" width="3" name="CDNE" access="WORZ" reset_value="0" description="Clear DONE Bit">
+      <alias type="CMSIS" value="DMA_CDNE_CDNE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="CADN" access="WORZ" reset_value="0" description="Clears All DONE Bits">
+      <alias type="CMSIS" value="DMA_CDNE_CADN(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="NOP" access="WORZ" reset_value="0" description="No Op enable">
+      <alias type="CMSIS" value="DMA_CDNE_NOP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1D" width="8" name="SSRT" description="Set START Bit Register">
+    <alias type="CMSIS" value="SSRT"/>
+    <bit_field offset="0" width="3" name="SSRT" access="WORZ" reset_value="0" description="Set START Bit">
+      <alias type="CMSIS" value="DMA_SSRT_SSRT(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="SAST" access="WORZ" reset_value="0" description="Set All START Bits (activates all channels)">
+      <alias type="CMSIS" value="DMA_SSRT_SAST(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="NOP" access="WORZ" reset_value="0" description="No Op enable">
+      <alias type="CMSIS" value="DMA_SSRT_NOP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1E" width="8" name="CERR" description="Clear Error Register">
+    <alias type="CMSIS" value="CERR"/>
+    <alias type="id" value="EDMA_CERR"/>
+    <bit_field offset="0" width="3" name="CERR" access="WORZ" reset_value="0" description="Clear Error Indicator">
+      <alias type="CMSIS" value="DMA_CERR_CERR(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="CAEI" access="WORZ" reset_value="0" description="Clear All Error Indicators">
+      <alias type="CMSIS" value="DMA_CERR_CAEI(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="NOP" access="WORZ" reset_value="0" description="No Op enable">
+      <alias type="CMSIS" value="DMA_CERR_NOP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1F" width="8" name="CINT" description="Clear Interrupt Request Register">
+    <alias type="CMSIS" value="CINT"/>
+    <bit_field offset="0" width="3" name="CINT" access="WORZ" reset_value="0" description="Clear Interrupt Request">
+      <alias type="CMSIS" value="DMA_CINT_CINT(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="CAIR" access="WORZ" reset_value="0" description="Clear All Interrupt Requests">
+      <alias type="CMSIS" value="DMA_CINT_CAIR(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="NOP" access="WORZ" reset_value="0" description="No Op enable">
+      <alias type="CMSIS" value="DMA_CINT_NOP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x24" width="32" name="INT" description="Interrupt Request Register">
+    <alias type="CMSIS" value="INT"/>
+    <bit_field offset="0" width="1" name="INT0" access="W1C" reset_value="0" description="Interrupt Request 0">
+      <alias type="CMSIS" value="DMA_INT_INT0(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="INT1" access="W1C" reset_value="0" description="Interrupt Request 1">
+      <alias type="CMSIS" value="DMA_INT_INT1(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="INT2" access="W1C" reset_value="0" description="Interrupt Request 2">
+      <alias type="CMSIS" value="DMA_INT_INT2(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="INT3" access="W1C" reset_value="0" description="Interrupt Request 3">
+      <alias type="CMSIS" value="DMA_INT_INT3(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="INT4" access="W1C" reset_value="0" description="Interrupt Request 4">
+      <alias type="CMSIS" value="DMA_INT_INT4(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="INT5" access="W1C" reset_value="0" description="Interrupt Request 5">
+      <alias type="CMSIS" value="DMA_INT_INT5(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="INT6" access="W1C" reset_value="0" description="Interrupt Request 6">
+      <alias type="CMSIS" value="DMA_INT_INT6(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="INT7" access="W1C" reset_value="0" description="Interrupt Request 7">
+      <alias type="CMSIS" value="DMA_INT_INT7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="24" reset_value="0"/>
+  </register>
+  <register offset="0x2C" width="32" name="ERR" description="Error Register">
+    <alias type="CMSIS" value="ERR"/>
+    <bit_field offset="0" width="1" name="ERR0" access="W1C" reset_value="0" description="Error In Channel 0">
+      <alias type="CMSIS" value="DMA_ERR_ERR0(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="ERR1" access="W1C" reset_value="0" description="Error In Channel 1">
+      <alias type="CMSIS" value="DMA_ERR_ERR1(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="ERR2" access="W1C" reset_value="0" description="Error In Channel 2">
+      <alias type="CMSIS" value="DMA_ERR_ERR2(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="ERR3" access="W1C" reset_value="0" description="Error In Channel 3">
+      <alias type="CMSIS" value="DMA_ERR_ERR3(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="ERR4" access="W1C" reset_value="0" description="Error In Channel 4">
+      <alias type="CMSIS" value="DMA_ERR_ERR4(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="ERR5" access="W1C" reset_value="0" description="Error In Channel 5">
+      <alias type="CMSIS" value="DMA_ERR_ERR5(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ERR6" access="W1C" reset_value="0" description="Error In Channel 6">
+      <alias type="CMSIS" value="DMA_ERR_ERR6(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ERR7" access="W1C" reset_value="0" description="Error In Channel 7">
+      <alias type="CMSIS" value="DMA_ERR_ERR7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="24" reset_value="0"/>
+  </register>
+  <register offset="0x34" width="32" name="HRS" description="Hardware Request Status Register">
+    <alias type="CMSIS" value="HRS"/>
+    <bit_field offset="0" width="1" name="HRS0" access="RO" reset_value="0" description="Hardware Request Status Channel 0">
+      <alias type="CMSIS" value="DMA_HRS_HRS0(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="HRS1" access="RO" reset_value="0" description="Hardware Request Status Channel 1">
+      <alias type="CMSIS" value="DMA_HRS_HRS1(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="HRS2" access="RO" reset_value="0" description="Hardware Request Status Channel 2">
+      <alias type="CMSIS" value="DMA_HRS_HRS2(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="HRS3" access="RO" reset_value="0" description="Hardware Request Status Channel 3">
+      <alias type="CMSIS" value="DMA_HRS_HRS3(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="HRS4" access="RO" reset_value="0" description="Hardware Request Status Channel 4">
+      <alias type="CMSIS" value="DMA_HRS_HRS4(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="HRS5" access="RO" reset_value="0" description="Hardware Request Status Channel 5">
+      <alias type="CMSIS" value="DMA_HRS_HRS5(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="HRS6" access="RO" reset_value="0" description="Hardware Request Status Channel 6">
+      <alias type="CMSIS" value="DMA_HRS_HRS6(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="HRS7" access="RO" reset_value="0" description="Hardware Request Status Channel 7">
+      <alias type="CMSIS" value="DMA_HRS_HRS7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="24" reset_value="0"/>
+  </register>
+  <register offset="0x44" width="32" name="EARS" description="Enable Asynchronous Request in Stop Register">
+    <alias type="CMSIS" value="EARS"/>
+    <bit_field offset="0" width="1" name="EDREQ_0" access="RW" reset_value="0" description="Enable asynchronous DMA request in stop mode for channel 0.">
+      <alias type="CMSIS" value="DMA_EARS_EDREQ_0(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="EDREQ_1" access="RW" reset_value="0" description="Enable asynchronous DMA request in stop mode for channel 1.">
+      <alias type="CMSIS" value="DMA_EARS_EDREQ_1(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="EDREQ_2" access="RW" reset_value="0" description="Enable asynchronous DMA request in stop mode for channel 2.">
+      <alias type="CMSIS" value="DMA_EARS_EDREQ_2(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="EDREQ_3" access="RW" reset_value="0" description="Enable asynchronous DMA request in stop mode for channel 3.">
+      <alias type="CMSIS" value="DMA_EARS_EDREQ_3(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="EDREQ_4" access="RW" reset_value="0" description="Enable asynchronous DMA request in stop mode for channel 4">
+      <alias type="CMSIS" value="DMA_EARS_EDREQ_4(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="EDREQ_5" access="RW" reset_value="0" description="Enable asynchronous DMA request in stop mode for channel 5">
+      <alias type="CMSIS" value="DMA_EARS_EDREQ_5(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="EDREQ_6" access="RW" reset_value="0" description="Enable asynchronous DMA request in stop mode for channel 6">
+      <alias type="CMSIS" value="DMA_EARS_EDREQ_6(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="EDREQ_7" access="RW" reset_value="0" description="Enable asynchronous DMA request in stop mode for channel 7">
+      <alias type="CMSIS" value="DMA_EARS_EDREQ_7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="24" reset_value="0"/>
+  </register>
+  <register offset="0x100" width="8" name="DCHPRI3" description="Channel n Priority Register">
+    <alias type="CMSIS" value="DCHPRI3"/>
+    <bit_field offset="0" width="3" name="CHPRI" access="RW" reset_value="0" description="Channel n Arbitration Priority">
+      <alias type="CMSIS" value="DMA_DCHPRI3_CHPRI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="DPA" access="RW" reset_value="0" description="Disable Preempt Ability.">
+      <alias type="CMSIS" value="DMA_DCHPRI3_DPA(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ECP" access="RW" reset_value="0" description="Enable Channel Preemption.">
+      <alias type="CMSIS" value="DMA_DCHPRI3_ECP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x101" width="8" name="DCHPRI2" description="Channel n Priority Register">
+    <alias type="CMSIS" value="DCHPRI2"/>
+    <bit_field offset="0" width="3" name="CHPRI" access="RW" reset_value="0" description="Channel n Arbitration Priority">
+      <alias type="CMSIS" value="DMA_DCHPRI2_CHPRI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="DPA" access="RW" reset_value="0" description="Disable Preempt Ability.">
+      <alias type="CMSIS" value="DMA_DCHPRI2_DPA(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ECP" access="RW" reset_value="0" description="Enable Channel Preemption.">
+      <alias type="CMSIS" value="DMA_DCHPRI2_ECP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x102" width="8" name="DCHPRI1" description="Channel n Priority Register">
+    <alias type="CMSIS" value="DCHPRI1"/>
+    <bit_field offset="0" width="3" name="CHPRI" access="RW" reset_value="0" description="Channel n Arbitration Priority">
+      <alias type="CMSIS" value="DMA_DCHPRI1_CHPRI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="DPA" access="RW" reset_value="0" description="Disable Preempt Ability.">
+      <alias type="CMSIS" value="DMA_DCHPRI1_DPA(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ECP" access="RW" reset_value="0" description="Enable Channel Preemption.">
+      <alias type="CMSIS" value="DMA_DCHPRI1_ECP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x103" width="8" name="DCHPRI0" description="Channel n Priority Register">
+    <alias type="CMSIS" value="DCHPRI0"/>
+    <bit_field offset="0" width="3" name="CHPRI" access="RW" reset_value="0" description="Channel n Arbitration Priority">
+      <alias type="CMSIS" value="DMA_DCHPRI0_CHPRI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="DPA" access="RW" reset_value="0" description="Disable Preempt Ability.">
+      <alias type="CMSIS" value="DMA_DCHPRI0_DPA(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ECP" access="RW" reset_value="0" description="Enable Channel Preemption.">
+      <alias type="CMSIS" value="DMA_DCHPRI0_ECP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x104" width="8" name="DCHPRI7" description="Channel n Priority Register">
+    <alias type="CMSIS" value="DCHPRI7"/>
+    <bit_field offset="0" width="3" name="CHPRI" access="RW" reset_value="0" description="Channel n Arbitration Priority">
+      <alias type="CMSIS" value="DMA_DCHPRI7_CHPRI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="DPA" access="RW" reset_value="0" description="Disable Preempt Ability.">
+      <alias type="CMSIS" value="DMA_DCHPRI7_DPA(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ECP" access="RW" reset_value="0" description="Enable Channel Preemption.">
+      <alias type="CMSIS" value="DMA_DCHPRI7_ECP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x105" width="8" name="DCHPRI6" description="Channel n Priority Register">
+    <alias type="CMSIS" value="DCHPRI6"/>
+    <bit_field offset="0" width="3" name="CHPRI" access="RW" reset_value="0" description="Channel n Arbitration Priority">
+      <alias type="CMSIS" value="DMA_DCHPRI6_CHPRI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="DPA" access="RW" reset_value="0" description="Disable Preempt Ability.">
+      <alias type="CMSIS" value="DMA_DCHPRI6_DPA(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ECP" access="RW" reset_value="0" description="Enable Channel Preemption.">
+      <alias type="CMSIS" value="DMA_DCHPRI6_ECP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x106" width="8" name="DCHPRI5" description="Channel n Priority Register">
+    <alias type="CMSIS" value="DCHPRI5"/>
+    <bit_field offset="0" width="3" name="CHPRI" access="RW" reset_value="0" description="Channel n Arbitration Priority">
+      <alias type="CMSIS" value="DMA_DCHPRI5_CHPRI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="DPA" access="RW" reset_value="0" description="Disable Preempt Ability.">
+      <alias type="CMSIS" value="DMA_DCHPRI5_DPA(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ECP" access="RW" reset_value="0" description="Enable Channel Preemption.">
+      <alias type="CMSIS" value="DMA_DCHPRI5_ECP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x107" width="8" name="DCHPRI4" description="Channel n Priority Register">
+    <alias type="CMSIS" value="DCHPRI4"/>
+    <bit_field offset="0" width="3" name="CHPRI" access="RW" reset_value="0" description="Channel n Arbitration Priority">
+      <alias type="CMSIS" value="DMA_DCHPRI4_CHPRI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="3" reset_value="0"/>
+    <bit_field offset="6" width="1" name="DPA" access="RW" reset_value="0" description="Disable Preempt Ability.">
+      <alias type="CMSIS" value="DMA_DCHPRI4_DPA(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ECP" access="RW" reset_value="0" description="Enable Channel Preemption.">
+      <alias type="CMSIS" value="DMA_DCHPRI4_ECP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1000" width="32" name="TCD0_SADDR" description="TCD Source Address">
+    <alias type="CMSIS" value="TCD[0].SADDR"/>
+    <bit_field offset="0" width="32" name="SADDR" access="RW" reset_value="0" reset_mask="0" description="Source Address">
+      <alias type="CMSIS" value="DMA_SADDR_SADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1004" width="16" name="TCD0_SOFF" description="TCD Signed Source Address Offset">
+    <alias type="CMSIS" value="TCD[0].SOFF"/>
+    <bit_field offset="0" width="16" name="SOFF" access="RW" reset_value="0" reset_mask="0" description="Source address signed offset">
+      <alias type="CMSIS" value="DMA_SOFF_SOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1006" width="16" name="TCD0_ATTR" description="TCD Transfer Attributes">
+    <alias type="CMSIS" value="TCD[0].ATTR"/>
+    <bit_field offset="0" width="3" name="DSIZE" access="RW" reset_value="0" reset_mask="0" description="Destination data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_DSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="5" name="DMOD" access="RW" reset_value="0" reset_mask="0" description="Destination Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_DMOD(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="SSIZE" access="RW" reset_value="0" reset_mask="0" description="Source data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_SSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="5" name="SMOD" access="RW" reset_value="0" reset_mask="0" description="Source Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_SMOD(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1008" width="32" name="TCD0_NBYTES_MLNO" description="TCD Minor Byte Count (Minor Loop Mapping Disabled)">
+    <alias type="CMSIS" value="TCD[0].NBYTES_MLNO"/>
+    <bit_field offset="0" width="32" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLNO_NBYTES(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1008" width="32" name="TCD0_NBYTES_MLOFFNO" description="TCD Signed Minor Loop Offset (Minor Loop Mapping Enabled and Offset Disabled)">
+    <alias type="CMSIS" value="TCD[0].NBYTES_MLOFFNO"/>
+    <bit_field offset="0" width="30" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1008" width="32" name="TCD0_NBYTES_MLOFFYES" description="TCD Signed Minor Loop Offset (Minor Loop Mapping and Offset Enabled)">
+    <alias type="CMSIS" value="TCD[0].NBYTES_MLOFFYES"/>
+    <bit_field offset="0" width="10" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="20" name="MLOFF" access="RW" reset_value="0" reset_mask="0" description="If SMLOE or DMLOE is set, this field represents a sign-extended offset applied to the source or destination address to form the next-state value after the minor loop completes.">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_MLOFF(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x100C" width="32" name="TCD0_SLAST" description="TCD Last Source Address Adjustment">
+    <alias type="CMSIS" value="TCD[0].SLAST"/>
+    <bit_field offset="0" width="32" name="SLAST" access="RW" reset_value="0" reset_mask="0" description="Last Source Address Adjustment">
+      <alias type="CMSIS" value="DMA_SLAST_SLAST(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1010" width="32" name="TCD0_DADDR" description="TCD Destination Address">
+    <alias type="CMSIS" value="TCD[0].DADDR"/>
+    <bit_field offset="0" width="32" name="DADDR" access="RW" reset_value="0" reset_mask="0" description="Destination Address">
+      <alias type="CMSIS" value="DMA_DADDR_DADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1014" width="16" name="TCD0_DOFF" description="TCD Signed Destination Address Offset">
+    <alias type="CMSIS" value="TCD[0].DOFF"/>
+    <bit_field offset="0" width="16" name="DOFF" access="RW" reset_value="0" reset_mask="0" description="Destination Address Signed Offset">
+      <alias type="CMSIS" value="DMA_DOFF_DOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1016" width="16" name="TCD0_CITER_ELINKYES" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[0].CITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Minor Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1016" width="16" name="TCD0_CITER_ELINKNO" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[0].CITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1018" width="32" name="TCD0_DLASTSGA" description="TCD Last Destination Address Adjustment/Scatter Gather Address">
+    <alias type="CMSIS" value="TCD[0].DLAST_SGA"/>
+    <bit_field offset="0" width="32" name="DLASTSGA" access="RW" reset_value="0" reset_mask="0" description="Destination last address adjustment or the memory address for the next transfer control descriptor to be loaded into this channel (scatter/gather). If (TCDn_CSR[ESG] = 0) then: Adjustment value added to the destination address at the completion of the major iteration count. This value can apply to restore the destination address to the initial value or adjust the address to reference the next data structure. This field uses two's complement notation for the final destination address adjustment. Otherwise: This address points to the beginning of a 0-modulo-32-byte region containing the next transfer control descriptor to be loaded into this channel. This channel reload is performed as the major iteration count completes. The scatter/gather address must be 0-modulo-32-byte, otherwise a configuration error is reported.">
+      <alias type="CMSIS" value="DMA_DLAST_SGA_DLASTSGA(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x101C" width="16" name="TCD0_CSR" description="TCD Control and Status">
+    <alias type="CMSIS" value="TCD[0].CSR"/>
+    <bit_field offset="0" width="1" name="START" access="RW" reset_value="0" reset_mask="0" description="Channel Start">
+      <alias type="CMSIS" value="DMA_CSR_START(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="INTMAJOR" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major iteration count completes.">
+      <alias type="CMSIS" value="DMA_CSR_INTMAJOR(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="INTHALF" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major counter is half complete.">
+      <alias type="CMSIS" value="DMA_CSR_INTHALF(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="DREQ" access="RW" reset_value="0" reset_mask="0" description="Disable Request">
+      <alias type="CMSIS" value="DMA_CSR_DREQ(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="ESG" access="RW" reset_value="0" reset_mask="0" description="Enable Scatter/Gather Processing">
+      <alias type="CMSIS" value="DMA_CSR_ESG(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="MAJORELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on major loop complete">
+      <alias type="CMSIS" value="DMA_CSR_MAJORELINK(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ACTIVE" access="RO" reset_value="0" reset_mask="0" description="Channel Active">
+      <alias type="CMSIS" value="DMA_CSR_ACTIVE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="DONE" access="RW" reset_value="0" reset_mask="0" description="Channel Done">
+      <alias type="CMSIS" value="DMA_CSR_DONE(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="MAJORLINKCH" access="RW" reset_value="0" reset_mask="0" description="Major Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CSR_MAJORLINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="14" width="2" name="BWC" access="RW" reset_value="0" reset_mask="0" description="Bandwidth Control">
+      <alias type="CMSIS" value="DMA_CSR_BWC(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x101E" width="16" name="TCD0_BITER_ELINKYES" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[0].BITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting major iteration count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Link Channel Number">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x101E" width="16" name="TCD0_BITER_ELINKNO" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[0].BITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting Major Iteration Count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1020" width="32" name="TCD1_SADDR" description="TCD Source Address">
+    <alias type="CMSIS" value="TCD[1].SADDR"/>
+    <bit_field offset="0" width="32" name="SADDR" access="RW" reset_value="0" reset_mask="0" description="Source Address">
+      <alias type="CMSIS" value="DMA_SADDR_SADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1024" width="16" name="TCD1_SOFF" description="TCD Signed Source Address Offset">
+    <alias type="CMSIS" value="TCD[1].SOFF"/>
+    <bit_field offset="0" width="16" name="SOFF" access="RW" reset_value="0" reset_mask="0" description="Source address signed offset">
+      <alias type="CMSIS" value="DMA_SOFF_SOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1026" width="16" name="TCD1_ATTR" description="TCD Transfer Attributes">
+    <alias type="CMSIS" value="TCD[1].ATTR"/>
+    <bit_field offset="0" width="3" name="DSIZE" access="RW" reset_value="0" reset_mask="0" description="Destination data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_DSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="5" name="DMOD" access="RW" reset_value="0" reset_mask="0" description="Destination Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_DMOD(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="SSIZE" access="RW" reset_value="0" reset_mask="0" description="Source data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_SSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="5" name="SMOD" access="RW" reset_value="0" reset_mask="0" description="Source Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_SMOD(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1028" width="32" name="TCD1_NBYTES_MLNO" description="TCD Minor Byte Count (Minor Loop Mapping Disabled)">
+    <alias type="CMSIS" value="TCD[1].NBYTES_MLNO"/>
+    <bit_field offset="0" width="32" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLNO_NBYTES(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1028" width="32" name="TCD1_NBYTES_MLOFFYES" description="TCD Signed Minor Loop Offset (Minor Loop Mapping and Offset Enabled)">
+    <alias type="CMSIS" value="TCD[1].NBYTES_MLOFFYES"/>
+    <bit_field offset="0" width="10" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="20" name="MLOFF" access="RW" reset_value="0" reset_mask="0" description="If SMLOE or DMLOE is set, this field represents a sign-extended offset applied to the source or destination address to form the next-state value after the minor loop completes.">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_MLOFF(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1028" width="32" name="TCD1_NBYTES_MLOFFNO" description="TCD Signed Minor Loop Offset (Minor Loop Mapping Enabled and Offset Disabled)">
+    <alias type="CMSIS" value="TCD[1].NBYTES_MLOFFNO"/>
+    <bit_field offset="0" width="30" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x102C" width="32" name="TCD1_SLAST" description="TCD Last Source Address Adjustment">
+    <alias type="CMSIS" value="TCD[1].SLAST"/>
+    <bit_field offset="0" width="32" name="SLAST" access="RW" reset_value="0" reset_mask="0" description="Last Source Address Adjustment">
+      <alias type="CMSIS" value="DMA_SLAST_SLAST(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1030" width="32" name="TCD1_DADDR" description="TCD Destination Address">
+    <alias type="CMSIS" value="TCD[1].DADDR"/>
+    <bit_field offset="0" width="32" name="DADDR" access="RW" reset_value="0" reset_mask="0" description="Destination Address">
+      <alias type="CMSIS" value="DMA_DADDR_DADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1034" width="16" name="TCD1_DOFF" description="TCD Signed Destination Address Offset">
+    <alias type="CMSIS" value="TCD[1].DOFF"/>
+    <bit_field offset="0" width="16" name="DOFF" access="RW" reset_value="0" reset_mask="0" description="Destination Address Signed Offset">
+      <alias type="CMSIS" value="DMA_DOFF_DOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1036" width="16" name="TCD1_CITER_ELINKNO" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[1].CITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1036" width="16" name="TCD1_CITER_ELINKYES" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[1].CITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Minor Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1038" width="32" name="TCD1_DLASTSGA" description="TCD Last Destination Address Adjustment/Scatter Gather Address">
+    <alias type="CMSIS" value="TCD[1].DLAST_SGA"/>
+    <bit_field offset="0" width="32" name="DLASTSGA" access="RW" reset_value="0" reset_mask="0" description="Destination last address adjustment or the memory address for the next transfer control descriptor to be loaded into this channel (scatter/gather). If (TCDn_CSR[ESG] = 0) then: Adjustment value added to the destination address at the completion of the major iteration count. This value can apply to restore the destination address to the initial value or adjust the address to reference the next data structure. This field uses two's complement notation for the final destination address adjustment. Otherwise: This address points to the beginning of a 0-modulo-32-byte region containing the next transfer control descriptor to be loaded into this channel. This channel reload is performed as the major iteration count completes. The scatter/gather address must be 0-modulo-32-byte, otherwise a configuration error is reported.">
+      <alias type="CMSIS" value="DMA_DLAST_SGA_DLASTSGA(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x103C" width="16" name="TCD1_CSR" description="TCD Control and Status">
+    <alias type="CMSIS" value="TCD[1].CSR"/>
+    <bit_field offset="0" width="1" name="START" access="RW" reset_value="0" reset_mask="0" description="Channel Start">
+      <alias type="CMSIS" value="DMA_CSR_START(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="INTMAJOR" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major iteration count completes.">
+      <alias type="CMSIS" value="DMA_CSR_INTMAJOR(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="INTHALF" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major counter is half complete.">
+      <alias type="CMSIS" value="DMA_CSR_INTHALF(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="DREQ" access="RW" reset_value="0" reset_mask="0" description="Disable Request">
+      <alias type="CMSIS" value="DMA_CSR_DREQ(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="ESG" access="RW" reset_value="0" reset_mask="0" description="Enable Scatter/Gather Processing">
+      <alias type="CMSIS" value="DMA_CSR_ESG(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="MAJORELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on major loop complete">
+      <alias type="CMSIS" value="DMA_CSR_MAJORELINK(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ACTIVE" access="RO" reset_value="0" reset_mask="0" description="Channel Active">
+      <alias type="CMSIS" value="DMA_CSR_ACTIVE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="DONE" access="RW" reset_value="0" reset_mask="0" description="Channel Done">
+      <alias type="CMSIS" value="DMA_CSR_DONE(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="MAJORLINKCH" access="RW" reset_value="0" reset_mask="0" description="Major Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CSR_MAJORLINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="14" width="2" name="BWC" access="RW" reset_value="0" reset_mask="0" description="Bandwidth Control">
+      <alias type="CMSIS" value="DMA_CSR_BWC(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x103E" width="16" name="TCD1_BITER_ELINKNO" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[1].BITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting Major Iteration Count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x103E" width="16" name="TCD1_BITER_ELINKYES" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[1].BITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting major iteration count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Link Channel Number">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1040" width="32" name="TCD2_SADDR" description="TCD Source Address">
+    <alias type="CMSIS" value="TCD[2].SADDR"/>
+    <bit_field offset="0" width="32" name="SADDR" access="RW" reset_value="0" reset_mask="0" description="Source Address">
+      <alias type="CMSIS" value="DMA_SADDR_SADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1044" width="16" name="TCD2_SOFF" description="TCD Signed Source Address Offset">
+    <alias type="CMSIS" value="TCD[2].SOFF"/>
+    <bit_field offset="0" width="16" name="SOFF" access="RW" reset_value="0" reset_mask="0" description="Source address signed offset">
+      <alias type="CMSIS" value="DMA_SOFF_SOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1046" width="16" name="TCD2_ATTR" description="TCD Transfer Attributes">
+    <alias type="CMSIS" value="TCD[2].ATTR"/>
+    <bit_field offset="0" width="3" name="DSIZE" access="RW" reset_value="0" reset_mask="0" description="Destination data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_DSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="5" name="DMOD" access="RW" reset_value="0" reset_mask="0" description="Destination Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_DMOD(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="SSIZE" access="RW" reset_value="0" reset_mask="0" description="Source data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_SSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="5" name="SMOD" access="RW" reset_value="0" reset_mask="0" description="Source Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_SMOD(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1048" width="32" name="TCD2_NBYTES_MLOFFYES" description="TCD Signed Minor Loop Offset (Minor Loop Mapping and Offset Enabled)">
+    <alias type="CMSIS" value="TCD[2].NBYTES_MLOFFYES"/>
+    <bit_field offset="0" width="10" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="20" name="MLOFF" access="RW" reset_value="0" reset_mask="0" description="If SMLOE or DMLOE is set, this field represents a sign-extended offset applied to the source or destination address to form the next-state value after the minor loop completes.">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_MLOFF(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1048" width="32" name="TCD2_NBYTES_MLNO" description="TCD Minor Byte Count (Minor Loop Mapping Disabled)">
+    <alias type="CMSIS" value="TCD[2].NBYTES_MLNO"/>
+    <bit_field offset="0" width="32" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLNO_NBYTES(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1048" width="32" name="TCD2_NBYTES_MLOFFNO" description="TCD Signed Minor Loop Offset (Minor Loop Mapping Enabled and Offset Disabled)">
+    <alias type="CMSIS" value="TCD[2].NBYTES_MLOFFNO"/>
+    <bit_field offset="0" width="30" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x104C" width="32" name="TCD2_SLAST" description="TCD Last Source Address Adjustment">
+    <alias type="CMSIS" value="TCD[2].SLAST"/>
+    <bit_field offset="0" width="32" name="SLAST" access="RW" reset_value="0" reset_mask="0" description="Last Source Address Adjustment">
+      <alias type="CMSIS" value="DMA_SLAST_SLAST(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1050" width="32" name="TCD2_DADDR" description="TCD Destination Address">
+    <alias type="CMSIS" value="TCD[2].DADDR"/>
+    <bit_field offset="0" width="32" name="DADDR" access="RW" reset_value="0" reset_mask="0" description="Destination Address">
+      <alias type="CMSIS" value="DMA_DADDR_DADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1054" width="16" name="TCD2_DOFF" description="TCD Signed Destination Address Offset">
+    <alias type="CMSIS" value="TCD[2].DOFF"/>
+    <bit_field offset="0" width="16" name="DOFF" access="RW" reset_value="0" reset_mask="0" description="Destination Address Signed Offset">
+      <alias type="CMSIS" value="DMA_DOFF_DOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1056" width="16" name="TCD2_CITER_ELINKYES" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[2].CITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Minor Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1056" width="16" name="TCD2_CITER_ELINKNO" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[2].CITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1058" width="32" name="TCD2_DLASTSGA" description="TCD Last Destination Address Adjustment/Scatter Gather Address">
+    <alias type="CMSIS" value="TCD[2].DLAST_SGA"/>
+    <bit_field offset="0" width="32" name="DLASTSGA" access="RW" reset_value="0" reset_mask="0" description="Destination last address adjustment or the memory address for the next transfer control descriptor to be loaded into this channel (scatter/gather). If (TCDn_CSR[ESG] = 0) then: Adjustment value added to the destination address at the completion of the major iteration count. This value can apply to restore the destination address to the initial value or adjust the address to reference the next data structure. This field uses two's complement notation for the final destination address adjustment. Otherwise: This address points to the beginning of a 0-modulo-32-byte region containing the next transfer control descriptor to be loaded into this channel. This channel reload is performed as the major iteration count completes. The scatter/gather address must be 0-modulo-32-byte, otherwise a configuration error is reported.">
+      <alias type="CMSIS" value="DMA_DLAST_SGA_DLASTSGA(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x105C" width="16" name="TCD2_CSR" description="TCD Control and Status">
+    <alias type="CMSIS" value="TCD[2].CSR"/>
+    <bit_field offset="0" width="1" name="START" access="RW" reset_value="0" reset_mask="0" description="Channel Start">
+      <alias type="CMSIS" value="DMA_CSR_START(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="INTMAJOR" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major iteration count completes.">
+      <alias type="CMSIS" value="DMA_CSR_INTMAJOR(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="INTHALF" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major counter is half complete.">
+      <alias type="CMSIS" value="DMA_CSR_INTHALF(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="DREQ" access="RW" reset_value="0" reset_mask="0" description="Disable Request">
+      <alias type="CMSIS" value="DMA_CSR_DREQ(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="ESG" access="RW" reset_value="0" reset_mask="0" description="Enable Scatter/Gather Processing">
+      <alias type="CMSIS" value="DMA_CSR_ESG(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="MAJORELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on major loop complete">
+      <alias type="CMSIS" value="DMA_CSR_MAJORELINK(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ACTIVE" access="RO" reset_value="0" reset_mask="0" description="Channel Active">
+      <alias type="CMSIS" value="DMA_CSR_ACTIVE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="DONE" access="RW" reset_value="0" reset_mask="0" description="Channel Done">
+      <alias type="CMSIS" value="DMA_CSR_DONE(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="MAJORLINKCH" access="RW" reset_value="0" reset_mask="0" description="Major Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CSR_MAJORLINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="14" width="2" name="BWC" access="RW" reset_value="0" reset_mask="0" description="Bandwidth Control">
+      <alias type="CMSIS" value="DMA_CSR_BWC(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x105E" width="16" name="TCD2_BITER_ELINKNO" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[2].BITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting Major Iteration Count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x105E" width="16" name="TCD2_BITER_ELINKYES" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[2].BITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting major iteration count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Link Channel Number">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1060" width="32" name="TCD3_SADDR" description="TCD Source Address">
+    <alias type="CMSIS" value="TCD[3].SADDR"/>
+    <bit_field offset="0" width="32" name="SADDR" access="RW" reset_value="0" reset_mask="0" description="Source Address">
+      <alias type="CMSIS" value="DMA_SADDR_SADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1064" width="16" name="TCD3_SOFF" description="TCD Signed Source Address Offset">
+    <alias type="CMSIS" value="TCD[3].SOFF"/>
+    <bit_field offset="0" width="16" name="SOFF" access="RW" reset_value="0" reset_mask="0" description="Source address signed offset">
+      <alias type="CMSIS" value="DMA_SOFF_SOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1066" width="16" name="TCD3_ATTR" description="TCD Transfer Attributes">
+    <alias type="CMSIS" value="TCD[3].ATTR"/>
+    <bit_field offset="0" width="3" name="DSIZE" access="RW" reset_value="0" reset_mask="0" description="Destination data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_DSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="5" name="DMOD" access="RW" reset_value="0" reset_mask="0" description="Destination Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_DMOD(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="SSIZE" access="RW" reset_value="0" reset_mask="0" description="Source data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_SSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="5" name="SMOD" access="RW" reset_value="0" reset_mask="0" description="Source Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_SMOD(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1068" width="32" name="TCD3_NBYTES_MLOFFYES" description="TCD Signed Minor Loop Offset (Minor Loop Mapping and Offset Enabled)">
+    <alias type="CMSIS" value="TCD[3].NBYTES_MLOFFYES"/>
+    <bit_field offset="0" width="10" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="20" name="MLOFF" access="RW" reset_value="0" reset_mask="0" description="If SMLOE or DMLOE is set, this field represents a sign-extended offset applied to the source or destination address to form the next-state value after the minor loop completes.">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_MLOFF(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1068" width="32" name="TCD3_NBYTES_MLNO" description="TCD Minor Byte Count (Minor Loop Mapping Disabled)">
+    <alias type="CMSIS" value="TCD[3].NBYTES_MLNO"/>
+    <bit_field offset="0" width="32" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLNO_NBYTES(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1068" width="32" name="TCD3_NBYTES_MLOFFNO" description="TCD Signed Minor Loop Offset (Minor Loop Mapping Enabled and Offset Disabled)">
+    <alias type="CMSIS" value="TCD[3].NBYTES_MLOFFNO"/>
+    <bit_field offset="0" width="30" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x106C" width="32" name="TCD3_SLAST" description="TCD Last Source Address Adjustment">
+    <alias type="CMSIS" value="TCD[3].SLAST"/>
+    <bit_field offset="0" width="32" name="SLAST" access="RW" reset_value="0" reset_mask="0" description="Last Source Address Adjustment">
+      <alias type="CMSIS" value="DMA_SLAST_SLAST(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1070" width="32" name="TCD3_DADDR" description="TCD Destination Address">
+    <alias type="CMSIS" value="TCD[3].DADDR"/>
+    <bit_field offset="0" width="32" name="DADDR" access="RW" reset_value="0" reset_mask="0" description="Destination Address">
+      <alias type="CMSIS" value="DMA_DADDR_DADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1074" width="16" name="TCD3_DOFF" description="TCD Signed Destination Address Offset">
+    <alias type="CMSIS" value="TCD[3].DOFF"/>
+    <bit_field offset="0" width="16" name="DOFF" access="RW" reset_value="0" reset_mask="0" description="Destination Address Signed Offset">
+      <alias type="CMSIS" value="DMA_DOFF_DOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1076" width="16" name="TCD3_CITER_ELINKNO" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[3].CITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1076" width="16" name="TCD3_CITER_ELINKYES" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[3].CITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Minor Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1078" width="32" name="TCD3_DLASTSGA" description="TCD Last Destination Address Adjustment/Scatter Gather Address">
+    <alias type="CMSIS" value="TCD[3].DLAST_SGA"/>
+    <bit_field offset="0" width="32" name="DLASTSGA" access="RW" reset_value="0" reset_mask="0" description="Destination last address adjustment or the memory address for the next transfer control descriptor to be loaded into this channel (scatter/gather). If (TCDn_CSR[ESG] = 0) then: Adjustment value added to the destination address at the completion of the major iteration count. This value can apply to restore the destination address to the initial value or adjust the address to reference the next data structure. This field uses two's complement notation for the final destination address adjustment. Otherwise: This address points to the beginning of a 0-modulo-32-byte region containing the next transfer control descriptor to be loaded into this channel. This channel reload is performed as the major iteration count completes. The scatter/gather address must be 0-modulo-32-byte, otherwise a configuration error is reported.">
+      <alias type="CMSIS" value="DMA_DLAST_SGA_DLASTSGA(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x107C" width="16" name="TCD3_CSR" description="TCD Control and Status">
+    <alias type="CMSIS" value="TCD[3].CSR"/>
+    <bit_field offset="0" width="1" name="START" access="RW" reset_value="0" reset_mask="0" description="Channel Start">
+      <alias type="CMSIS" value="DMA_CSR_START(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="INTMAJOR" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major iteration count completes.">
+      <alias type="CMSIS" value="DMA_CSR_INTMAJOR(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="INTHALF" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major counter is half complete.">
+      <alias type="CMSIS" value="DMA_CSR_INTHALF(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="DREQ" access="RW" reset_value="0" reset_mask="0" description="Disable Request">
+      <alias type="CMSIS" value="DMA_CSR_DREQ(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="ESG" access="RW" reset_value="0" reset_mask="0" description="Enable Scatter/Gather Processing">
+      <alias type="CMSIS" value="DMA_CSR_ESG(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="MAJORELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on major loop complete">
+      <alias type="CMSIS" value="DMA_CSR_MAJORELINK(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ACTIVE" access="RO" reset_value="0" reset_mask="0" description="Channel Active">
+      <alias type="CMSIS" value="DMA_CSR_ACTIVE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="DONE" access="RW" reset_value="0" reset_mask="0" description="Channel Done">
+      <alias type="CMSIS" value="DMA_CSR_DONE(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="MAJORLINKCH" access="RW" reset_value="0" reset_mask="0" description="Major Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CSR_MAJORLINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="14" width="2" name="BWC" access="RW" reset_value="0" reset_mask="0" description="Bandwidth Control">
+      <alias type="CMSIS" value="DMA_CSR_BWC(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x107E" width="16" name="TCD3_BITER_ELINKNO" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[3].BITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting Major Iteration Count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x107E" width="16" name="TCD3_BITER_ELINKYES" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[3].BITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting major iteration count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Link Channel Number">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1080" width="32" name="TCD4_SADDR" description="TCD Source Address">
+    <alias type="CMSIS" value="TCD[4].SADDR"/>
+    <bit_field offset="0" width="32" name="SADDR" access="RW" reset_value="0" reset_mask="0" description="Source Address">
+      <alias type="CMSIS" value="DMA_SADDR_SADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1084" width="16" name="TCD4_SOFF" description="TCD Signed Source Address Offset">
+    <alias type="CMSIS" value="TCD[4].SOFF"/>
+    <bit_field offset="0" width="16" name="SOFF" access="RW" reset_value="0" reset_mask="0" description="Source address signed offset">
+      <alias type="CMSIS" value="DMA_SOFF_SOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1086" width="16" name="TCD4_ATTR" description="TCD Transfer Attributes">
+    <alias type="CMSIS" value="TCD[4].ATTR"/>
+    <bit_field offset="0" width="3" name="DSIZE" access="RW" reset_value="0" reset_mask="0" description="Destination data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_DSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="5" name="DMOD" access="RW" reset_value="0" reset_mask="0" description="Destination Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_DMOD(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="SSIZE" access="RW" reset_value="0" reset_mask="0" description="Source data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_SSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="5" name="SMOD" access="RW" reset_value="0" reset_mask="0" description="Source Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_SMOD(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1088" width="32" name="TCD4_NBYTES_MLOFFNO" description="TCD Signed Minor Loop Offset (Minor Loop Mapping Enabled and Offset Disabled)">
+    <alias type="CMSIS" value="TCD[4].NBYTES_MLOFFNO"/>
+    <bit_field offset="0" width="30" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1088" width="32" name="TCD4_NBYTES_MLNO" description="TCD Minor Byte Count (Minor Loop Mapping Disabled)">
+    <alias type="CMSIS" value="TCD[4].NBYTES_MLNO"/>
+    <bit_field offset="0" width="32" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLNO_NBYTES(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1088" width="32" name="TCD4_NBYTES_MLOFFYES" description="TCD Signed Minor Loop Offset (Minor Loop Mapping and Offset Enabled)">
+    <alias type="CMSIS" value="TCD[4].NBYTES_MLOFFYES"/>
+    <bit_field offset="0" width="10" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="20" name="MLOFF" access="RW" reset_value="0" reset_mask="0" description="If SMLOE or DMLOE is set, this field represents a sign-extended offset applied to the source or destination address to form the next-state value after the minor loop completes.">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_MLOFF(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x108C" width="32" name="TCD4_SLAST" description="TCD Last Source Address Adjustment">
+    <alias type="CMSIS" value="TCD[4].SLAST"/>
+    <bit_field offset="0" width="32" name="SLAST" access="RW" reset_value="0" reset_mask="0" description="Last Source Address Adjustment">
+      <alias type="CMSIS" value="DMA_SLAST_SLAST(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1090" width="32" name="TCD4_DADDR" description="TCD Destination Address">
+    <alias type="CMSIS" value="TCD[4].DADDR"/>
+    <bit_field offset="0" width="32" name="DADDR" access="RW" reset_value="0" reset_mask="0" description="Destination Address">
+      <alias type="CMSIS" value="DMA_DADDR_DADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1094" width="16" name="TCD4_DOFF" description="TCD Signed Destination Address Offset">
+    <alias type="CMSIS" value="TCD[4].DOFF"/>
+    <bit_field offset="0" width="16" name="DOFF" access="RW" reset_value="0" reset_mask="0" description="Destination Address Signed Offset">
+      <alias type="CMSIS" value="DMA_DOFF_DOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1096" width="16" name="TCD4_CITER_ELINKYES" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[4].CITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Minor Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1096" width="16" name="TCD4_CITER_ELINKNO" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[4].CITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1098" width="32" name="TCD4_DLASTSGA" description="TCD Last Destination Address Adjustment/Scatter Gather Address">
+    <alias type="CMSIS" value="TCD[4].DLAST_SGA"/>
+    <bit_field offset="0" width="32" name="DLASTSGA" access="RW" reset_value="0" reset_mask="0" description="Destination last address adjustment or the memory address for the next transfer control descriptor to be loaded into this channel (scatter/gather). If (TCDn_CSR[ESG] = 0) then: Adjustment value added to the destination address at the completion of the major iteration count. This value can apply to restore the destination address to the initial value or adjust the address to reference the next data structure. This field uses two's complement notation for the final destination address adjustment. Otherwise: This address points to the beginning of a 0-modulo-32-byte region containing the next transfer control descriptor to be loaded into this channel. This channel reload is performed as the major iteration count completes. The scatter/gather address must be 0-modulo-32-byte, otherwise a configuration error is reported.">
+      <alias type="CMSIS" value="DMA_DLAST_SGA_DLASTSGA(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x109C" width="16" name="TCD4_CSR" description="TCD Control and Status">
+    <alias type="CMSIS" value="TCD[4].CSR"/>
+    <bit_field offset="0" width="1" name="START" access="RW" reset_value="0" reset_mask="0" description="Channel Start">
+      <alias type="CMSIS" value="DMA_CSR_START(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="INTMAJOR" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major iteration count completes.">
+      <alias type="CMSIS" value="DMA_CSR_INTMAJOR(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="INTHALF" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major counter is half complete.">
+      <alias type="CMSIS" value="DMA_CSR_INTHALF(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="DREQ" access="RW" reset_value="0" reset_mask="0" description="Disable Request">
+      <alias type="CMSIS" value="DMA_CSR_DREQ(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="ESG" access="RW" reset_value="0" reset_mask="0" description="Enable Scatter/Gather Processing">
+      <alias type="CMSIS" value="DMA_CSR_ESG(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="MAJORELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on major loop complete">
+      <alias type="CMSIS" value="DMA_CSR_MAJORELINK(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ACTIVE" access="RO" reset_value="0" reset_mask="0" description="Channel Active">
+      <alias type="CMSIS" value="DMA_CSR_ACTIVE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="DONE" access="RW" reset_value="0" reset_mask="0" description="Channel Done">
+      <alias type="CMSIS" value="DMA_CSR_DONE(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="MAJORLINKCH" access="RW" reset_value="0" reset_mask="0" description="Major Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CSR_MAJORLINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="14" width="2" name="BWC" access="RW" reset_value="0" reset_mask="0" description="Bandwidth Control">
+      <alias type="CMSIS" value="DMA_CSR_BWC(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x109E" width="16" name="TCD4_BITER_ELINKYES" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[4].BITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting major iteration count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Link Channel Number">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x109E" width="16" name="TCD4_BITER_ELINKNO" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[4].BITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting Major Iteration Count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10A0" width="32" name="TCD5_SADDR" description="TCD Source Address">
+    <alias type="CMSIS" value="TCD[5].SADDR"/>
+    <bit_field offset="0" width="32" name="SADDR" access="RW" reset_value="0" reset_mask="0" description="Source Address">
+      <alias type="CMSIS" value="DMA_SADDR_SADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10A4" width="16" name="TCD5_SOFF" description="TCD Signed Source Address Offset">
+    <alias type="CMSIS" value="TCD[5].SOFF"/>
+    <bit_field offset="0" width="16" name="SOFF" access="RW" reset_value="0" reset_mask="0" description="Source address signed offset">
+      <alias type="CMSIS" value="DMA_SOFF_SOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10A6" width="16" name="TCD5_ATTR" description="TCD Transfer Attributes">
+    <alias type="CMSIS" value="TCD[5].ATTR"/>
+    <bit_field offset="0" width="3" name="DSIZE" access="RW" reset_value="0" reset_mask="0" description="Destination data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_DSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="5" name="DMOD" access="RW" reset_value="0" reset_mask="0" description="Destination Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_DMOD(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="SSIZE" access="RW" reset_value="0" reset_mask="0" description="Source data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_SSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="5" name="SMOD" access="RW" reset_value="0" reset_mask="0" description="Source Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_SMOD(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10A8" width="32" name="TCD5_NBYTES_MLNO" description="TCD Minor Byte Count (Minor Loop Mapping Disabled)">
+    <alias type="CMSIS" value="TCD[5].NBYTES_MLNO"/>
+    <bit_field offset="0" width="32" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLNO_NBYTES(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10A8" width="32" name="TCD5_NBYTES_MLOFFYES" description="TCD Signed Minor Loop Offset (Minor Loop Mapping and Offset Enabled)">
+    <alias type="CMSIS" value="TCD[5].NBYTES_MLOFFYES"/>
+    <bit_field offset="0" width="10" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="20" name="MLOFF" access="RW" reset_value="0" reset_mask="0" description="If SMLOE or DMLOE is set, this field represents a sign-extended offset applied to the source or destination address to form the next-state value after the minor loop completes.">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_MLOFF(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10A8" width="32" name="TCD5_NBYTES_MLOFFNO" description="TCD Signed Minor Loop Offset (Minor Loop Mapping Enabled and Offset Disabled)">
+    <alias type="CMSIS" value="TCD[5].NBYTES_MLOFFNO"/>
+    <bit_field offset="0" width="30" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10AC" width="32" name="TCD5_SLAST" description="TCD Last Source Address Adjustment">
+    <alias type="CMSIS" value="TCD[5].SLAST"/>
+    <bit_field offset="0" width="32" name="SLAST" access="RW" reset_value="0" reset_mask="0" description="Last Source Address Adjustment">
+      <alias type="CMSIS" value="DMA_SLAST_SLAST(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10B0" width="32" name="TCD5_DADDR" description="TCD Destination Address">
+    <alias type="CMSIS" value="TCD[5].DADDR"/>
+    <bit_field offset="0" width="32" name="DADDR" access="RW" reset_value="0" reset_mask="0" description="Destination Address">
+      <alias type="CMSIS" value="DMA_DADDR_DADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10B4" width="16" name="TCD5_DOFF" description="TCD Signed Destination Address Offset">
+    <alias type="CMSIS" value="TCD[5].DOFF"/>
+    <bit_field offset="0" width="16" name="DOFF" access="RW" reset_value="0" reset_mask="0" description="Destination Address Signed Offset">
+      <alias type="CMSIS" value="DMA_DOFF_DOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10B6" width="16" name="TCD5_CITER_ELINKYES" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[5].CITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Minor Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10B6" width="16" name="TCD5_CITER_ELINKNO" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[5].CITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10B8" width="32" name="TCD5_DLASTSGA" description="TCD Last Destination Address Adjustment/Scatter Gather Address">
+    <alias type="CMSIS" value="TCD[5].DLAST_SGA"/>
+    <bit_field offset="0" width="32" name="DLASTSGA" access="RW" reset_value="0" reset_mask="0" description="Destination last address adjustment or the memory address for the next transfer control descriptor to be loaded into this channel (scatter/gather). If (TCDn_CSR[ESG] = 0) then: Adjustment value added to the destination address at the completion of the major iteration count. This value can apply to restore the destination address to the initial value or adjust the address to reference the next data structure. This field uses two's complement notation for the final destination address adjustment. Otherwise: This address points to the beginning of a 0-modulo-32-byte region containing the next transfer control descriptor to be loaded into this channel. This channel reload is performed as the major iteration count completes. The scatter/gather address must be 0-modulo-32-byte, otherwise a configuration error is reported.">
+      <alias type="CMSIS" value="DMA_DLAST_SGA_DLASTSGA(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10BC" width="16" name="TCD5_CSR" description="TCD Control and Status">
+    <alias type="CMSIS" value="TCD[5].CSR"/>
+    <bit_field offset="0" width="1" name="START" access="RW" reset_value="0" reset_mask="0" description="Channel Start">
+      <alias type="CMSIS" value="DMA_CSR_START(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="INTMAJOR" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major iteration count completes.">
+      <alias type="CMSIS" value="DMA_CSR_INTMAJOR(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="INTHALF" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major counter is half complete.">
+      <alias type="CMSIS" value="DMA_CSR_INTHALF(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="DREQ" access="RW" reset_value="0" reset_mask="0" description="Disable Request">
+      <alias type="CMSIS" value="DMA_CSR_DREQ(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="ESG" access="RW" reset_value="0" reset_mask="0" description="Enable Scatter/Gather Processing">
+      <alias type="CMSIS" value="DMA_CSR_ESG(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="MAJORELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on major loop complete">
+      <alias type="CMSIS" value="DMA_CSR_MAJORELINK(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ACTIVE" access="RO" reset_value="0" reset_mask="0" description="Channel Active">
+      <alias type="CMSIS" value="DMA_CSR_ACTIVE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="DONE" access="RW" reset_value="0" reset_mask="0" description="Channel Done">
+      <alias type="CMSIS" value="DMA_CSR_DONE(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="MAJORLINKCH" access="RW" reset_value="0" reset_mask="0" description="Major Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CSR_MAJORLINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="14" width="2" name="BWC" access="RW" reset_value="0" reset_mask="0" description="Bandwidth Control">
+      <alias type="CMSIS" value="DMA_CSR_BWC(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10BE" width="16" name="TCD5_BITER_ELINKYES" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[5].BITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting major iteration count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Link Channel Number">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10BE" width="16" name="TCD5_BITER_ELINKNO" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[5].BITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting Major Iteration Count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10C0" width="32" name="TCD6_SADDR" description="TCD Source Address">
+    <alias type="CMSIS" value="TCD[6].SADDR"/>
+    <bit_field offset="0" width="32" name="SADDR" access="RW" reset_value="0" reset_mask="0" description="Source Address">
+      <alias type="CMSIS" value="DMA_SADDR_SADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10C4" width="16" name="TCD6_SOFF" description="TCD Signed Source Address Offset">
+    <alias type="CMSIS" value="TCD[6].SOFF"/>
+    <bit_field offset="0" width="16" name="SOFF" access="RW" reset_value="0" reset_mask="0" description="Source address signed offset">
+      <alias type="CMSIS" value="DMA_SOFF_SOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10C6" width="16" name="TCD6_ATTR" description="TCD Transfer Attributes">
+    <alias type="CMSIS" value="TCD[6].ATTR"/>
+    <bit_field offset="0" width="3" name="DSIZE" access="RW" reset_value="0" reset_mask="0" description="Destination data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_DSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="5" name="DMOD" access="RW" reset_value="0" reset_mask="0" description="Destination Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_DMOD(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="SSIZE" access="RW" reset_value="0" reset_mask="0" description="Source data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_SSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="5" name="SMOD" access="RW" reset_value="0" reset_mask="0" description="Source Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_SMOD(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10C8" width="32" name="TCD6_NBYTES_MLOFFYES" description="TCD Signed Minor Loop Offset (Minor Loop Mapping and Offset Enabled)">
+    <alias type="CMSIS" value="TCD[6].NBYTES_MLOFFYES"/>
+    <bit_field offset="0" width="10" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="20" name="MLOFF" access="RW" reset_value="0" reset_mask="0" description="If SMLOE or DMLOE is set, this field represents a sign-extended offset applied to the source or destination address to form the next-state value after the minor loop completes.">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_MLOFF(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10C8" width="32" name="TCD6_NBYTES_MLNO" description="TCD Minor Byte Count (Minor Loop Mapping Disabled)">
+    <alias type="CMSIS" value="TCD[6].NBYTES_MLNO"/>
+    <bit_field offset="0" width="32" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLNO_NBYTES(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10C8" width="32" name="TCD6_NBYTES_MLOFFNO" description="TCD Signed Minor Loop Offset (Minor Loop Mapping Enabled and Offset Disabled)">
+    <alias type="CMSIS" value="TCD[6].NBYTES_MLOFFNO"/>
+    <bit_field offset="0" width="30" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10CC" width="32" name="TCD6_SLAST" description="TCD Last Source Address Adjustment">
+    <alias type="CMSIS" value="TCD[6].SLAST"/>
+    <bit_field offset="0" width="32" name="SLAST" access="RW" reset_value="0" reset_mask="0" description="Last Source Address Adjustment">
+      <alias type="CMSIS" value="DMA_SLAST_SLAST(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10D0" width="32" name="TCD6_DADDR" description="TCD Destination Address">
+    <alias type="CMSIS" value="TCD[6].DADDR"/>
+    <bit_field offset="0" width="32" name="DADDR" access="RW" reset_value="0" reset_mask="0" description="Destination Address">
+      <alias type="CMSIS" value="DMA_DADDR_DADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10D4" width="16" name="TCD6_DOFF" description="TCD Signed Destination Address Offset">
+    <alias type="CMSIS" value="TCD[6].DOFF"/>
+    <bit_field offset="0" width="16" name="DOFF" access="RW" reset_value="0" reset_mask="0" description="Destination Address Signed Offset">
+      <alias type="CMSIS" value="DMA_DOFF_DOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10D6" width="16" name="TCD6_CITER_ELINKYES" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[6].CITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Minor Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10D6" width="16" name="TCD6_CITER_ELINKNO" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[6].CITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10D8" width="32" name="TCD6_DLASTSGA" description="TCD Last Destination Address Adjustment/Scatter Gather Address">
+    <alias type="CMSIS" value="TCD[6].DLAST_SGA"/>
+    <bit_field offset="0" width="32" name="DLASTSGA" access="RW" reset_value="0" reset_mask="0" description="Destination last address adjustment or the memory address for the next transfer control descriptor to be loaded into this channel (scatter/gather). If (TCDn_CSR[ESG] = 0) then: Adjustment value added to the destination address at the completion of the major iteration count. This value can apply to restore the destination address to the initial value or adjust the address to reference the next data structure. This field uses two's complement notation for the final destination address adjustment. Otherwise: This address points to the beginning of a 0-modulo-32-byte region containing the next transfer control descriptor to be loaded into this channel. This channel reload is performed as the major iteration count completes. The scatter/gather address must be 0-modulo-32-byte, otherwise a configuration error is reported.">
+      <alias type="CMSIS" value="DMA_DLAST_SGA_DLASTSGA(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10DC" width="16" name="TCD6_CSR" description="TCD Control and Status">
+    <alias type="CMSIS" value="TCD[6].CSR"/>
+    <bit_field offset="0" width="1" name="START" access="RW" reset_value="0" reset_mask="0" description="Channel Start">
+      <alias type="CMSIS" value="DMA_CSR_START(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="INTMAJOR" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major iteration count completes.">
+      <alias type="CMSIS" value="DMA_CSR_INTMAJOR(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="INTHALF" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major counter is half complete.">
+      <alias type="CMSIS" value="DMA_CSR_INTHALF(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="DREQ" access="RW" reset_value="0" reset_mask="0" description="Disable Request">
+      <alias type="CMSIS" value="DMA_CSR_DREQ(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="ESG" access="RW" reset_value="0" reset_mask="0" description="Enable Scatter/Gather Processing">
+      <alias type="CMSIS" value="DMA_CSR_ESG(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="MAJORELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on major loop complete">
+      <alias type="CMSIS" value="DMA_CSR_MAJORELINK(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ACTIVE" access="RO" reset_value="0" reset_mask="0" description="Channel Active">
+      <alias type="CMSIS" value="DMA_CSR_ACTIVE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="DONE" access="RW" reset_value="0" reset_mask="0" description="Channel Done">
+      <alias type="CMSIS" value="DMA_CSR_DONE(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="MAJORLINKCH" access="RW" reset_value="0" reset_mask="0" description="Major Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CSR_MAJORLINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="14" width="2" name="BWC" access="RW" reset_value="0" reset_mask="0" description="Bandwidth Control">
+      <alias type="CMSIS" value="DMA_CSR_BWC(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10DE" width="16" name="TCD6_BITER_ELINKNO" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[6].BITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting Major Iteration Count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10DE" width="16" name="TCD6_BITER_ELINKYES" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[6].BITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting major iteration count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Link Channel Number">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10E0" width="32" name="TCD7_SADDR" description="TCD Source Address">
+    <alias type="CMSIS" value="TCD[7].SADDR"/>
+    <bit_field offset="0" width="32" name="SADDR" access="RW" reset_value="0" reset_mask="0" description="Source Address">
+      <alias type="CMSIS" value="DMA_SADDR_SADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10E4" width="16" name="TCD7_SOFF" description="TCD Signed Source Address Offset">
+    <alias type="CMSIS" value="TCD[7].SOFF"/>
+    <bit_field offset="0" width="16" name="SOFF" access="RW" reset_value="0" reset_mask="0" description="Source address signed offset">
+      <alias type="CMSIS" value="DMA_SOFF_SOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10E6" width="16" name="TCD7_ATTR" description="TCD Transfer Attributes">
+    <alias type="CMSIS" value="TCD[7].ATTR"/>
+    <bit_field offset="0" width="3" name="DSIZE" access="RW" reset_value="0" reset_mask="0" description="Destination data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_DSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="5" name="DMOD" access="RW" reset_value="0" reset_mask="0" description="Destination Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_DMOD(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="SSIZE" access="RW" reset_value="0" reset_mask="0" description="Source data transfer size">
+      <alias type="CMSIS" value="DMA_ATTR_SSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="5" name="SMOD" access="RW" reset_value="0" reset_mask="0" description="Source Address Modulo">
+      <alias type="CMSIS" value="DMA_ATTR_SMOD(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10E8" width="32" name="TCD7_NBYTES_MLNO" description="TCD Minor Byte Count (Minor Loop Mapping Disabled)">
+    <alias type="CMSIS" value="TCD[7].NBYTES_MLNO"/>
+    <bit_field offset="0" width="32" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLNO_NBYTES(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10E8" width="32" name="TCD7_NBYTES_MLOFFYES" description="TCD Signed Minor Loop Offset (Minor Loop Mapping and Offset Enabled)">
+    <alias type="CMSIS" value="TCD[7].NBYTES_MLOFFYES"/>
+    <bit_field offset="0" width="10" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="20" name="MLOFF" access="RW" reset_value="0" reset_mask="0" description="If SMLOE or DMLOE is set, this field represents a sign-extended offset applied to the source or destination address to form the next-state value after the minor loop completes.">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_MLOFF(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFYES_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10E8" width="32" name="TCD7_NBYTES_MLOFFNO" description="TCD Signed Minor Loop Offset (Minor Loop Mapping Enabled and Offset Disabled)">
+    <alias type="CMSIS" value="TCD[7].NBYTES_MLOFFNO"/>
+    <bit_field offset="0" width="30" name="NBYTES" access="RW" reset_value="0" reset_mask="0" description="Minor Byte Transfer Count">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_NBYTES(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="DMLOE" access="RW" reset_value="0" reset_mask="0" description="Destination Minor Loop Offset enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_DMLOE(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="SMLOE" access="RW" reset_value="0" reset_mask="0" description="Source Minor Loop Offset Enable">
+      <alias type="CMSIS" value="DMA_NBYTES_MLOFFNO_SMLOE(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10EC" width="32" name="TCD7_SLAST" description="TCD Last Source Address Adjustment">
+    <alias type="CMSIS" value="TCD[7].SLAST"/>
+    <bit_field offset="0" width="32" name="SLAST" access="RW" reset_value="0" reset_mask="0" description="Last Source Address Adjustment">
+      <alias type="CMSIS" value="DMA_SLAST_SLAST(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10F0" width="32" name="TCD7_DADDR" description="TCD Destination Address">
+    <alias type="CMSIS" value="TCD[7].DADDR"/>
+    <bit_field offset="0" width="32" name="DADDR" access="RW" reset_value="0" reset_mask="0" description="Destination Address">
+      <alias type="CMSIS" value="DMA_DADDR_DADDR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10F4" width="16" name="TCD7_DOFF" description="TCD Signed Destination Address Offset">
+    <alias type="CMSIS" value="TCD[7].DOFF"/>
+    <bit_field offset="0" width="16" name="DOFF" access="RW" reset_value="0" reset_mask="0" description="Destination Address Signed Offset">
+      <alias type="CMSIS" value="DMA_DOFF_DOFF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10F6" width="16" name="TCD7_CITER_ELINKYES" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[7].CITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Minor Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10F6" width="16" name="TCD7_CITER_ELINKNO" description="TCD Current Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[7].CITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="CITER" access="RW" reset_value="0" reset_mask="0" description="Current Major Iteration Count">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_CITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on minor-loop complete">
+      <alias type="CMSIS" value="DMA_CITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10F8" width="32" name="TCD7_DLASTSGA" description="TCD Last Destination Address Adjustment/Scatter Gather Address">
+    <alias type="CMSIS" value="TCD[7].DLAST_SGA"/>
+    <bit_field offset="0" width="32" name="DLASTSGA" access="RW" reset_value="0" reset_mask="0" description="Destination last address adjustment or the memory address for the next transfer control descriptor to be loaded into this channel (scatter/gather). If (TCDn_CSR[ESG] = 0) then: Adjustment value added to the destination address at the completion of the major iteration count. This value can apply to restore the destination address to the initial value or adjust the address to reference the next data structure. This field uses two's complement notation for the final destination address adjustment. Otherwise: This address points to the beginning of a 0-modulo-32-byte region containing the next transfer control descriptor to be loaded into this channel. This channel reload is performed as the major iteration count completes. The scatter/gather address must be 0-modulo-32-byte, otherwise a configuration error is reported.">
+      <alias type="CMSIS" value="DMA_DLAST_SGA_DLASTSGA(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10FC" width="16" name="TCD7_CSR" description="TCD Control and Status">
+    <alias type="CMSIS" value="TCD[7].CSR"/>
+    <bit_field offset="0" width="1" name="START" access="RW" reset_value="0" reset_mask="0" description="Channel Start">
+      <alias type="CMSIS" value="DMA_CSR_START(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="INTMAJOR" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major iteration count completes.">
+      <alias type="CMSIS" value="DMA_CSR_INTMAJOR(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="INTHALF" access="RW" reset_value="0" reset_mask="0" description="Enable an interrupt when major counter is half complete.">
+      <alias type="CMSIS" value="DMA_CSR_INTHALF(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="DREQ" access="RW" reset_value="0" reset_mask="0" description="Disable Request">
+      <alias type="CMSIS" value="DMA_CSR_DREQ(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="ESG" access="RW" reset_value="0" reset_mask="0" description="Enable Scatter/Gather Processing">
+      <alias type="CMSIS" value="DMA_CSR_ESG(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="MAJORELINK" access="RW" reset_value="0" reset_mask="0" description="Enable channel-to-channel linking on major loop complete">
+      <alias type="CMSIS" value="DMA_CSR_MAJORELINK(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="ACTIVE" access="RO" reset_value="0" reset_mask="0" description="Channel Active">
+      <alias type="CMSIS" value="DMA_CSR_ACTIVE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="DONE" access="RW" reset_value="0" reset_mask="0" description="Channel Done">
+      <alias type="CMSIS" value="DMA_CSR_DONE(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="MAJORLINKCH" access="RW" reset_value="0" reset_mask="0" description="Major Loop Link Channel Number">
+      <alias type="CMSIS" value="DMA_CSR_MAJORLINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="14" width="2" name="BWC" access="RW" reset_value="0" reset_mask="0" description="Bandwidth Control">
+      <alias type="CMSIS" value="DMA_CSR_BWC(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10FE" width="16" name="TCD7_BITER_ELINKNO" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Disabled)">
+    <alias type="CMSIS" value="TCD[7].BITER_ELINKNO"/>
+    <bit_field offset="0" width="15" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting Major Iteration Count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKNO_ELINK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10FE" width="16" name="TCD7_BITER_ELINKYES" description="TCD Beginning Minor Loop Link, Major Loop Count (Channel Linking Enabled)">
+    <alias type="CMSIS" value="TCD[7].BITER_ELINKYES"/>
+    <bit_field offset="0" width="9" name="BITER" access="RW" reset_value="0" reset_mask="0" description="Starting major iteration count">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_BITER(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="3" name="LINKCH" access="RW" reset_value="0" reset_mask="0" description="Link Channel Number">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_LINKCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="3" reset_value="0" reset_mask="0"/>
+    <bit_field offset="15" width="1" name="ELINK" access="RW" reset_value="0" reset_mask="0" description="Enables channel-to-channel linking on minor loop complete">
+      <alias type="CMSIS" value="DMA_BITER_ELINKYES_ELINK(x)"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

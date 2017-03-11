@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="CSR" description="Low Power Timer Control Status Register">
+    <alias type="CMSIS" value="CSR"/>
+    <bit_field offset="0" width="1" name="TEN" access="RW" reset_value="0" description="Timer Enable">
+      <alias type="CMSIS" value="LPTMR_CSR_TEN(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="TMS" access="RW" reset_value="0" description="Timer Mode Select">
+      <alias type="CMSIS" value="LPTMR_CSR_TMS(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="TFC" access="RW" reset_value="0" description="Timer Free-Running Counter">
+      <alias type="CMSIS" value="LPTMR_CSR_TFC(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="TPP" access="RW" reset_value="0" description="Timer Pin Polarity">
+      <alias type="CMSIS" value="LPTMR_CSR_TPP(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="2" name="TPS" access="RW" reset_value="0" description="Timer Pin Select">
+      <alias type="CMSIS" value="LPTMR_CSR_TPS(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TIE" access="RW" reset_value="0" description="Timer Interrupt Enable">
+      <alias type="CMSIS" value="LPTMR_CSR_TIE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="TCF" access="W1C" reset_value="0" description="Timer Compare Flag">
+      <alias type="CMSIS" value="LPTMR_CSR_TCF(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="1" name="TDRE" access="RW" reset_value="0" description="Timer DMA Request Enable">
+      <alias type="CMSIS" value="LPTMR_CSR_TDRE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="9" width="23" reset_value="0"/>
+  </register>
+  <register offset="0x4" width="32" name="PSR" description="Low Power Timer Prescale Register">
+    <alias type="CMSIS" value="PSR"/>
+    <bit_field offset="0" width="2" name="PCS" access="RW" reset_value="0" description="Prescaler Clock Select">
+      <alias type="CMSIS" value="LPTMR_PSR_PCS(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="PBYP" access="RW" reset_value="0" description="Prescaler Bypass">
+      <alias type="CMSIS" value="LPTMR_PSR_PBYP(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="4" name="PRESCALE" access="RW" reset_value="0" description="Prescale Value">
+      <alias type="CMSIS" value="LPTMR_PSR_PRESCALE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="25" reset_value="0"/>
+  </register>
+  <register offset="0x8" width="32" name="CMR" description="Low Power Timer Compare Register">
+    <alias type="CMSIS" value="CMR"/>
+    <bit_field offset="0" width="16" name="COMPARE" access="RW" reset_value="0" description="Compare Value">
+      <alias type="CMSIS" value="LPTMR_CMR_COMPARE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="16" reset_value="0"/>
+  </register>
+  <register offset="0xC" width="32" name="CNR" description="Low Power Timer Counter Register">
+    <alias type="CMSIS" value="CNR"/>
+    <bit_field offset="0" width="16" name="COUNTER" access="RW" reset_value="0" description="Counter Value">
+      <alias type="CMSIS" value="LPTMR_CNR_COUNTER(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="16" reset_value="0"/>
+  </register>
+</regs:peripheral>

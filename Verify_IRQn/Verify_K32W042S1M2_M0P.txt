@@ -1,0 +1,2 @@
+RF0_0_IRQn : 1
+RF0_1_IRQn : 1

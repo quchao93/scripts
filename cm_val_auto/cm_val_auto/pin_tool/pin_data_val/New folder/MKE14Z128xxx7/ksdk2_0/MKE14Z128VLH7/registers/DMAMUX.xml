@@ -1,0 +1,515 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="8" name="CHCFG0" description="Channel Configuration register">
+    <alias type="CMSIS" value="CHCFG[0]"/>
+    <bit_field offset="0" width="6" name="SOURCE" access="RW" reset_value="0" description="DMA Channel Source (Slot)">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_SOURCE(x)"/>
+      <bit_field_value name="CHCFG_SOURCE_Disable_Signal" value="0b000000" description="Disable_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Rx_Signal" value="0b000010" description="LPUART0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Tx_Signal" value="0b000011" description="LPUART0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Rx_Signal" value="0b000100" description="LPUART1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Tx_Signal" value="0b000101" description="LPUART1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Rx_Signal" value="0b000110" description="LPUART2_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Tx_Signal" value="0b000111" description="LPUART2_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel0_Signal" value="0b001010" description="FlexIO_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel1_Signal" value="0b001011" description="FlexIO_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel2_Signal" value="0b001100" description="FlexIO_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel3_Signal" value="0b001101" description="FlexIO_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Rx_Signal" value="0b001110" description="LPSPI0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Tx_Signal" value="0b001111" description="LPSPI0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Rx_Signal" value="0b010000" description="LPSPI1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Tx_Signal" value="0b010001" description="LPSPI1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Rx_Signal" value="0b010010" description="LPI2C0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Tx_Signal" value="0b010011" description="LPI2C0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel0_Signal" value="0b010100" description="FTM0_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel1_Signal" value="0b010101" description="FTM0_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel2_Signal" value="0b010110" description="FTM0_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel3_Signal" value="0b010111" description="FTM0_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel4_Signal" value="0b011000" description="FTM0_Channel4_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel5_Signal" value="0b011001" description="FTM0_Channel5_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel6_Signal" value="0b011010" description="FTM0_Channel6_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel7_Signal" value="0b011011" description="FTM0_Channel7_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel0_Signal" value="0b011100" description="FTM1_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel1_Signal" value="0b011101" description="FTM1_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel0_Signal" value="0b011110" description="FTM2_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel1_Signal" value="0b011111" description="FTM2_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Rx_Signal" value="0b100000" description="LPI2C1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Tx_Signal" value="0b100001" description="LPI2C1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC0_Signal" value="0b101000" description="ADC0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC1_Signal" value="0b101001" description="ADC1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP0_Signal" value="0b101011" description="CMP0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP1_Signal" value="0b101100" description="CMP1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PDB0_Signal" value="0b101110" description="PDB0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortA_Signal" value="0b110001" description="PortA_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortB_Signal" value="0b110010" description="PortB_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortC_Signal" value="0b110011" description="PortC_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortD_Signal" value="0b110100" description="PortD_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortE_Signal" value="0b110101" description="PortE_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel2_Signal" value="0b111001" description="FTM1_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel2_Signal" value="0b111010" description="FTM2_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPTMR0_Signal" value="0b111011" description="LPTMR0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn60_Signal" value="0b111100" description="AlwaysOn60_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn61_Signal" value="0b111101" description="AlwaysOn61_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn62_Signal" value="0b111110" description="AlwaysOn62_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn63_Signal" value="0b111111" description="AlwaysOn63_Signal"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TRIG" access="RW" reset_value="0" description="DMA Channel Trigger Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_TRIG(x)"/>
+      <bit_field_value name="CHCFG_TRIG_DISABLED" value="0b0" description="Triggering is disabled. If triggering is disabled and ENBL is set, the DMA Channel will simply route the specified source to the DMA channel. (Normal mode)"/>
+      <bit_field_value name="CHCFG_TRIG_ENABLED" value="0b1" description="Triggering is enabled. If triggering is enabled and ENBL is set, the DMAMUX is in Periodic Trigger mode."/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ENBL" access="RW" reset_value="0" description="DMA Channel Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_ENBL(x)"/>
+      <bit_field_value name="CHCFG_ENBL_DISABLED" value="0b0" description="DMA channel is disabled. This mode is primarily used during configuration of the DMAMux. The DMA has separate channel enables/disables, which should be used to disable or reconfigure a DMA channel."/>
+      <bit_field_value name="CHCFG_ENBL_ENABLED" value="0b1" description="DMA channel is enabled"/>
+    </bit_field>
+  </register>
+  <register offset="0x1" width="8" name="CHCFG1" description="Channel Configuration register">
+    <alias type="CMSIS" value="CHCFG[1]"/>
+    <bit_field offset="0" width="6" name="SOURCE" access="RW" reset_value="0" description="DMA Channel Source (Slot)">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_SOURCE(x)"/>
+      <bit_field_value name="CHCFG_SOURCE_Disable_Signal" value="0b000000" description="Disable_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Rx_Signal" value="0b000010" description="LPUART0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Tx_Signal" value="0b000011" description="LPUART0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Rx_Signal" value="0b000100" description="LPUART1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Tx_Signal" value="0b000101" description="LPUART1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Rx_Signal" value="0b000110" description="LPUART2_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Tx_Signal" value="0b000111" description="LPUART2_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel0_Signal" value="0b001010" description="FlexIO_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel1_Signal" value="0b001011" description="FlexIO_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel2_Signal" value="0b001100" description="FlexIO_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel3_Signal" value="0b001101" description="FlexIO_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Rx_Signal" value="0b001110" description="LPSPI0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Tx_Signal" value="0b001111" description="LPSPI0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Rx_Signal" value="0b010000" description="LPSPI1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Tx_Signal" value="0b010001" description="LPSPI1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Rx_Signal" value="0b010010" description="LPI2C0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Tx_Signal" value="0b010011" description="LPI2C0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel0_Signal" value="0b010100" description="FTM0_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel1_Signal" value="0b010101" description="FTM0_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel2_Signal" value="0b010110" description="FTM0_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel3_Signal" value="0b010111" description="FTM0_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel4_Signal" value="0b011000" description="FTM0_Channel4_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel5_Signal" value="0b011001" description="FTM0_Channel5_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel6_Signal" value="0b011010" description="FTM0_Channel6_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel7_Signal" value="0b011011" description="FTM0_Channel7_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel0_Signal" value="0b011100" description="FTM1_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel1_Signal" value="0b011101" description="FTM1_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel0_Signal" value="0b011110" description="FTM2_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel1_Signal" value="0b011111" description="FTM2_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Rx_Signal" value="0b100000" description="LPI2C1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Tx_Signal" value="0b100001" description="LPI2C1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC0_Signal" value="0b101000" description="ADC0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC1_Signal" value="0b101001" description="ADC1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP0_Signal" value="0b101011" description="CMP0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP1_Signal" value="0b101100" description="CMP1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PDB0_Signal" value="0b101110" description="PDB0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortA_Signal" value="0b110001" description="PortA_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortB_Signal" value="0b110010" description="PortB_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortC_Signal" value="0b110011" description="PortC_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortD_Signal" value="0b110100" description="PortD_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortE_Signal" value="0b110101" description="PortE_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel2_Signal" value="0b111001" description="FTM1_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel2_Signal" value="0b111010" description="FTM2_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPTMR0_Signal" value="0b111011" description="LPTMR0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn60_Signal" value="0b111100" description="AlwaysOn60_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn61_Signal" value="0b111101" description="AlwaysOn61_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn62_Signal" value="0b111110" description="AlwaysOn62_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn63_Signal" value="0b111111" description="AlwaysOn63_Signal"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TRIG" access="RW" reset_value="0" description="DMA Channel Trigger Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_TRIG(x)"/>
+      <bit_field_value name="CHCFG_TRIG_DISABLED" value="0b0" description="Triggering is disabled. If triggering is disabled and ENBL is set, the DMA Channel will simply route the specified source to the DMA channel. (Normal mode)"/>
+      <bit_field_value name="CHCFG_TRIG_ENABLED" value="0b1" description="Triggering is enabled. If triggering is enabled and ENBL is set, the DMAMUX is in Periodic Trigger mode."/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ENBL" access="RW" reset_value="0" description="DMA Channel Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_ENBL(x)"/>
+      <bit_field_value name="CHCFG_ENBL_DISABLED" value="0b0" description="DMA channel is disabled. This mode is primarily used during configuration of the DMAMux. The DMA has separate channel enables/disables, which should be used to disable or reconfigure a DMA channel."/>
+      <bit_field_value name="CHCFG_ENBL_ENABLED" value="0b1" description="DMA channel is enabled"/>
+    </bit_field>
+  </register>
+  <register offset="0x2" width="8" name="CHCFG2" description="Channel Configuration register">
+    <alias type="CMSIS" value="CHCFG[2]"/>
+    <bit_field offset="0" width="6" name="SOURCE" access="RW" reset_value="0" description="DMA Channel Source (Slot)">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_SOURCE(x)"/>
+      <bit_field_value name="CHCFG_SOURCE_Disable_Signal" value="0b000000" description="Disable_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Rx_Signal" value="0b000010" description="LPUART0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Tx_Signal" value="0b000011" description="LPUART0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Rx_Signal" value="0b000100" description="LPUART1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Tx_Signal" value="0b000101" description="LPUART1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Rx_Signal" value="0b000110" description="LPUART2_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Tx_Signal" value="0b000111" description="LPUART2_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel0_Signal" value="0b001010" description="FlexIO_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel1_Signal" value="0b001011" description="FlexIO_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel2_Signal" value="0b001100" description="FlexIO_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel3_Signal" value="0b001101" description="FlexIO_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Rx_Signal" value="0b001110" description="LPSPI0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Tx_Signal" value="0b001111" description="LPSPI0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Rx_Signal" value="0b010000" description="LPSPI1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Tx_Signal" value="0b010001" description="LPSPI1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Rx_Signal" value="0b010010" description="LPI2C0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Tx_Signal" value="0b010011" description="LPI2C0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel0_Signal" value="0b010100" description="FTM0_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel1_Signal" value="0b010101" description="FTM0_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel2_Signal" value="0b010110" description="FTM0_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel3_Signal" value="0b010111" description="FTM0_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel4_Signal" value="0b011000" description="FTM0_Channel4_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel5_Signal" value="0b011001" description="FTM0_Channel5_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel6_Signal" value="0b011010" description="FTM0_Channel6_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel7_Signal" value="0b011011" description="FTM0_Channel7_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel0_Signal" value="0b011100" description="FTM1_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel1_Signal" value="0b011101" description="FTM1_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel0_Signal" value="0b011110" description="FTM2_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel1_Signal" value="0b011111" description="FTM2_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Rx_Signal" value="0b100000" description="LPI2C1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Tx_Signal" value="0b100001" description="LPI2C1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC0_Signal" value="0b101000" description="ADC0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC1_Signal" value="0b101001" description="ADC1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP0_Signal" value="0b101011" description="CMP0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP1_Signal" value="0b101100" description="CMP1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PDB0_Signal" value="0b101110" description="PDB0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortA_Signal" value="0b110001" description="PortA_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortB_Signal" value="0b110010" description="PortB_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortC_Signal" value="0b110011" description="PortC_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortD_Signal" value="0b110100" description="PortD_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortE_Signal" value="0b110101" description="PortE_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel2_Signal" value="0b111001" description="FTM1_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel2_Signal" value="0b111010" description="FTM2_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPTMR0_Signal" value="0b111011" description="LPTMR0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn60_Signal" value="0b111100" description="AlwaysOn60_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn61_Signal" value="0b111101" description="AlwaysOn61_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn62_Signal" value="0b111110" description="AlwaysOn62_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn63_Signal" value="0b111111" description="AlwaysOn63_Signal"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TRIG" access="RW" reset_value="0" description="DMA Channel Trigger Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_TRIG(x)"/>
+      <bit_field_value name="CHCFG_TRIG_DISABLED" value="0b0" description="Triggering is disabled. If triggering is disabled and ENBL is set, the DMA Channel will simply route the specified source to the DMA channel. (Normal mode)"/>
+      <bit_field_value name="CHCFG_TRIG_ENABLED" value="0b1" description="Triggering is enabled. If triggering is enabled and ENBL is set, the DMAMUX is in Periodic Trigger mode."/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ENBL" access="RW" reset_value="0" description="DMA Channel Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_ENBL(x)"/>
+      <bit_field_value name="CHCFG_ENBL_DISABLED" value="0b0" description="DMA channel is disabled. This mode is primarily used during configuration of the DMAMux. The DMA has separate channel enables/disables, which should be used to disable or reconfigure a DMA channel."/>
+      <bit_field_value name="CHCFG_ENBL_ENABLED" value="0b1" description="DMA channel is enabled"/>
+    </bit_field>
+  </register>
+  <register offset="0x3" width="8" name="CHCFG3" description="Channel Configuration register">
+    <alias type="CMSIS" value="CHCFG[3]"/>
+    <bit_field offset="0" width="6" name="SOURCE" access="RW" reset_value="0" description="DMA Channel Source (Slot)">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_SOURCE(x)"/>
+      <bit_field_value name="CHCFG_SOURCE_Disable_Signal" value="0b000000" description="Disable_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Rx_Signal" value="0b000010" description="LPUART0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Tx_Signal" value="0b000011" description="LPUART0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Rx_Signal" value="0b000100" description="LPUART1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Tx_Signal" value="0b000101" description="LPUART1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Rx_Signal" value="0b000110" description="LPUART2_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Tx_Signal" value="0b000111" description="LPUART2_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel0_Signal" value="0b001010" description="FlexIO_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel1_Signal" value="0b001011" description="FlexIO_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel2_Signal" value="0b001100" description="FlexIO_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel3_Signal" value="0b001101" description="FlexIO_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Rx_Signal" value="0b001110" description="LPSPI0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Tx_Signal" value="0b001111" description="LPSPI0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Rx_Signal" value="0b010000" description="LPSPI1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Tx_Signal" value="0b010001" description="LPSPI1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Rx_Signal" value="0b010010" description="LPI2C0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Tx_Signal" value="0b010011" description="LPI2C0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel0_Signal" value="0b010100" description="FTM0_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel1_Signal" value="0b010101" description="FTM0_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel2_Signal" value="0b010110" description="FTM0_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel3_Signal" value="0b010111" description="FTM0_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel4_Signal" value="0b011000" description="FTM0_Channel4_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel5_Signal" value="0b011001" description="FTM0_Channel5_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel6_Signal" value="0b011010" description="FTM0_Channel6_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel7_Signal" value="0b011011" description="FTM0_Channel7_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel0_Signal" value="0b011100" description="FTM1_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel1_Signal" value="0b011101" description="FTM1_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel0_Signal" value="0b011110" description="FTM2_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel1_Signal" value="0b011111" description="FTM2_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Rx_Signal" value="0b100000" description="LPI2C1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Tx_Signal" value="0b100001" description="LPI2C1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC0_Signal" value="0b101000" description="ADC0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC1_Signal" value="0b101001" description="ADC1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP0_Signal" value="0b101011" description="CMP0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP1_Signal" value="0b101100" description="CMP1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PDB0_Signal" value="0b101110" description="PDB0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortA_Signal" value="0b110001" description="PortA_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortB_Signal" value="0b110010" description="PortB_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortC_Signal" value="0b110011" description="PortC_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortD_Signal" value="0b110100" description="PortD_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortE_Signal" value="0b110101" description="PortE_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel2_Signal" value="0b111001" description="FTM1_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel2_Signal" value="0b111010" description="FTM2_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPTMR0_Signal" value="0b111011" description="LPTMR0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn60_Signal" value="0b111100" description="AlwaysOn60_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn61_Signal" value="0b111101" description="AlwaysOn61_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn62_Signal" value="0b111110" description="AlwaysOn62_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn63_Signal" value="0b111111" description="AlwaysOn63_Signal"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TRIG" access="RW" reset_value="0" description="DMA Channel Trigger Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_TRIG(x)"/>
+      <bit_field_value name="CHCFG_TRIG_DISABLED" value="0b0" description="Triggering is disabled. If triggering is disabled and ENBL is set, the DMA Channel will simply route the specified source to the DMA channel. (Normal mode)"/>
+      <bit_field_value name="CHCFG_TRIG_ENABLED" value="0b1" description="Triggering is enabled. If triggering is enabled and ENBL is set, the DMAMUX is in Periodic Trigger mode."/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ENBL" access="RW" reset_value="0" description="DMA Channel Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_ENBL(x)"/>
+      <bit_field_value name="CHCFG_ENBL_DISABLED" value="0b0" description="DMA channel is disabled. This mode is primarily used during configuration of the DMAMux. The DMA has separate channel enables/disables, which should be used to disable or reconfigure a DMA channel."/>
+      <bit_field_value name="CHCFG_ENBL_ENABLED" value="0b1" description="DMA channel is enabled"/>
+    </bit_field>
+  </register>
+  <register offset="0x4" width="8" name="CHCFG4" description="Channel Configuration register">
+    <alias type="CMSIS" value="CHCFG[4]"/>
+    <bit_field offset="0" width="6" name="SOURCE" access="RW" reset_value="0" description="DMA Channel Source (Slot)">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_SOURCE(x)"/>
+      <bit_field_value name="CHCFG_SOURCE_Disable_Signal" value="0b000000" description="Disable_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Rx_Signal" value="0b000010" description="LPUART0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Tx_Signal" value="0b000011" description="LPUART0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Rx_Signal" value="0b000100" description="LPUART1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Tx_Signal" value="0b000101" description="LPUART1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Rx_Signal" value="0b000110" description="LPUART2_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Tx_Signal" value="0b000111" description="LPUART2_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel0_Signal" value="0b001010" description="FlexIO_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel1_Signal" value="0b001011" description="FlexIO_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel2_Signal" value="0b001100" description="FlexIO_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel3_Signal" value="0b001101" description="FlexIO_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Rx_Signal" value="0b001110" description="LPSPI0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Tx_Signal" value="0b001111" description="LPSPI0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Rx_Signal" value="0b010000" description="LPSPI1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Tx_Signal" value="0b010001" description="LPSPI1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Rx_Signal" value="0b010010" description="LPI2C0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Tx_Signal" value="0b010011" description="LPI2C0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel0_Signal" value="0b010100" description="FTM0_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel1_Signal" value="0b010101" description="FTM0_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel2_Signal" value="0b010110" description="FTM0_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel3_Signal" value="0b010111" description="FTM0_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel4_Signal" value="0b011000" description="FTM0_Channel4_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel5_Signal" value="0b011001" description="FTM0_Channel5_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel6_Signal" value="0b011010" description="FTM0_Channel6_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel7_Signal" value="0b011011" description="FTM0_Channel7_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel0_Signal" value="0b011100" description="FTM1_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel1_Signal" value="0b011101" description="FTM1_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel0_Signal" value="0b011110" description="FTM2_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel1_Signal" value="0b011111" description="FTM2_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Rx_Signal" value="0b100000" description="LPI2C1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Tx_Signal" value="0b100001" description="LPI2C1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC0_Signal" value="0b101000" description="ADC0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC1_Signal" value="0b101001" description="ADC1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP0_Signal" value="0b101011" description="CMP0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP1_Signal" value="0b101100" description="CMP1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PDB0_Signal" value="0b101110" description="PDB0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortA_Signal" value="0b110001" description="PortA_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortB_Signal" value="0b110010" description="PortB_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortC_Signal" value="0b110011" description="PortC_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortD_Signal" value="0b110100" description="PortD_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortE_Signal" value="0b110101" description="PortE_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel2_Signal" value="0b111001" description="FTM1_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel2_Signal" value="0b111010" description="FTM2_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPTMR0_Signal" value="0b111011" description="LPTMR0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn60_Signal" value="0b111100" description="AlwaysOn60_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn61_Signal" value="0b111101" description="AlwaysOn61_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn62_Signal" value="0b111110" description="AlwaysOn62_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn63_Signal" value="0b111111" description="AlwaysOn63_Signal"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TRIG" access="RW" reset_value="0" description="DMA Channel Trigger Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_TRIG(x)"/>
+      <bit_field_value name="CHCFG_TRIG_DISABLED" value="0b0" description="Triggering is disabled. If triggering is disabled and ENBL is set, the DMA Channel will simply route the specified source to the DMA channel. (Normal mode)"/>
+      <bit_field_value name="CHCFG_TRIG_ENABLED" value="0b1" description="Triggering is enabled. If triggering is enabled and ENBL is set, the DMAMUX is in Periodic Trigger mode."/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ENBL" access="RW" reset_value="0" description="DMA Channel Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_ENBL(x)"/>
+      <bit_field_value name="CHCFG_ENBL_DISABLED" value="0b0" description="DMA channel is disabled. This mode is primarily used during configuration of the DMAMux. The DMA has separate channel enables/disables, which should be used to disable or reconfigure a DMA channel."/>
+      <bit_field_value name="CHCFG_ENBL_ENABLED" value="0b1" description="DMA channel is enabled"/>
+    </bit_field>
+  </register>
+  <register offset="0x5" width="8" name="CHCFG5" description="Channel Configuration register">
+    <alias type="CMSIS" value="CHCFG[5]"/>
+    <bit_field offset="0" width="6" name="SOURCE" access="RW" reset_value="0" description="DMA Channel Source (Slot)">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_SOURCE(x)"/>
+      <bit_field_value name="CHCFG_SOURCE_Disable_Signal" value="0b000000" description="Disable_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Rx_Signal" value="0b000010" description="LPUART0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Tx_Signal" value="0b000011" description="LPUART0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Rx_Signal" value="0b000100" description="LPUART1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Tx_Signal" value="0b000101" description="LPUART1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Rx_Signal" value="0b000110" description="LPUART2_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Tx_Signal" value="0b000111" description="LPUART2_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel0_Signal" value="0b001010" description="FlexIO_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel1_Signal" value="0b001011" description="FlexIO_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel2_Signal" value="0b001100" description="FlexIO_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel3_Signal" value="0b001101" description="FlexIO_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Rx_Signal" value="0b001110" description="LPSPI0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Tx_Signal" value="0b001111" description="LPSPI0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Rx_Signal" value="0b010000" description="LPSPI1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Tx_Signal" value="0b010001" description="LPSPI1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Rx_Signal" value="0b010010" description="LPI2C0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Tx_Signal" value="0b010011" description="LPI2C0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel0_Signal" value="0b010100" description="FTM0_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel1_Signal" value="0b010101" description="FTM0_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel2_Signal" value="0b010110" description="FTM0_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel3_Signal" value="0b010111" description="FTM0_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel4_Signal" value="0b011000" description="FTM0_Channel4_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel5_Signal" value="0b011001" description="FTM0_Channel5_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel6_Signal" value="0b011010" description="FTM0_Channel6_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel7_Signal" value="0b011011" description="FTM0_Channel7_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel0_Signal" value="0b011100" description="FTM1_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel1_Signal" value="0b011101" description="FTM1_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel0_Signal" value="0b011110" description="FTM2_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel1_Signal" value="0b011111" description="FTM2_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Rx_Signal" value="0b100000" description="LPI2C1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Tx_Signal" value="0b100001" description="LPI2C1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC0_Signal" value="0b101000" description="ADC0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC1_Signal" value="0b101001" description="ADC1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP0_Signal" value="0b101011" description="CMP0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP1_Signal" value="0b101100" description="CMP1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PDB0_Signal" value="0b101110" description="PDB0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortA_Signal" value="0b110001" description="PortA_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortB_Signal" value="0b110010" description="PortB_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortC_Signal" value="0b110011" description="PortC_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortD_Signal" value="0b110100" description="PortD_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortE_Signal" value="0b110101" description="PortE_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel2_Signal" value="0b111001" description="FTM1_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel2_Signal" value="0b111010" description="FTM2_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPTMR0_Signal" value="0b111011" description="LPTMR0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn60_Signal" value="0b111100" description="AlwaysOn60_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn61_Signal" value="0b111101" description="AlwaysOn61_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn62_Signal" value="0b111110" description="AlwaysOn62_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn63_Signal" value="0b111111" description="AlwaysOn63_Signal"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TRIG" access="RW" reset_value="0" description="DMA Channel Trigger Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_TRIG(x)"/>
+      <bit_field_value name="CHCFG_TRIG_DISABLED" value="0b0" description="Triggering is disabled. If triggering is disabled and ENBL is set, the DMA Channel will simply route the specified source to the DMA channel. (Normal mode)"/>
+      <bit_field_value name="CHCFG_TRIG_ENABLED" value="0b1" description="Triggering is enabled. If triggering is enabled and ENBL is set, the DMAMUX is in Periodic Trigger mode."/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ENBL" access="RW" reset_value="0" description="DMA Channel Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_ENBL(x)"/>
+      <bit_field_value name="CHCFG_ENBL_DISABLED" value="0b0" description="DMA channel is disabled. This mode is primarily used during configuration of the DMAMux. The DMA has separate channel enables/disables, which should be used to disable or reconfigure a DMA channel."/>
+      <bit_field_value name="CHCFG_ENBL_ENABLED" value="0b1" description="DMA channel is enabled"/>
+    </bit_field>
+  </register>
+  <register offset="0x6" width="8" name="CHCFG6" description="Channel Configuration register">
+    <alias type="CMSIS" value="CHCFG[6]"/>
+    <bit_field offset="0" width="6" name="SOURCE" access="RW" reset_value="0" description="DMA Channel Source (Slot)">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_SOURCE(x)"/>
+      <bit_field_value name="CHCFG_SOURCE_Disable_Signal" value="0b000000" description="Disable_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Rx_Signal" value="0b000010" description="LPUART0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Tx_Signal" value="0b000011" description="LPUART0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Rx_Signal" value="0b000100" description="LPUART1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Tx_Signal" value="0b000101" description="LPUART1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Rx_Signal" value="0b000110" description="LPUART2_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Tx_Signal" value="0b000111" description="LPUART2_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel0_Signal" value="0b001010" description="FlexIO_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel1_Signal" value="0b001011" description="FlexIO_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel2_Signal" value="0b001100" description="FlexIO_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel3_Signal" value="0b001101" description="FlexIO_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Rx_Signal" value="0b001110" description="LPSPI0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Tx_Signal" value="0b001111" description="LPSPI0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Rx_Signal" value="0b010000" description="LPSPI1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Tx_Signal" value="0b010001" description="LPSPI1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Rx_Signal" value="0b010010" description="LPI2C0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Tx_Signal" value="0b010011" description="LPI2C0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel0_Signal" value="0b010100" description="FTM0_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel1_Signal" value="0b010101" description="FTM0_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel2_Signal" value="0b010110" description="FTM0_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel3_Signal" value="0b010111" description="FTM0_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel4_Signal" value="0b011000" description="FTM0_Channel4_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel5_Signal" value="0b011001" description="FTM0_Channel5_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel6_Signal" value="0b011010" description="FTM0_Channel6_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel7_Signal" value="0b011011" description="FTM0_Channel7_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel0_Signal" value="0b011100" description="FTM1_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel1_Signal" value="0b011101" description="FTM1_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel0_Signal" value="0b011110" description="FTM2_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel1_Signal" value="0b011111" description="FTM2_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Rx_Signal" value="0b100000" description="LPI2C1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Tx_Signal" value="0b100001" description="LPI2C1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC0_Signal" value="0b101000" description="ADC0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC1_Signal" value="0b101001" description="ADC1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP0_Signal" value="0b101011" description="CMP0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP1_Signal" value="0b101100" description="CMP1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PDB0_Signal" value="0b101110" description="PDB0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortA_Signal" value="0b110001" description="PortA_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortB_Signal" value="0b110010" description="PortB_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortC_Signal" value="0b110011" description="PortC_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortD_Signal" value="0b110100" description="PortD_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortE_Signal" value="0b110101" description="PortE_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel2_Signal" value="0b111001" description="FTM1_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel2_Signal" value="0b111010" description="FTM2_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPTMR0_Signal" value="0b111011" description="LPTMR0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn60_Signal" value="0b111100" description="AlwaysOn60_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn61_Signal" value="0b111101" description="AlwaysOn61_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn62_Signal" value="0b111110" description="AlwaysOn62_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn63_Signal" value="0b111111" description="AlwaysOn63_Signal"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TRIG" access="RW" reset_value="0" description="DMA Channel Trigger Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_TRIG(x)"/>
+      <bit_field_value name="CHCFG_TRIG_DISABLED" value="0b0" description="Triggering is disabled. If triggering is disabled and ENBL is set, the DMA Channel will simply route the specified source to the DMA channel. (Normal mode)"/>
+      <bit_field_value name="CHCFG_TRIG_ENABLED" value="0b1" description="Triggering is enabled. If triggering is enabled and ENBL is set, the DMAMUX is in Periodic Trigger mode."/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ENBL" access="RW" reset_value="0" description="DMA Channel Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_ENBL(x)"/>
+      <bit_field_value name="CHCFG_ENBL_DISABLED" value="0b0" description="DMA channel is disabled. This mode is primarily used during configuration of the DMAMux. The DMA has separate channel enables/disables, which should be used to disable or reconfigure a DMA channel."/>
+      <bit_field_value name="CHCFG_ENBL_ENABLED" value="0b1" description="DMA channel is enabled"/>
+    </bit_field>
+  </register>
+  <register offset="0x7" width="8" name="CHCFG7" description="Channel Configuration register">
+    <alias type="CMSIS" value="CHCFG[7]"/>
+    <bit_field offset="0" width="6" name="SOURCE" access="RW" reset_value="0" description="DMA Channel Source (Slot)">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_SOURCE(x)"/>
+      <bit_field_value name="CHCFG_SOURCE_Disable_Signal" value="0b000000" description="Disable_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Rx_Signal" value="0b000010" description="LPUART0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART0_Tx_Signal" value="0b000011" description="LPUART0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Rx_Signal" value="0b000100" description="LPUART1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART1_Tx_Signal" value="0b000101" description="LPUART1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Rx_Signal" value="0b000110" description="LPUART2_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPUART2_Tx_Signal" value="0b000111" description="LPUART2_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel0_Signal" value="0b001010" description="FlexIO_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel1_Signal" value="0b001011" description="FlexIO_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel2_Signal" value="0b001100" description="FlexIO_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FlexIO_Channel3_Signal" value="0b001101" description="FlexIO_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Rx_Signal" value="0b001110" description="LPSPI0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI0_Tx_Signal" value="0b001111" description="LPSPI0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Rx_Signal" value="0b010000" description="LPSPI1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPSPI1_Tx_Signal" value="0b010001" description="LPSPI1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Rx_Signal" value="0b010010" description="LPI2C0_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C0_Tx_Signal" value="0b010011" description="LPI2C0_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel0_Signal" value="0b010100" description="FTM0_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel1_Signal" value="0b010101" description="FTM0_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel2_Signal" value="0b010110" description="FTM0_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel3_Signal" value="0b010111" description="FTM0_Channel3_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel4_Signal" value="0b011000" description="FTM0_Channel4_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel5_Signal" value="0b011001" description="FTM0_Channel5_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel6_Signal" value="0b011010" description="FTM0_Channel6_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM0_Channel7_Signal" value="0b011011" description="FTM0_Channel7_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel0_Signal" value="0b011100" description="FTM1_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel1_Signal" value="0b011101" description="FTM1_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel0_Signal" value="0b011110" description="FTM2_Channel0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel1_Signal" value="0b011111" description="FTM2_Channel1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Rx_Signal" value="0b100000" description="LPI2C1_Rx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPI2C1_Tx_Signal" value="0b100001" description="LPI2C1_Tx_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC0_Signal" value="0b101000" description="ADC0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_ADC1_Signal" value="0b101001" description="ADC1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP0_Signal" value="0b101011" description="CMP0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_CMP1_Signal" value="0b101100" description="CMP1_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PDB0_Signal" value="0b101110" description="PDB0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortA_Signal" value="0b110001" description="PortA_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortB_Signal" value="0b110010" description="PortB_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortC_Signal" value="0b110011" description="PortC_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortD_Signal" value="0b110100" description="PortD_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_PortE_Signal" value="0b110101" description="PortE_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM1_Channel2_Signal" value="0b111001" description="FTM1_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_FTM2_Channel2_Signal" value="0b111010" description="FTM2_Channel2_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_LPTMR0_Signal" value="0b111011" description="LPTMR0_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn60_Signal" value="0b111100" description="AlwaysOn60_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn61_Signal" value="0b111101" description="AlwaysOn61_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn62_Signal" value="0b111110" description="AlwaysOn62_Signal"/>
+      <bit_field_value name="CHCFG_SOURCE_AlwaysOn63_Signal" value="0b111111" description="AlwaysOn63_Signal"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TRIG" access="RW" reset_value="0" description="DMA Channel Trigger Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_TRIG(x)"/>
+      <bit_field_value name="CHCFG_TRIG_DISABLED" value="0b0" description="Triggering is disabled. If triggering is disabled and ENBL is set, the DMA Channel will simply route the specified source to the DMA channel. (Normal mode)"/>
+      <bit_field_value name="CHCFG_TRIG_ENABLED" value="0b1" description="Triggering is enabled. If triggering is enabled and ENBL is set, the DMAMUX is in Periodic Trigger mode."/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="ENBL" access="RW" reset_value="0" description="DMA Channel Enable">
+      <alias type="CMSIS" value="DMAMUX_CHCFG_ENBL(x)"/>
+      <bit_field_value name="CHCFG_ENBL_DISABLED" value="0b0" description="DMA channel is disabled. This mode is primarily used during configuration of the DMAMux. The DMA has separate channel enables/disables, which should be used to disable or reconfigure a DMA channel."/>
+      <bit_field_value name="CHCFG_ENBL_ENABLED" value="0b1" description="DMA channel is enabled"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

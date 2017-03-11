@@ -1,0 +1,9 @@
+Usage: verify_data [options]
+    -d [the parent folder of pin tool xml data processor],
+        --dir                        specify the parent folder of one processor
+    -r [Optional -- the parent folder of reference excel files from RM docs],
+        --ref                        Optional -- specify the parent folder of reference excel files
+    -p, --peripheral                 is enable peripheral instance value validation
+    -f, --features                   is enable features value validation
+    -h, --help                       print this help
+Example: ruby verify_data.rb -d C:\ProgramData\NXP\KEx_Tools\1.0\mcu_data\kex_tools\processors\MK65FN2M0xxx18

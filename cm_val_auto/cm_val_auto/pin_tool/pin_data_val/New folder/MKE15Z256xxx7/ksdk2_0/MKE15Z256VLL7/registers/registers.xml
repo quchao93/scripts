@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<regs:registers version="1" xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0 http://swtools.freescale.net/XSD/registers/1.0/registers.xsd">
+  <part_information>
+    <part_number id="MKE15Z256xxx7" family="Kinetis"/>
+  </part_information>
+  <peripherals>
+    <peripheral name="WDOG" link="WDOG.xml"/>
+    <peripheral name="TSI" link="TSI.xml"/>
+    <peripheral name="TRGMUX1" link="TRGMUX1.xml"/>
+    <peripheral name="TRGMUX0" link="TRGMUX0.xml"/>
+    <peripheral name="SMC" link="SMC.xml"/>
+    <peripheral name="SIM" link="SIM.xml"/>
+    <peripheral name="SCG" link="SCG.xml"/>
+    <peripheral name="RTC" link="RTC.xml"/>
+    <peripheral name="ROM" link="ROM.xml"/>
+    <peripheral name="RCM" link="RCM.xml"/>
+    <peripheral name="PWT" link="PWT.xml"/>
+    <peripheral name="PORTE" link="PORTE.xml"/>
+    <peripheral name="PORTD" link="PORTD.xml"/>
+    <peripheral name="PORTC" link="PORTC.xml"/>
+    <peripheral name="PORTB" link="PORTB.xml"/>
+    <peripheral name="PORTA" link="PORTA.xml"/>
+    <peripheral name="PMC" link="PMC.xml"/>
+    <peripheral name="PDB0" link="PDB0.xml"/>
+    <peripheral name="PCC" link="PCC.xml"/>
+    <peripheral name="OSC32" link="OSC32.xml"/>
+    <peripheral name="MTBDWT" link="MTBDWT.xml"/>
+    <peripheral name="MTB" link="MTB.xml"/>
+    <peripheral name="MMDVSQ" link="MMDVSQ.xml"/>
+    <peripheral name="MCM" link="MCM.xml"/>
+    <peripheral name="LPUART2" link="LPUART2.xml"/>
+    <peripheral name="LPUART1" link="LPUART1.xml"/>
+    <peripheral name="LPUART0" link="LPUART0.xml"/>
+    <peripheral name="LPTMR0" link="LPTMR0.xml"/>
+    <peripheral name="LPSPI1" link="LPSPI1.xml"/>
+    <peripheral name="LPSPI0" link="LPSPI0.xml"/>
+    <peripheral name="LPIT0" link="LPIT0.xml"/>
+    <peripheral name="LPI2C1" link="LPI2C1.xml"/>
+    <peripheral name="LPI2C0" link="LPI2C0.xml"/>
+    <peripheral name="GPIOE" link="GPIOE.xml"/>
+    <peripheral name="GPIOD" link="GPIOD.xml"/>
+    <peripheral name="GPIOC" link="GPIOC.xml"/>
+    <peripheral name="GPIOB" link="GPIOB.xml"/>
+    <peripheral name="GPIOA" link="GPIOA.xml"/>
+    <peripheral name="FTM2" link="FTM2.xml"/>
+    <peripheral name="FTM1" link="FTM1.xml"/>
+    <peripheral name="FTM0" link="FTM0.xml"/>
+    <peripheral name="FTFE_FlashConfig" link="FTFE_FlashConfig.xml"/>
+    <peripheral name="FTFE" link="FTFE.xml"/>
+    <peripheral name="FLEXIO" link="FLEXIO.xml"/>
+    <peripheral name="EWM" link="EWM.xml"/>
+    <peripheral name="DMAMUX" link="DMAMUX.xml"/>
+    <peripheral name="DMA" link="DMA.xml"/>
+    <peripheral name="CRC" link="CRC.xml"/>
+    <peripheral name="CMP1" link="CMP1.xml"/>
+    <peripheral name="CMP0" link="CMP0.xml"/>
+    <peripheral name="AIPS" link="AIPS.xml"/>
+    <peripheral name="ADC1" link="ADC1.xml"/>
+    <peripheral name="ADC0" link="ADC0.xml"/>
+  </peripherals>
+  <clock_gates>
+    <clock_gate name="ADC0">
+      <control peripheral="PCC" register="ADC0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="ADC0"/>
+    </clock_gate>
+    <clock_gate name="ADC1">
+      <control peripheral="PCC" register="ADC1" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="ADC1"/>
+    </clock_gate>
+    <clock_gate name="CMP0">
+      <control peripheral="PCC" register="CMP0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="CMP0"/>
+    </clock_gate>
+    <clock_gate name="CMP1">
+      <control peripheral="PCC" register="CMP1" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="CMP1"/>
+    </clock_gate>
+    <clock_gate name="CRC">
+      <control peripheral="PCC" register="CRC" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="CRC"/>
+    </clock_gate>
+    <clock_gate name="DMA">
+      <control peripheral="PCC" register="DMA0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="DMA"/>
+    </clock_gate>
+    <clock_gate name="DMAMUX">
+      <control peripheral="PCC" register="DMAMUX0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="DMAMUX"/>
+    </clock_gate>
+    <clock_gate name="EWM">
+      <control peripheral="PCC" register="EWM" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="EWM"/>
+    </clock_gate>
+    <clock_gate name="FLEXIO">
+      <control peripheral="PCC" register="FLEXIO" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="FLEXIO"/>
+    </clock_gate>
+    <clock_gate name="FTFE">
+      <control peripheral="PCC" register="FLASH" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="FTFE"/>
+    </clock_gate>
+    <clock_gate name="FTM0">
+      <control peripheral="PCC" register="FLEXTMR0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="FTM0"/>
+    </clock_gate>
+    <clock_gate name="FTM1">
+      <control peripheral="PCC" register="FLEXTMR1" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="FTM1"/>
+    </clock_gate>
+    <clock_gate name="FTM2">
+      <control peripheral="PCC" register="FLEXTMR2" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="FTM2"/>
+    </clock_gate>
+    <clock_gate name="LPI2C0">
+      <control peripheral="PCC" register="LPI2C0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="LPI2C0"/>
+    </clock_gate>
+    <clock_gate name="LPI2C1">
+      <control peripheral="PCC" register="LPI2C1" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="LPI2C1"/>
+    </clock_gate>
+    <clock_gate name="LPIT0">
+      <control peripheral="PCC" register="LPIT0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="LPIT0"/>
+    </clock_gate>
+    <clock_gate name="LPSPI0">
+      <control peripheral="PCC" register="LPSPI0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="LPSPI0"/>
+    </clock_gate>
+    <clock_gate name="LPSPI1">
+      <control peripheral="PCC" register="LPSPI1" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="LPSPI1"/>
+    </clock_gate>
+    <clock_gate name="LPTMR0">
+      <control peripheral="PCC" register="LPTMR0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="LPTMR0"/>
+    </clock_gate>
+    <clock_gate name="LPUART0">
+      <control peripheral="PCC" register="LPUART0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="LPUART0"/>
+    </clock_gate>
+    <clock_gate name="LPUART1">
+      <control peripheral="PCC" register="LPUART1" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="LPUART1"/>
+    </clock_gate>
+    <clock_gate name="LPUART2">
+      <control peripheral="PCC" register="LPUART2" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="LPUART2"/>
+    </clock_gate>
+    <clock_gate name="OSC32">
+      <control peripheral="PCC" register="OSC32" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="OSC32"/>
+    </clock_gate>
+    <clock_gate name="PDB0">
+      <control peripheral="PCC" register="PDB0" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="PDB0"/>
+    </clock_gate>
+    <clock_gate name="PORTA">
+      <control peripheral="PCC" register="PORTA" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="PORTA"/>
+    </clock_gate>
+    <clock_gate name="PORTB">
+      <control peripheral="PCC" register="PORTB" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="PORTB"/>
+    </clock_gate>
+    <clock_gate name="PORTC">
+      <control peripheral="PCC" register="PORTC" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="PORTC"/>
+    </clock_gate>
+    <clock_gate name="PORTD">
+      <control peripheral="PCC" register="PORTD" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="PORTD"/>
+    </clock_gate>
+    <clock_gate name="PORTE">
+      <control peripheral="PCC" register="PORTE" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="PORTE"/>
+    </clock_gate>
+    <clock_gate name="PWT">
+      <control peripheral="PCC" register="PWT" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="PWT"/>
+    </clock_gate>
+    <clock_gate name="RTC">
+      <control peripheral="PCC" register="RTC" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="RTC"/>
+    </clock_gate>
+    <clock_gate name="TSI">
+      <control peripheral="PCC" register="TSI" bit_field="CGC">
+        <state name="enabled" value="1"/>
+        <state name="disabled" value="0"/>
+      </control>
+      <peripheral name="TSI"/>
+    </clock_gate>
+  </clock_gates>
+</regs:registers>

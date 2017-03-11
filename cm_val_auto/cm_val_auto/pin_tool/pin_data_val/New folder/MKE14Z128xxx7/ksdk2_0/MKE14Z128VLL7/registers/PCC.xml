@@ -1,0 +1,611 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0x20" width="32" name="DMA0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[8]"/>
+    <alias type="id" value="PCC_8"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0x1" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x80" width="32" name="FLASH" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[32]"/>
+    <alias type="id" value="PCC_32"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0x1" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x84" width="32" name="DMAMUX0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[33]"/>
+    <alias type="id" value="PCC_33"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x9C" width="32" name="ADC1" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[39]"/>
+    <alias type="id" value="PCC_39"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0x1" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xB0" width="32" name="LPSPI0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[44]"/>
+    <alias type="id" value="PCC_44"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xB4" width="32" name="LPSPI1" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[45]"/>
+    <alias type="id" value="PCC_45"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xC8" width="32" name="CRC" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[50]"/>
+    <alias type="id" value="PCC_50"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xD8" width="32" name="PDB0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[54]"/>
+    <alias type="id" value="PCC_54"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xDC" width="32" name="LPIT0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[55]"/>
+    <alias type="id" value="PCC_55"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xE0" width="32" name="FLEXTMR0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[56]"/>
+    <alias type="id" value="PCC_56"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xE4" width="32" name="FLEXTMR1" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[57]"/>
+    <alias type="id" value="PCC_57"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xE8" width="32" name="FLEXTMR2" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[58]"/>
+    <alias type="id" value="PCC_58"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xEC" width="32" name="ADC0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[59]"/>
+    <alias type="id" value="PCC_59"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0x1" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xF4" width="32" name="RTC" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[61]"/>
+    <alias type="id" value="PCC_61"/>
+    <bit_field offset="0" width="3" name="PCD" access="RW" reset_value="0" description="Peripheral Clock Divider Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCD(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="FRAC" access="RW" reset_value="0" description="Peripheral Clock Divider Fraction">
+      <alias type="CMSIS" value="PCC_CLKCFG_FRAC(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x100" width="32" name="LPTMR0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[64]"/>
+    <alias type="id" value="PCC_64"/>
+    <bit_field offset="0" width="3" name="PCD" access="RW" reset_value="0" description="Peripheral Clock Divider Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCD(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="FRAC" access="RW" reset_value="0" description="Peripheral Clock Divider Fraction">
+      <alias type="CMSIS" value="PCC_CLKCFG_FRAC(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x114" width="32" name="TSI" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[69]"/>
+    <alias type="id" value="PCC_69"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x124" width="32" name="PORTA" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[73]"/>
+    <alias type="id" value="PCC_73"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x128" width="32" name="PORTB" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[74]"/>
+    <alias type="id" value="PCC_74"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x12C" width="32" name="PORTC" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[75]"/>
+    <alias type="id" value="PCC_75"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x130" width="32" name="PORTD" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[76]"/>
+    <alias type="id" value="PCC_76"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x134" width="32" name="PORTE" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[77]"/>
+    <alias type="id" value="PCC_77"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x158" width="32" name="PWT" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[86]"/>
+    <alias type="id" value="PCC_86"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x168" width="32" name="FLEXIO" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[90]"/>
+    <alias type="id" value="PCC_90"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x180" width="32" name="OSC32" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[96]"/>
+    <alias type="id" value="PCC_96"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x184" width="32" name="EWM" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[97]"/>
+    <alias type="id" value="PCC_97"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x198" width="32" name="LPI2C0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[102]"/>
+    <alias type="id" value="PCC_102"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x19C" width="32" name="LPI2C1" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[103]"/>
+    <alias type="id" value="PCC_103"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1A8" width="32" name="LPUART0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[106]"/>
+    <alias type="id" value="PCC_106"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1AC" width="32" name="LPUART1" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[107]"/>
+    <alias type="id" value="PCC_107"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1B0" width="32" name="LPUART2" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[108]"/>
+    <alias type="id" value="PCC_108"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PCS" access="RW" reset_value="0" description="Peripheral Clock Source Select">
+      <alias type="CMSIS" value="PCC_CLKCFG_PCS(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1CC" width="32" name="CMP0" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[115]"/>
+    <alias type="id" value="PCC_115"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1D0" width="32" name="CMP1" description="PCC Register">
+    <alias type="CMSIS" value="CLKCFG[116]"/>
+    <alias type="id" value="PCC_116"/>
+    <reserved_bit_field offset="0" width="3" reset_value="0"/>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <reserved_bit_field offset="27" width="2" reset_value="0"/>
+    <bit_field offset="29" width="1" name="INUSE" access="RO" reset_value="0" description="Clock Gate Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_INUSE(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="CGC" access="RW" reset_value="0" description="Clock Control">
+      <alias type="CMSIS" value="PCC_CLKCFG_CGC(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="PR" access="RO" reset_value="0x1" description="Enable">
+      <alias type="CMSIS" value="PCC_CLKCFG_PR(x)"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

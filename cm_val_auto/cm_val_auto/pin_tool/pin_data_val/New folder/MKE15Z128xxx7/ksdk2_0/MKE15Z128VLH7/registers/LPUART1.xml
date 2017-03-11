@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="VERID" description="Version ID Register">
+    <alias type="CMSIS" value="VERID"/>
+    <bit_field offset="0" width="16" name="FEATURE" access="RO" reset_value="0x3" description="Feature Identification Number">
+      <alias type="CMSIS" value="LPUART_VERID_FEATURE(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="8" name="MINOR" access="RO" reset_value="0x1" description="Minor Version Number">
+      <alias type="CMSIS" value="LPUART_VERID_MINOR(x)"/>
+    </bit_field>
+    <bit_field offset="24" width="8" name="MAJOR" access="RO" reset_value="0x4" description="Major Version Number">
+      <alias type="CMSIS" value="LPUART_VERID_MAJOR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x4" width="32" name="PARAM" description="Parameter Register">
+    <alias type="CMSIS" value="PARAM"/>
+    <bit_field offset="0" width="8" name="TXFIFO" access="RO" reset_value="0x2" description="Transmit FIFO Size">
+      <alias type="CMSIS" value="LPUART_PARAM_TXFIFO(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="8" name="RXFIFO" access="RO" reset_value="0x2" description="Receive FIFO Size">
+      <alias type="CMSIS" value="LPUART_PARAM_RXFIFO(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="16" reset_value="0"/>
+  </register>
+  <register offset="0x8" width="32" name="GLOBAL" description="LPUART Global Register">
+    <alias type="CMSIS" value="GLOBAL"/>
+    <reserved_bit_field offset="0" width="1" reset_value="0"/>
+    <bit_field offset="1" width="1" name="RST" access="RW" reset_value="0" description="Software Reset">
+      <alias type="CMSIS" value="LPUART_GLOBAL_RST(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="2" width="30" reset_value="0"/>
+  </register>
+  <register offset="0xC" width="32" name="PINCFG" description="LPUART Pin Configuration Register">
+    <alias type="CMSIS" value="PINCFG"/>
+    <bit_field offset="0" width="2" name="TRGSEL" access="RW" reset_value="0" description="Trigger Select">
+      <alias type="CMSIS" value="LPUART_PINCFG_TRGSEL(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="2" width="30" reset_value="0"/>
+  </register>
+  <register offset="0x10" width="32" name="BAUD" description="LPUART Baud Rate Register">
+    <alias type="CMSIS" value="BAUD"/>
+    <bit_field offset="0" width="13" name="SBR" access="RW" reset_value="0x4" description="Baud Rate Modulo Divisor.">
+      <alias type="CMSIS" value="LPUART_BAUD_SBR(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="SBNS" access="RW" reset_value="0" description="Stop Bit Number Select">
+      <alias type="CMSIS" value="LPUART_BAUD_SBNS(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="RXEDGIE" access="RW" reset_value="0" description="RX Input Active Edge Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_BAUD_RXEDGIE(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="LBKDIE" access="RW" reset_value="0" description="LIN Break Detect Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_BAUD_LBKDIE(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="1" name="RESYNCDIS" access="RW" reset_value="0" description="Resynchronization Disable">
+      <alias type="CMSIS" value="LPUART_BAUD_RESYNCDIS(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="BOTHEDGE" access="RW" reset_value="0" description="Both Edge Sampling">
+      <alias type="CMSIS" value="LPUART_BAUD_BOTHEDGE(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="2" name="MATCFG" access="RW" reset_value="0" description="Match Configuration">
+      <alias type="CMSIS" value="LPUART_BAUD_MATCFG(x)"/>
+    </bit_field>
+    <bit_field offset="20" width="1" name="RIDMAE" access="RW" reset_value="0" description="Receiver Idle DMA Enable">
+      <alias type="CMSIS" value="LPUART_BAUD_RIDMAE(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="RDMAE" access="RW" reset_value="0" description="Receiver Full DMA Enable">
+      <alias type="CMSIS" value="LPUART_BAUD_RDMAE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="1" reset_value="0"/>
+    <bit_field offset="23" width="1" name="TDMAE" access="RW" reset_value="0" description="Transmitter DMA Enable">
+      <alias type="CMSIS" value="LPUART_BAUD_TDMAE(x)"/>
+    </bit_field>
+    <bit_field offset="24" width="5" name="OSR" access="RW" reset_value="0xF" description="Oversampling Ratio">
+      <alias type="CMSIS" value="LPUART_BAUD_OSR(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="M10" access="RW" reset_value="0" description="10-bit Mode select">
+      <alias type="CMSIS" value="LPUART_BAUD_M10(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="MAEN2" access="RW" reset_value="0" description="Match Address Mode Enable 2">
+      <alias type="CMSIS" value="LPUART_BAUD_MAEN2(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="MAEN1" access="RW" reset_value="0" description="Match Address Mode Enable 1">
+      <alias type="CMSIS" value="LPUART_BAUD_MAEN1(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x14" width="32" name="STAT" description="LPUART Status Register">
+    <alias type="CMSIS" value="STAT"/>
+    <reserved_bit_field offset="0" width="14" reset_value="0"/>
+    <bit_field offset="14" width="1" name="MA2F" access="W1C" reset_value="0" description="Match 2 Flag">
+      <alias type="CMSIS" value="LPUART_STAT_MA2F(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="MA1F" access="W1C" reset_value="0" description="Match 1 Flag">
+      <alias type="CMSIS" value="LPUART_STAT_MA1F(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="1" name="PF" access="W1C" reset_value="0" description="Parity Error Flag">
+      <alias type="CMSIS" value="LPUART_STAT_PF(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="FE" access="W1C" reset_value="0" description="Framing Error Flag">
+      <alias type="CMSIS" value="LPUART_STAT_FE(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="NF" access="W1C" reset_value="0" description="Noise Flag">
+      <alias type="CMSIS" value="LPUART_STAT_NF(x)"/>
+    </bit_field>
+    <bit_field offset="19" width="1" name="OR" access="W1C" reset_value="0" description="Receiver Overrun Flag">
+      <alias type="CMSIS" value="LPUART_STAT_OR(x)"/>
+    </bit_field>
+    <bit_field offset="20" width="1" name="IDLE" access="W1C" reset_value="0" description="Idle Line Flag">
+      <alias type="CMSIS" value="LPUART_STAT_IDLE(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="RDRF" access="RO" reset_value="0" description="Receive Data Register Full Flag">
+      <alias type="CMSIS" value="LPUART_STAT_RDRF(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="TC" access="RO" reset_value="0x1" description="Transmission Complete Flag">
+      <alias type="CMSIS" value="LPUART_STAT_TC(x)"/>
+    </bit_field>
+    <bit_field offset="23" width="1" name="TDRE" access="RO" reset_value="0x1" description="Transmit Data Register Empty Flag">
+      <alias type="CMSIS" value="LPUART_STAT_TDRE(x)"/>
+    </bit_field>
+    <bit_field offset="24" width="1" name="RAF" access="RO" reset_value="0" description="Receiver Active Flag">
+      <alias type="CMSIS" value="LPUART_STAT_RAF(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="LBKDE" access="RW" reset_value="0" description="LIN Break Detection Enable">
+      <alias type="CMSIS" value="LPUART_STAT_LBKDE(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="BRK13" access="RW" reset_value="0" description="Break Character Generation Length">
+      <alias type="CMSIS" value="LPUART_STAT_BRK13(x)"/>
+    </bit_field>
+    <bit_field offset="27" width="1" name="RWUID" access="RW" reset_value="0" description="Receive Wake Up Idle Detect">
+      <alias type="CMSIS" value="LPUART_STAT_RWUID(x)"/>
+    </bit_field>
+    <bit_field offset="28" width="1" name="RXINV" access="RW" reset_value="0" description="Receive Data Inversion">
+      <alias type="CMSIS" value="LPUART_STAT_RXINV(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="MSBF" access="RW" reset_value="0" description="MSB First">
+      <alias type="CMSIS" value="LPUART_STAT_MSBF(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="RXEDGIF" access="W1C" reset_value="0" description="RXD Pin Active Edge Interrupt Flag">
+      <alias type="CMSIS" value="LPUART_STAT_RXEDGIF(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="LBKDIF" access="W1C" reset_value="0" description="LIN Break Detect Interrupt Flag">
+      <alias type="CMSIS" value="LPUART_STAT_LBKDIF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x18" width="32" name="CTRL" description="LPUART Control Register">
+    <alias type="CMSIS" value="CTRL"/>
+    <bit_field offset="0" width="1" name="PT" access="RW" reset_value="0" description="Parity Type">
+      <alias type="CMSIS" value="LPUART_CTRL_PT(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="PE" access="RW" reset_value="0" description="Parity Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_PE(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="ILT" access="RW" reset_value="0" description="Idle Line Type Select">
+      <alias type="CMSIS" value="LPUART_CTRL_ILT(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="WAKE" access="RW" reset_value="0" description="Receiver Wakeup Method Select">
+      <alias type="CMSIS" value="LPUART_CTRL_WAKE(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="M" access="RW" reset_value="0" description="9-Bit or 8-Bit Mode Select">
+      <alias type="CMSIS" value="LPUART_CTRL_M(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="RSRC" access="RW" reset_value="0" description="Receiver Source Select">
+      <alias type="CMSIS" value="LPUART_CTRL_RSRC(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="DOZEEN" access="RW" reset_value="0" description="Doze Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_DOZEEN(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="LOOPS" access="RW" reset_value="0" description="Loop Mode Select">
+      <alias type="CMSIS" value="LPUART_CTRL_LOOPS(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="IDLECFG" access="RW" reset_value="0" description="Idle Configuration">
+      <alias type="CMSIS" value="LPUART_CTRL_IDLECFG(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="1" name="M7" access="RW" reset_value="0" description="7-Bit Mode Select">
+      <alias type="CMSIS" value="LPUART_CTRL_M7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="2" reset_value="0"/>
+    <bit_field offset="14" width="1" name="MA2IE" access="RW" reset_value="0" description="Match 2 Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_MA2IE(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="MA1IE" access="RW" reset_value="0" description="Match 1 Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_MA1IE(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="1" name="SBK" access="RW" reset_value="0" description="Send Break">
+      <alias type="CMSIS" value="LPUART_CTRL_SBK(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="RWU" access="RW" reset_value="0" description="Receiver Wakeup Control">
+      <alias type="CMSIS" value="LPUART_CTRL_RWU(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="RE" access="RW" reset_value="0" description="Receiver Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_RE(x)"/>
+    </bit_field>
+    <bit_field offset="19" width="1" name="TE" access="RW" reset_value="0" description="Transmitter Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_TE(x)"/>
+    </bit_field>
+    <bit_field offset="20" width="1" name="ILIE" access="RW" reset_value="0" description="Idle Line Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_ILIE(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="RIE" access="RW" reset_value="0" description="Receiver Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_RIE(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="TCIE" access="RW" reset_value="0" description="Transmission Complete Interrupt Enable for">
+      <alias type="CMSIS" value="LPUART_CTRL_TCIE(x)"/>
+    </bit_field>
+    <bit_field offset="23" width="1" name="TIE" access="RW" reset_value="0" description="Transmit Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_TIE(x)"/>
+    </bit_field>
+    <bit_field offset="24" width="1" name="PEIE" access="RW" reset_value="0" description="Parity Error Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_PEIE(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="FEIE" access="RW" reset_value="0" description="Framing Error Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_FEIE(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="NEIE" access="RW" reset_value="0" description="Noise Error Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_NEIE(x)"/>
+    </bit_field>
+    <bit_field offset="27" width="1" name="ORIE" access="RW" reset_value="0" description="Overrun Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_CTRL_ORIE(x)"/>
+    </bit_field>
+    <bit_field offset="28" width="1" name="TXINV" access="RW" reset_value="0" description="Transmit Data Inversion">
+      <alias type="CMSIS" value="LPUART_CTRL_TXINV(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="TXDIR" access="RW" reset_value="0" description="TXD Pin Direction in Single-Wire Mode">
+      <alias type="CMSIS" value="LPUART_CTRL_TXDIR(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="R9T8" access="RW" reset_value="0" description="Receive Bit 9 / Transmit Bit 8">
+      <alias type="CMSIS" value="LPUART_CTRL_R9T8(x)"/>
+    </bit_field>
+    <bit_field offset="31" width="1" name="R8T9" access="RW" reset_value="0" description="Receive Bit 8 / Transmit Bit 9">
+      <alias type="CMSIS" value="LPUART_CTRL_R8T9(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1C" width="32" name="DATA" description="LPUART Data Register">
+    <alias type="CMSIS" value="DATA"/>
+    <bit_field offset="0" width="1" name="R0T0" access="RW" reset_value="0" description="R0T0">
+      <alias type="CMSIS" value="LPUART_DATA_R0T0(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="R1T1" access="RW" reset_value="0" description="R1T1">
+      <alias type="CMSIS" value="LPUART_DATA_R1T1(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="R2T2" access="RW" reset_value="0" description="R2T2">
+      <alias type="CMSIS" value="LPUART_DATA_R2T2(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="R3T3" access="RW" reset_value="0" description="R3T3">
+      <alias type="CMSIS" value="LPUART_DATA_R3T3(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="R4T4" access="RW" reset_value="0" description="R4T4">
+      <alias type="CMSIS" value="LPUART_DATA_R4T4(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="R5T5" access="RW" reset_value="0" description="R5T5">
+      <alias type="CMSIS" value="LPUART_DATA_R5T5(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="R6T6" access="RW" reset_value="0" description="R6T6">
+      <alias type="CMSIS" value="LPUART_DATA_R6T6(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="R7T7" access="RW" reset_value="0" description="R7T7">
+      <alias type="CMSIS" value="LPUART_DATA_R7T7(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="1" name="R8T8" access="RW" reset_value="0" description="R8T8">
+      <alias type="CMSIS" value="LPUART_DATA_R8T8(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="R9T9" access="RW" reset_value="0" description="R9T9">
+      <alias type="CMSIS" value="LPUART_DATA_R9T9(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="10" width="1" reset_value="0"/>
+    <bit_field offset="11" width="1" name="IDLINE" access="RO" reset_value="0" description="Idle Line">
+      <alias type="CMSIS" value="LPUART_DATA_IDLINE(x)"/>
+    </bit_field>
+    <bit_field offset="12" width="1" name="RXEMPT" access="RO" reset_value="0x1" description="Receive Buffer Empty">
+      <alias type="CMSIS" value="LPUART_DATA_RXEMPT(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="FRETSC" access="RW" reset_value="0" description="Frame Error / Transmit Special Character">
+      <alias type="CMSIS" value="LPUART_DATA_FRETSC(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="PARITYE" access="RO" reset_value="0" description="PARITYE">
+      <alias type="CMSIS" value="LPUART_DATA_PARITYE(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="NOISY" access="RO" reset_value="0" description="NOISY">
+      <alias type="CMSIS" value="LPUART_DATA_NOISY(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="16" reset_value="0"/>
+  </register>
+  <register offset="0x20" width="32" name="MATCH" description="LPUART Match Address Register">
+    <alias type="CMSIS" value="MATCH"/>
+    <bit_field offset="0" width="10" name="MA1" access="RW" reset_value="0" description="Match Address 1">
+      <alias type="CMSIS" value="LPUART_MATCH_MA1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="10" width="6" reset_value="0"/>
+    <bit_field offset="16" width="10" name="MA2" access="RW" reset_value="0" description="Match Address 2">
+      <alias type="CMSIS" value="LPUART_MATCH_MA2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="26" width="6" reset_value="0"/>
+  </register>
+  <register offset="0x24" width="32" name="MODIR" description="LPUART Modem IrDA Register">
+    <alias type="CMSIS" value="MODIR"/>
+    <bit_field offset="0" width="1" name="TXCTSE" access="RW" reset_value="0" description="Transmitter clear-to-send enable">
+      <alias type="CMSIS" value="LPUART_MODIR_TXCTSE(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="TXRTSE" access="RW" reset_value="0" description="Transmitter request-to-send enable">
+      <alias type="CMSIS" value="LPUART_MODIR_TXRTSE(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="TXRTSPOL" access="RW" reset_value="0" description="Transmitter request-to-send polarity">
+      <alias type="CMSIS" value="LPUART_MODIR_TXRTSPOL(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="RXRTSE" access="RW" reset_value="0" description="Receiver request-to-send enable">
+      <alias type="CMSIS" value="LPUART_MODIR_RXRTSE(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="TXCTSC" access="RW" reset_value="0" description="Transmit CTS Configuration">
+      <alias type="CMSIS" value="LPUART_MODIR_TXCTSC(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="TXCTSSRC" access="RW" reset_value="0" description="Transmit CTS Source">
+      <alias type="CMSIS" value="LPUART_MODIR_TXCTSSRC(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="8" name="RTSWATER" access="RW" reset_value="0" description="Receive RTS Configuration">
+      <alias type="CMSIS" value="LPUART_MODIR_RTSWATER(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="2" name="TNP" access="RW" reset_value="0" description="Transmitter narrow pulse">
+      <alias type="CMSIS" value="LPUART_MODIR_TNP(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="IREN" access="RW" reset_value="0" description="Infrared enable">
+      <alias type="CMSIS" value="LPUART_MODIR_IREN(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="13" reset_value="0"/>
+  </register>
+  <register offset="0x28" width="32" name="FIFO" description="LPUART FIFO Register">
+    <alias type="CMSIS" value="FIFO"/>
+    <bit_field offset="0" width="3" name="RXFIFOSIZE" access="RO" reset_value="0x1" description="Receive FIFO. Buffer Depth">
+      <alias type="CMSIS" value="LPUART_FIFO_RXFIFOSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="RXFE" access="RW" reset_value="0" description="Receive FIFO Enable">
+      <alias type="CMSIS" value="LPUART_FIFO_RXFE(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="3" name="TXFIFOSIZE" access="RO" reset_value="0x1" description="Transmit FIFO. Buffer Depth">
+      <alias type="CMSIS" value="LPUART_FIFO_TXFIFOSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="TXFE" access="RW" reset_value="0" description="Transmit FIFO Enable">
+      <alias type="CMSIS" value="LPUART_FIFO_TXFE(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="1" name="RXUFE" access="RW" reset_value="0" description="Receive FIFO Underflow Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_FIFO_RXUFE(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="TXOFE" access="RW" reset_value="0" description="Transmit FIFO Overflow Interrupt Enable">
+      <alias type="CMSIS" value="LPUART_FIFO_TXOFE(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="3" name="RXIDEN" access="RW" reset_value="0" description="Receiver Idle Empty Enable">
+      <alias type="CMSIS" value="LPUART_FIFO_RXIDEN(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="13" width="1" reset_value="0"/>
+    <bit_field offset="14" width="1" name="RXFLUSH" access="WORZ" reset_value="0" description="Receive FIFO/Buffer Flush">
+      <alias type="CMSIS" value="LPUART_FIFO_RXFLUSH(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="TXFLUSH" access="WORZ" reset_value="0" description="Transmit FIFO/Buffer Flush">
+      <alias type="CMSIS" value="LPUART_FIFO_TXFLUSH(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="1" name="RXUF" access="W1C" reset_value="0" description="Receiver Buffer Underflow Flag">
+      <alias type="CMSIS" value="LPUART_FIFO_RXUF(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="TXOF" access="W1C" reset_value="0" description="Transmitter Buffer Overflow Flag">
+      <alias type="CMSIS" value="LPUART_FIFO_TXOF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="18" width="4" reset_value="0"/>
+    <bit_field offset="22" width="1" name="RXEMPT" access="RO" reset_value="0x1" description="Receive Buffer/FIFO Empty">
+      <alias type="CMSIS" value="LPUART_FIFO_RXEMPT(x)"/>
+    </bit_field>
+    <bit_field offset="23" width="1" name="TXEMPT" access="RO" reset_value="0x1" description="Transmit Buffer/FIFO Empty">
+      <alias type="CMSIS" value="LPUART_FIFO_TXEMPT(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="24" width="8" reset_value="0"/>
+  </register>
+  <register offset="0x2C" width="32" name="WATER" description="LPUART Watermark Register">
+    <alias type="CMSIS" value="WATER"/>
+    <bit_field offset="0" width="8" name="TXWATER" access="RW" reset_value="0" description="Transmit Watermark">
+      <alias type="CMSIS" value="LPUART_WATER_TXWATER(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="8" name="TXCOUNT" access="RO" reset_value="0" description="Transmit Counter">
+      <alias type="CMSIS" value="LPUART_WATER_TXCOUNT(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="8" name="RXWATER" access="RW" reset_value="0" description="Receive Watermark">
+      <alias type="CMSIS" value="LPUART_WATER_RXWATER(x)"/>
+    </bit_field>
+    <bit_field offset="24" width="8" name="RXCOUNT" access="RO" reset_value="0" description="Receive Counter">
+      <alias type="CMSIS" value="LPUART_WATER_RXCOUNT(x)"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

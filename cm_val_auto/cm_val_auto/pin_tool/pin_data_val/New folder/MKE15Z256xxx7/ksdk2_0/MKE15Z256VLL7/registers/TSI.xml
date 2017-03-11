@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="GENCS" description="TSI General Control and Status Register">
+    <alias type="CMSIS" value="GENCS"/>
+    <bit_field offset="0" width="1" name="EOSDMEO" access="RW" reset_value="0" description="End-of-Scan DMA Transfer Request Enable Only">
+      <alias type="CMSIS" value="TSI_GENCS_EOSDMEO(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="1" width="1" reset_value="0"/>
+    <bit_field offset="2" width="1" name="EOSF" access="W1C" reset_value="0" description="End of Scan Flag">
+      <alias type="CMSIS" value="TSI_GENCS_EOSF(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="SCNIP" access="RO" reset_value="0" description="Scan In Progress Status">
+      <alias type="CMSIS" value="TSI_GENCS_SCNIP(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="STM" access="RW" reset_value="0" description="Scan Trigger Mode">
+      <alias type="CMSIS" value="TSI_GENCS_STM(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="STPE" access="RW" reset_value="0" description="TSI STOP Enable">
+      <alias type="CMSIS" value="TSI_GENCS_STPE(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="TSIIEN" access="RW" reset_value="0" description="Touch Sensing Input Interrupt Enable">
+      <alias type="CMSIS" value="TSI_GENCS_TSIIEN(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="TSIEN" access="RW" reset_value="0" description="Touch Sensing Input Module Enable">
+      <alias type="CMSIS" value="TSI_GENCS_TSIEN(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="3" reset_value="0"/>
+    <bit_field offset="11" width="1" name="CLKSOC_SEL" access="RW" reset_value="0" description="CLKSOC_SEL">
+      <alias type="CMSIS" value="TSI_GENCS_CLKSOC_SEL(x)"/>
+    </bit_field>
+    <bit_field offset="12" width="1" name="RUN_CTRL" access="RW" reset_value="0" description="RUN_CTRL">
+      <alias type="CMSIS" value="TSI_GENCS_RUN_CTRL(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="3" name="TSI_ANA_TEST" access="RW" reset_value="0" description="TSI_ANA_TEST">
+      <alias type="CMSIS" value="TSI_GENCS_TSI_ANA_TEST(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="3" reset_value="0"/>
+    <bit_field offset="19" width="2" name="DVOLT" access="RW" reset_value="0" description="DVOLT">
+      <alias type="CMSIS" value="TSI_GENCS_DVOLT(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="21" width="7" reset_value="0"/>
+    <bit_field offset="28" width="1" name="ESOR" access="RW" reset_value="0" description="End-of-scan or Out-of-Range Interrupt Selection">
+      <alias type="CMSIS" value="TSI_GENCS_ESOR(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="29" width="2" reset_value="0"/>
+    <bit_field offset="31" width="1" name="OUTRGF" access="W1C" reset_value="0" description="Out of Range Flag.">
+      <alias type="CMSIS" value="TSI_GENCS_OUTRGF(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x4" width="32" name="DATA" description="TSI DATA Register">
+    <alias type="CMSIS" value="DATA"/>
+    <bit_field offset="0" width="16" name="TSICNT" access="RO" reset_value="0" description="TSI Conversion Counter Value">
+      <alias type="CMSIS" value="TSI_DATA_TSICNT(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <bit_field offset="22" width="1" name="SWTS" access="WO" reset_value="0" description="Software Trigger Start">
+      <alias type="CMSIS" value="TSI_DATA_SWTS(x)"/>
+    </bit_field>
+    <bit_field offset="23" width="1" name="DMAEN" access="RW" reset_value="0" description="DMA Transfer Enabled">
+      <alias type="CMSIS" value="TSI_DATA_DMAEN(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="24" width="3" reset_value="0"/>
+    <bit_field offset="27" width="5" name="TSICH" access="RW" reset_value="0" description="TSICH">
+      <alias type="CMSIS" value="TSI_DATA_TSICH(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x8" width="32" name="TSHD" description="TSI Threshold Register">
+    <alias type="CMSIS" value="TSHD"/>
+    <bit_field offset="0" width="16" name="THRESL" access="RW" reset_value="0" description="TSI Wakeup Channel Low-threshold">
+      <alias type="CMSIS" value="TSI_TSHD_THRESL(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="16" name="THRESH" access="RW" reset_value="0" description="TSI Wakeup Channel High-threshold">
+      <alias type="CMSIS" value="TSI_TSHD_THRESH(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xC" width="32" name="MODE" description="TSI MODE Register">
+    <alias type="CMSIS" value="MODE"/>
+    <bit_field offset="0" width="1" name="S_NOISE" access="RW" reset_value="0" description="S_NOISE">
+      <alias type="CMSIS" value="TSI_MODE_S_NOISE(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="MODE" access="RW" reset_value="0" description="MODE">
+      <alias type="CMSIS" value="TSI_MODE_MODE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="2" width="3" reset_value="0"/>
+    <bit_field offset="5" width="2" name="SETCLK" access="RW" reset_value="0x3" description="SETCLK">
+      <alias type="CMSIS" value="TSI_MODE_SETCLK(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="5" reset_value="0"/>
+    <bit_field offset="12" width="3" name="S_XCH" access="RW" reset_value="0" description="S_XCH">
+      <alias type="CMSIS" value="TSI_MODE_S_XCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="3" reset_value="0"/>
+    <bit_field offset="18" width="1" name="S_XIN" access="RW" reset_value="0x1" description="S_XIN">
+      <alias type="CMSIS" value="TSI_MODE_S_XIN(x)"/>
+    </bit_field>
+    <bit_field offset="19" width="3" name="S_CTRIM" access="RW" reset_value="0x7" description="Capacitor trim setting">
+      <alias type="CMSIS" value="TSI_MODE_S_CTRIM(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="S_SEN" access="RW" reset_value="0" description="S_SEN">
+      <alias type="CMSIS" value="TSI_MODE_S_SEN(x)"/>
+    </bit_field>
+    <bit_field offset="23" width="1" name="S_W_SHIELD" access="RW" reset_value="0" description="S_W_SHIELD">
+      <alias type="CMSIS" value="TSI_MODE_S_W_SHIELD(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="24" width="4" reset_value="0"/>
+    <bit_field offset="28" width="3" name="S_XDN" access="RW" reset_value="0" description="S_XDN">
+      <alias type="CMSIS" value="TSI_MODE_S_XDN(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x10" width="32" name="MUL0" description="TSI MUTUAL-CAP Register 0">
+    <alias type="CMSIS" value="MUL0"/>
+    <bit_field offset="0" width="3" name="M_SEL_RX" access="RW" reset_value="0" description="M_SEL_RX">
+      <alias type="CMSIS" value="TSI_MUL0_M_SEL_RX(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="3" name="M_SEL_TX" access="RW" reset_value="0" description="M_SEL_TX">
+      <alias type="CMSIS" value="TSI_MUL0_M_SEL_TX(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="4" name="M_SEN_RES" access="RW" reset_value="0x3" description="M_SEN_RES">
+      <alias type="CMSIS" value="TSI_MUL0_M_SEN_RES(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="1" reset_value="0"/>
+    <bit_field offset="13" width="3" name="M_PRE_RES" access="RW" reset_value="0x3" description="M_PRE_RES">
+      <alias type="CMSIS" value="TSI_MUL0_M_PRE_RES(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="9" reset_value="0"/>
+    <reserved_bit_field offset="25" width="4" reset_value="0"/>
+    <bit_field offset="29" width="3" name="M_PRE_CURRENT" access="RW" reset_value="0x3" description="M_PRE_CURRENT">
+      <alias type="CMSIS" value="TSI_MUL0_M_PRE_CURRENT(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x14" width="32" name="MUL1" description="TSI MUTUAL-CAP Register 1">
+    <alias type="CMSIS" value="MUL1"/>
+    <bit_field offset="0" width="1" name="M_NMIR_CTRL" access="RW" reset_value="0" description="M_NMIR_CTRL">
+      <alias type="CMSIS" value="TSI_MUL1_M_NMIR_CTRL(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="2" name="M_NMIRROR" access="RW" reset_value="0x3" description="M_NMIRROR">
+      <alias type="CMSIS" value="TSI_MUL1_M_NMIRROR(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="2" name="M_PMIRRORR" access="RW" reset_value="0x3" description="M_PMIRRORR">
+      <alias type="CMSIS" value="TSI_MUL1_M_PMIRRORR(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="3" name="M_PMIRRORL" access="RW" reset_value="0x3" description="M_PMIRRORL">
+      <alias type="CMSIS" value="TSI_MUL1_M_PMIRRORL(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="8" reset_value="0"/>
+    <bit_field offset="16" width="1" name="M_VPRE_CHOOSE" access="RW" reset_value="0x1" description="M_VPRE_CHOOSE">
+      <alias type="CMSIS" value="TSI_MUL1_M_VPRE_CHOOSE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="17" width="1" reset_value="0"/>
+    <bit_field offset="18" width="1" name="M_MODE" access="RW" reset_value="0x1" description="M_MODE">
+      <alias type="CMSIS" value="TSI_MUL1_M_MODE(x)"/>
+    </bit_field>
+    <bit_field offset="19" width="5" name="M_SEN_BOOST" access="RW" reset_value="0" description="M_SEN_BOOST">
+      <alias type="CMSIS" value="TSI_MUL1_M_SEN_BOOST(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="24" width="8" reset_value="0"/>
+  </register>
+  <register offset="0x18" width="32" name="SINC" description="TSI SINC filter Register">
+    <alias type="CMSIS" value="SINC"/>
+    <bit_field offset="0" width="1" name="SSC_CONTROL_OUT" access="RO" reset_value="0x1" description="SSC_CONTROL_OUT">
+      <alias type="CMSIS" value="TSI_SINC_SSC_CONTROL_OUT(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="SINC_VALID" access="RO" reset_value="0" description="SINC_VALID">
+      <alias type="CMSIS" value="TSI_SINC_SINC_VALID(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SINC_OVERFLOW_FLAG" access="RO" reset_value="0" description="SINC_OVERFLOW_FLAG">
+      <alias type="CMSIS" value="TSI_SINC_SINC_OVERFLOW_FLAG(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="SWITCH_ENABLE" access="RO" reset_value="0" description="SWITCH_ENABLE">
+      <alias type="CMSIS" value="TSI_SINC_SWITCH_ENABLE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="12" reset_value="0"/>
+    <bit_field offset="16" width="5" name="DECIMATION" access="RW" reset_value="0x7" description="DECIMATION">
+      <alias type="CMSIS" value="TSI_SINC_DECIMATION(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="ORDER" access="RW" reset_value="0" description="ORDER">
+      <alias type="CMSIS" value="TSI_SINC_ORDER(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <bit_field offset="24" width="4" name="CUTOFF" access="RW" reset_value="0" description="CUTOFF">
+      <alias type="CMSIS" value="TSI_SINC_CUTOFF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="28" width="4" reset_value="0"/>
+  </register>
+  <register offset="0x1C" width="32" name="SSC0" description="TSI SSC Register 0">
+    <alias type="CMSIS" value="SSC0"/>
+    <bit_field offset="0" width="8" name="SSC_PRESCALE_NUM" access="RW" reset_value="0" description="SSC_PRESCALE_NUM">
+      <alias type="CMSIS" value="TSI_SSC0_SSC_PRESCALE_NUM(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="8" reset_value="0"/>
+    <bit_field offset="16" width="4" name="BASE_NOCHARGE_NUM" access="RW" reset_value="0x2" description="BASE_NOCHARGE_NUM">
+      <alias type="CMSIS" value="TSI_SSC0_BASE_NOCHARGE_NUM(x)"/>
+    </bit_field>
+    <bit_field offset="20" width="4" name="CHARGE_NUM" access="RW" reset_value="0x3" description="CHARGE_NUM">
+      <alias type="CMSIS" value="TSI_SSC0_CHARGE_NUM(x)"/>
+    </bit_field>
+    <bit_field offset="24" width="1" name="SSC_CONTROL_REVERSE" access="RW" reset_value="0" description="SSC_CONTROL_REVERSE">
+      <alias type="CMSIS" value="TSI_SSC0_SSC_CONTROL_REVERSE(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="2" name="SSC_MODE" access="RW" reset_value="0" description="SSC_MODE">
+      <alias type="CMSIS" value="TSI_SSC0_SSC_MODE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="4" name="PRBS_OUTSEL" access="RW" reset_value="0x6" description="PRBS_OUTSEL">
+      <alias type="CMSIS" value="TSI_SSC0_PRBS_OUTSEL(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x20" width="32" name="SSC1" description="TSI SSC Register 0">
+    <alias type="CMSIS" value="SSC1"/>
+    <bit_field offset="0" width="8" name="PRBS_SEED_LO" access="RW" reset_value="0x40" description="PRBS_SEED_LO">
+      <alias type="CMSIS" value="TSI_SSC1_PRBS_SEED_LO(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="8" name="PRBS_SEED_HI" access="RW" reset_value="0" description="PRBS_SEED_HI">
+      <alias type="CMSIS" value="TSI_SSC1_PRBS_SEED_HI(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="8" name="PRBS_WEIGHT_LO" access="RW" reset_value="0x60" description="PRBS_WEIGHT_LO">
+      <alias type="CMSIS" value="TSI_SSC1_PRBS_WEIGHT_LO(x)"/>
+    </bit_field>
+    <bit_field offset="24" width="8" name="PRBS_WEIGHT_HI" access="RW" reset_value="0" description="PRBS_WEIGHT_HI">
+      <alias type="CMSIS" value="TSI_SSC1_PRBS_WEIGHT_HI(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x24" width="32" name="SSC2" description="TSI SSC Register 2">
+    <alias type="CMSIS" value="SSC2"/>
+    <bit_field offset="0" width="5" name="MOVE_REPEAT_NUM" access="RW" reset_value="0x1" description="MOVE_REPEAT_NUM">
+      <alias type="CMSIS" value="TSI_SSC2_MOVE_REPEAT_NUM(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="5" width="3" reset_value="0"/>
+    <bit_field offset="8" width="3" name="MOVE_STEPS_NUM" access="RW" reset_value="0x1" description="MOVE_STEPS_NUM">
+      <alias type="CMSIS" value="TSI_SSC2_MOVE_STEPS_NUM(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="5" reset_value="0"/>
+    <bit_field offset="16" width="6" name="MOVE_NOCHARGE_MAX" access="RW" reset_value="0x8" description="MOVE_NOCHARGE_MAX">
+      <alias type="CMSIS" value="TSI_SSC2_MOVE_NOCHARGE_MAX(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="6" reset_value="0"/>
+    <bit_field offset="28" width="4" name="MOVE_NOCHARGE_MIN" access="RW" reset_value="0x1" description="MOVE_NOCHARGE_MIN">
+      <alias type="CMSIS" value="TSI_SSC2_MOVE_NOCHARGE_MIN(x)"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

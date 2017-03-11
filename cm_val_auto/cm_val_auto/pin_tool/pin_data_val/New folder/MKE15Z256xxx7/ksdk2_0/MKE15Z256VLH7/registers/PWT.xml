@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="8" name="CS" description="Pulse Width Timer Control and Status Register">
+    <alias type="CMSIS" value="CS"/>
+    <bit_field offset="0" width="1" name="PWTOV" access="RW" reset_value="0" description="PWT Counter Overflow">
+      <alias type="CMSIS" value="PWT_CS_PWTOV(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="PWTRDY" access="RW" reset_value="0" description="PWT Pulse Width Valid">
+      <alias type="CMSIS" value="PWT_CS_PWTRDY(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="FCTLE" access="RW" reset_value="0" description="First counter load enable after enable">
+      <alias type="CMSIS" value="PWT_CS_FCTLE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="PWTSR" access="WORZ" reset_value="0" description="PWT Soft Reset">
+      <alias type="CMSIS" value="PWT_CS_PWTSR(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="POVIE" access="RW" reset_value="0" description="PWT Counter Overflow Interrupt Enable">
+      <alias type="CMSIS" value="PWT_CS_POVIE(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="PRDYIE" access="RW" reset_value="0" description="PWT Pulse Width Data Ready Interrupt Enable">
+      <alias type="CMSIS" value="PWT_CS_PRDYIE(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="PWTIE" access="RW" reset_value="0" description="PWT Module Interrupt Enable">
+      <alias type="CMSIS" value="PWT_CS_PWTIE(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="PWTEN" access="RW" reset_value="0" description="PWT Module Enable">
+      <alias type="CMSIS" value="PWT_CS_PWTEN(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1" width="8" name="CR" description="Pulse Width Timer Control Register">
+    <alias type="CMSIS" value="CR"/>
+    <bit_field offset="0" width="3" name="PRE" access="RW" reset_value="0" description="PWT Clock Prescaler (CLKPRE) Setting">
+      <alias type="CMSIS" value="PWT_CR_PRE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="LVL" access="RO" reset_value="0" description="PWTIN Level when Overflows">
+      <alias type="CMSIS" value="PWT_CR_LVL(x)"/>
+    </bit_field>
+    <bit_field offset="4" width="1" name="TGL" access="W1C" reset_value="0" description="PWTIN states Toggled from last state">
+      <alias type="CMSIS" value="PWT_CR_TGL(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="2" name="PINSEL" access="RW" reset_value="0" description="PWT Pulse Inputs Selection">
+      <alias type="CMSIS" value="PWT_CR_PINSEL(x)"/>
+    </bit_field>
+    <bit_field offset="7" width="1" name="PCLKS" access="RW" reset_value="0" description="PWT Clock Source Selection">
+      <alias type="CMSIS" value="PWT_CR_PCLKS(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x2" width="8" name="PPH" description="Pulse Width Timer Positive Pulse Width Register: High">
+    <alias type="CMSIS" value="PPH"/>
+    <bit_field offset="0" width="8" name="PPWH" access="RO" reset_value="0" description="Positive Pulse Width[15:8]">
+      <alias type="CMSIS" value="PWT_PPH_PPWH(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x3" width="8" name="PPL" description="Pulse Width Timer Positive Pulse Width Register: Loq">
+    <alias type="CMSIS" value="PPL"/>
+    <bit_field offset="0" width="8" name="PPWL" access="RO" reset_value="0" description="Positive Pulse Width[7:0]">
+      <alias type="CMSIS" value="PWT_PPL_PPWL(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x4" width="8" name="NPH" description="Pulse Width Timer Negative Pulse Width Register: High">
+    <alias type="CMSIS" value="NPH"/>
+    <bit_field offset="0" width="8" name="NPWH" access="RO" reset_value="0" description="Negative Pulse Width[15:8]">
+      <alias type="CMSIS" value="PWT_NPH_NPWH(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x5" width="8" name="NPL" description="Pulse Width Timer Negative Pulse Width Register: Low">
+    <alias type="CMSIS" value="NPL"/>
+    <bit_field offset="0" width="8" name="NPWL" access="RO" reset_value="0" description="Negative Pulse Width[7:0]">
+      <alias type="CMSIS" value="PWT_NPL_NPWL(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x6" width="8" name="CNTH" description="Pulse Width Timer Counter Register: High">
+    <alias type="CMSIS" value="CNTH"/>
+    <bit_field offset="0" width="8" name="PWTH" access="RO" reset_value="0" description="PWT counter[15:8]">
+      <alias type="CMSIS" value="PWT_CNTH_PWTH(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x7" width="8" name="CNTL" description="Pulse Width Timer Counter Register: Low">
+    <alias type="CMSIS" value="CNTL"/>
+    <bit_field offset="0" width="8" name="PWTL" access="RO" reset_value="0" description="PWT counter[7:0]">
+      <alias type="CMSIS" value="PWT_CNTL_PWTL(x)"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

@@ -1,0 +1,1716 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="MPRA" description="Master Privilege Register A">
+    <alias type="CMSIS" value="MPRA"/>
+    <reserved_bit_field offset="0" width="4" reset_value="0"/>
+    <reserved_bit_field offset="4" width="4" reset_value="0"/>
+    <reserved_bit_field offset="8" width="4" reset_value="0"/>
+    <reserved_bit_field offset="12" width="4" reset_value="0"/>
+    <reserved_bit_field offset="16" width="4" reset_value="0"/>
+    <bit_field offset="20" width="1" name="MPL2" access="RW" reset_value="0" description="Master 2 Privilege Level">
+      <alias type="CMSIS" value="AIPS_MPRA_MPL2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="MTW2" access="RW" reset_value="0" description="Master 2 Trusted For Writes">
+      <alias type="CMSIS" value="AIPS_MPRA_MTW2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="MTR2" access="RW" reset_value="0" description="Master 2 Trusted For Read">
+      <alias type="CMSIS" value="AIPS_MPRA_MTR2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <reserved_bit_field offset="24" width="4" reset_value="0"/>
+    <bit_field offset="28" width="1" name="MPL0" access="RW" reset_value="0" description="Master 0 Privilege Level">
+      <alias type="CMSIS" value="AIPS_MPRA_MPL0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="MTW0" access="RW" reset_value="0" description="Master 0 Trusted For Writes">
+      <alias type="CMSIS" value="AIPS_MPRA_MTW0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="MTR0" access="RW" reset_value="0" description="Master 0 Trusted For Read">
+      <alias type="CMSIS" value="AIPS_MPRA_MTR0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x20" width="32" name="PACRA" description="Peripheral Access Control Register">
+    <alias type="CMSIS" value="PACR[0]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x24" width="32" name="PACRB" description="Peripheral Access Control Register">
+    <alias type="CMSIS" value="PACR[1]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x28" width="32" name="PACRC" description="Peripheral Access Control Register">
+    <alias type="CMSIS" value="PACR[2]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x2C" width="32" name="PACRD" description="Peripheral Access Control Register">
+    <alias type="CMSIS" value="PACR[3]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x40" width="32" name="OPACRA" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[0]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x44" width="32" name="OPACRB" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[1]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x48" width="32" name="OPACRC" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[2]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x4C" width="32" name="OPACRD" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[3]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x50" width="32" name="OPACRE" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[4]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x54" width="32" name="OPACRF" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[5]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x58" width="32" name="OPACRG" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[6]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x5C" width="32" name="OPACRH" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[7]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x60" width="32" name="OPACRI" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[8]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x64" width="32" name="OPACRJ" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[9]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x68" width="32" name="OPACRK" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[10]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x6C" width="32" name="OPACRL" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[11]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x70" width="32" name="OPACRM" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[12]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x74" width="32" name="OPACRN" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[13]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x78" width="32" name="OPACRO" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[14]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x7C" width="32" name="OPACRP" description="Off-Platform Peripheral Access Control Register">
+    <alias type="CMSIS" value="OPACR[15]"/>
+    <bit_field offset="0" width="1" name="TP7" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP7(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="WP7" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP7(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="SP7" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP7(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="1" reset_value="0"/>
+    <bit_field offset="4" width="1" name="TP6" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP6(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="WP6" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP6(x)"/>
+    </bit_field>
+    <bit_field offset="6" width="1" name="SP6" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP6(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="7" width="1" reset_value="0"/>
+    <bit_field offset="8" width="1" name="TP5" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP5(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="WP5" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP5(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="SP5" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP5(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="1" reset_value="0"/>
+    <bit_field offset="12" width="1" name="TP4" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP4(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="WP4" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP4(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="SP4" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP4(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="1" reset_value="0"/>
+    <bit_field offset="16" width="1" name="TP3" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP3(x)"/>
+    </bit_field>
+    <bit_field offset="17" width="1" name="WP3" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP3(x)"/>
+    </bit_field>
+    <bit_field offset="18" width="1" name="SP3" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="1" reset_value="0"/>
+    <bit_field offset="20" width="1" name="TP2" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP2(x)"/>
+    </bit_field>
+    <bit_field offset="21" width="1" name="WP2" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP2(x)"/>
+    </bit_field>
+    <bit_field offset="22" width="1" name="SP2" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="23" width="1" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_OPACR_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+  <register offset="0x80" width="32" name="PACRU" description="Peripheral Access Control Register">
+    <alias type="CMSIS" value="PACRU"/>
+    <reserved_bit_field offset="0" width="24" reset_value="0"/>
+    <bit_field offset="24" width="1" name="TP1" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACRU_TP1(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="WP1" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACRU_WP1(x)"/>
+    </bit_field>
+    <bit_field offset="26" width="1" name="SP1" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACRU_SP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="1" reset_value="0"/>
+    <bit_field offset="28" width="1" name="TP0" access="RW" reset_value="0" description="Trusted Protect">
+      <alias type="CMSIS" value="AIPS_PACRU_TP0(x)"/>
+    </bit_field>
+    <bit_field offset="29" width="1" name="WP0" access="RW" reset_value="0" description="Write Protect">
+      <alias type="CMSIS" value="AIPS_PACRU_WP0(x)"/>
+    </bit_field>
+    <bit_field offset="30" width="1" name="SP0" access="RW" reset_value="0" description="Supervisor Protect">
+      <alias type="CMSIS" value="AIPS_PACRU_SP0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="31" width="1" reset_value="0"/>
+  </register>
+</regs:peripheral>

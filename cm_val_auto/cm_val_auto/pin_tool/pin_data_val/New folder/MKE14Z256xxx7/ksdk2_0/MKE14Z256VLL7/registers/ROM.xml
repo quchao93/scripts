@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="ENTRY0" description="Entry">
+    <alias type="CMSIS" value="ENTRY[0]"/>
+    <bit_field offset="0" width="32" name="ENTRY" access="RO" reset_value="0" reset_mask="0" description="ENTRY">
+      <alias type="CMSIS" value="ROM_ENTRY_ENTRY(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x4" width="32" name="ENTRY1" description="Entry">
+    <alias type="CMSIS" value="ENTRY[1]"/>
+    <bit_field offset="0" width="32" name="ENTRY" access="RO" reset_value="0" reset_mask="0" description="ENTRY">
+      <alias type="CMSIS" value="ROM_ENTRY_ENTRY(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x8" width="32" name="ENTRY2" description="Entry">
+    <alias type="CMSIS" value="ENTRY[2]"/>
+    <bit_field offset="0" width="32" name="ENTRY" access="RO" reset_value="0" reset_mask="0" description="ENTRY">
+      <alias type="CMSIS" value="ROM_ENTRY_ENTRY(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xC" width="32" name="TABLEMARK" description="End of Table Marker Register">
+    <alias type="CMSIS" value="TABLEMARK"/>
+    <bit_field offset="0" width="32" name="MARK" access="RO" reset_value="0" description="MARK">
+      <alias type="CMSIS" value="ROM_TABLEMARK_MARK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFCC" width="32" name="SYSACCESS" description="System Access Register">
+    <alias type="CMSIS" value="SYSACCESS"/>
+    <bit_field offset="0" width="32" name="SYSACCESS" access="RO" reset_value="0x1" description="SYSACCESS">
+      <alias type="CMSIS" value="ROM_SYSACCESS_SYSACCESS(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFD0" width="32" name="PERIPHID4" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID4"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="ROM_PERIPHID4_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFD4" width="32" name="PERIPHID5" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID5"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="ROM_PERIPHID5_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFD8" width="32" name="PERIPHID6" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID6"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="ROM_PERIPHID6_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFDC" width="32" name="PERIPHID7" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID7"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="ROM_PERIPHID7_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFE0" width="32" name="PERIPHID0" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID0"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="ROM_PERIPHID0_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFE4" width="32" name="PERIPHID1" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID1"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="ROM_PERIPHID1_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFE8" width="32" name="PERIPHID2" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID2"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="ROM_PERIPHID2_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFEC" width="32" name="PERIPHID3" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID3"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="ROM_PERIPHID3_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFF0" width="32" name="COMPID0" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[0]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="ROM_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFF4" width="32" name="COMPID1" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[1]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="ROM_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFF8" width="32" name="COMPID2" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[2]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="ROM_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFFC" width="32" name="COMPID3" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[3]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="ROM_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

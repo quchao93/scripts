@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="TRGMUX_DMAMUX0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[0]"/>
+    <alias type="id" value="TRGMUX_0"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="SEL1" access="RW" reset_value="0" description="Trigger MUX Input 1 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="6" name="SEL2" access="RW" reset_value="0" description="Trigger MUX Input 2 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <bit_field offset="24" width="6" name="SEL3" access="RW" reset_value="0" description="Trigger MUX Input 3 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x4" width="32" name="TRGMUX_EXTOUT0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[1]"/>
+    <alias type="id" value="TRGMUX_1"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="SEL1" access="RW" reset_value="0" description="Trigger MUX Input 1 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="6" name="SEL2" access="RW" reset_value="0" description="Trigger MUX Input 2 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <bit_field offset="24" width="6" name="SEL3" access="RW" reset_value="0" description="Trigger MUX Input 3 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x8" width="32" name="TRGMUX_EXTOUT1" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[2]"/>
+    <alias type="id" value="TRGMUX_2"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="SEL1" access="RW" reset_value="0" description="Trigger MUX Input 1 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="6" name="SEL2" access="RW" reset_value="0" description="Trigger MUX Input 2 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <bit_field offset="24" width="6" name="SEL3" access="RW" reset_value="0" description="Trigger MUX Input 3 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xC" width="32" name="TRGMUX_ADC0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[3]"/>
+    <alias type="id" value="TRGMUX_3"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="SEL1" access="RW" reset_value="0" description="Trigger MUX Input 1 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x10" width="32" name="TRGMUX_ADC1" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[4]"/>
+    <alias type="id" value="TRGMUX_4"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="SEL1" access="RW" reset_value="0" description="Trigger MUX Input 1 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x1C" width="32" name="TRGMUX_CMP0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[7]"/>
+    <alias type="id" value="TRGMUX_7"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x20" width="32" name="TRGMUX_CMP1" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[8]"/>
+    <alias type="id" value="TRGMUX_8"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x28" width="32" name="TRGMUX_FTM0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[10]"/>
+    <alias type="id" value="TRGMUX_10"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="SEL1" access="RW" reset_value="0" description="Trigger MUX Input 1 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="6" name="SEL2" access="RW" reset_value="0" description="Trigger MUX Input 2 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <bit_field offset="24" width="6" name="SEL3" access="RW" reset_value="0" description="Trigger MUX Input 3 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x2C" width="32" name="TRGMUX_FTM1" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[11]"/>
+    <alias type="id" value="TRGMUX_11"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="SEL1" access="RW" reset_value="0" description="Trigger MUX Input 1 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="6" name="SEL2" access="RW" reset_value="0" description="Trigger MUX Input 2 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x30" width="32" name="TRGMUX_FTM2" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[12]"/>
+    <alias type="id" value="TRGMUX_12"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="SEL1" access="RW" reset_value="0" description="Trigger MUX Input 1 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="6" name="SEL2" access="RW" reset_value="0" description="Trigger MUX Input 2 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x38" width="32" name="TRGMUX_PDB0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[14]"/>
+    <alias type="id" value="TRGMUX_14"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x44" width="32" name="TRGMUX_FLEXIO" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[17]"/>
+    <alias type="id" value="TRGMUX_17"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="SEL1" access="RW" reset_value="0" description="Trigger MUX Input 1 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="6" name="SEL2" access="RW" reset_value="0" description="Trigger MUX Input 2 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <bit_field offset="24" width="6" name="SEL3" access="RW" reset_value="0" description="Trigger MUX Input 3 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x48" width="32" name="TRGMUX_LPIT0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[18]"/>
+    <alias type="id" value="TRGMUX_18"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="SEL1" access="RW" reset_value="0" description="Trigger MUX Input 1 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="6" name="SEL2" access="RW" reset_value="0" description="Trigger MUX Input 2 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL2(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <bit_field offset="24" width="6" name="SEL3" access="RW" reset_value="0" description="Trigger MUX Input 3 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL3(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x4C" width="32" name="TRGMUX_LPUART0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[19]"/>
+    <alias type="id" value="TRGMUX_19"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x50" width="32" name="TRGMUX_LPUART1" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[20]"/>
+    <alias type="id" value="TRGMUX_20"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x54" width="32" name="TRGMUX_LPI2C0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[21]"/>
+    <alias type="id" value="TRGMUX_21"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x58" width="32" name="TRGMUX_LPI2C1" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[22]"/>
+    <alias type="id" value="TRGMUX_22"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x5C" width="32" name="TRGMUX_LPSPI0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[23]"/>
+    <alias type="id" value="TRGMUX_23"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x60" width="32" name="TRGMUX_LPSPI1" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[24]"/>
+    <alias type="id" value="TRGMUX_24"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x64" width="32" name="TRGMUX_LPTMR0" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[25]"/>
+    <alias type="id" value="TRGMUX_25"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x68" width="32" name="TRGMUX_TSI" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[26]"/>
+    <alias type="id" value="TRGMUX_26"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x6C" width="32" name="TRGMUX_PWT" description="TRGMUX Register">
+    <alias type="CMSIS" value="TRGCFG[27]"/>
+    <alias type="id" value="TRGMUX_27"/>
+    <bit_field offset="0" width="6" name="SEL0" access="RW" reset_value="0" description="Trigger MUX Input 0 Source Select">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_SEL0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <reserved_bit_field offset="16" width="6" reset_value="0"/>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <reserved_bit_field offset="24" width="6" reset_value="0"/>
+    <reserved_bit_field offset="30" width="1" reset_value="0"/>
+    <bit_field offset="31" width="1" name="LK" access="RO" reset_value="0" description="Enable">
+      <alias type="CMSIS" value="TRGMUX0_TRGCFG_LK(x)"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

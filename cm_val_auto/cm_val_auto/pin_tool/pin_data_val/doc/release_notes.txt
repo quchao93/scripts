@@ -1,0 +1,13 @@
+Release Notes for Pin_Data_Val 0.1
+
+*Release Highlights:*
+This is the first release which includes the basic auto verification for pin tool alt functions.
+
+*New Features:*
+1. Support to verify the pin name, pin list and their signals in each alt.
+2. Support to verify the combined name for each pin.
+3. Support to verify the conflicts for the same signal.
+4. Support to verify the description for the peripheral type.
+
+*Bug Fixes:*
+N/A

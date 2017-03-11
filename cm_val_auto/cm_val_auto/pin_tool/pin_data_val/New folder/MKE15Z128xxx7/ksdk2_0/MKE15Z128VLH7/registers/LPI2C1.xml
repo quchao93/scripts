@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="VERID" description="Version ID Register">
+    <alias type="CMSIS" value="VERID"/>
+    <bit_field offset="0" width="16" name="FEATURE" access="RO" reset_value="0x3" description="Feature Specification Number">
+      <alias type="CMSIS" value="LPI2C_VERID_FEATURE(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="8" name="MINOR" access="RO" reset_value="0" description="Minor Version Number">
+      <alias type="CMSIS" value="LPI2C_VERID_MINOR(x)"/>
+    </bit_field>
+    <bit_field offset="24" width="8" name="MAJOR" access="RO" reset_value="0x1" description="Major Version Number">
+      <alias type="CMSIS" value="LPI2C_VERID_MAJOR(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x4" width="32" name="PARAM" description="Parameter Register">
+    <alias type="CMSIS" value="PARAM"/>
+    <bit_field offset="0" width="4" name="MTXFIFO" access="RO" reset_value="0x2" description="Master Transmit FIFO Size">
+      <alias type="CMSIS" value="LPI2C_PARAM_MTXFIFO(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="4" reset_value="0"/>
+    <bit_field offset="8" width="4" name="MRXFIFO" access="RO" reset_value="0x2" description="Master Receive FIFO Size">
+      <alias type="CMSIS" value="LPI2C_PARAM_MRXFIFO(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="4" reset_value="0"/>
+    <reserved_bit_field offset="16" width="16" reset_value="0"/>
+  </register>
+  <register offset="0x10" width="32" name="MCR" description="Master Control Register">
+    <alias type="CMSIS" value="MCR"/>
+    <bit_field offset="0" width="1" name="MEN" access="RW" reset_value="0" description="Master Enable">
+      <alias type="CMSIS" value="LPI2C_MCR_MEN(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="RST" access="RW" reset_value="0" description="Software Reset">
+      <alias type="CMSIS" value="LPI2C_MCR_RST(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="DOZEN" access="RW" reset_value="0" description="Doze mode enable">
+      <alias type="CMSIS" value="LPI2C_MCR_DOZEN(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="DBGEN" access="RW" reset_value="0" description="Debug Enable">
+      <alias type="CMSIS" value="LPI2C_MCR_DBGEN(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="4" reset_value="0"/>
+    <bit_field offset="8" width="1" name="RTF" access="WORZ" reset_value="0" description="Reset Transmit FIFO">
+      <alias type="CMSIS" value="LPI2C_MCR_RTF(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="RRF" access="WORZ" reset_value="0" description="Reset Receive FIFO">
+      <alias type="CMSIS" value="LPI2C_MCR_RRF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="10" width="22" reset_value="0"/>
+  </register>
+  <register offset="0x14" width="32" name="MSR" description="Master Status Register">
+    <alias type="CMSIS" value="MSR"/>
+    <bit_field offset="0" width="1" name="TDF" access="RO" reset_value="0x1" description="Transmit Data Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_TDF(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="RDF" access="RO" reset_value="0" description="Receive Data Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_RDF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="2" width="6" reset_value="0"/>
+    <bit_field offset="8" width="1" name="EPF" access="W1C" reset_value="0" description="End Packet Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_EPF(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="SDF" access="W1C" reset_value="0" description="STOP Detect Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_SDF(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="NDF" access="W1C" reset_value="0" description="NACK Detect Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_NDF(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="1" name="ALF" access="W1C" reset_value="0" description="Arbitration Lost Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_ALF(x)"/>
+    </bit_field>
+    <bit_field offset="12" width="1" name="FEF" access="W1C" reset_value="0" description="FIFO Error Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_FEF(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="PLTF" access="W1C" reset_value="0" description="Pin Low Timeout Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_PLTF(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="DMF" access="W1C" reset_value="0" description="Data Match Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_DMF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="9" reset_value="0"/>
+    <bit_field offset="24" width="1" name="MBF" access="RO" reset_value="0" description="Master Busy Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_MBF(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="BBF" access="RO" reset_value="0" description="Bus Busy Flag">
+      <alias type="CMSIS" value="LPI2C_MSR_BBF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="26" width="6" reset_value="0"/>
+  </register>
+  <register offset="0x18" width="32" name="MIER" description="Master Interrupt Enable Register">
+    <alias type="CMSIS" value="MIER"/>
+    <bit_field offset="0" width="1" name="TDIE" access="RW" reset_value="0" description="Transmit Data Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_MIER_TDIE(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="RDIE" access="RW" reset_value="0" description="Receive Data Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_MIER_RDIE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="2" width="6" reset_value="0"/>
+    <bit_field offset="8" width="1" name="EPIE" access="RW" reset_value="0" description="End Packet Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_MIER_EPIE(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="SDIE" access="RW" reset_value="0" description="STOP Detect Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_MIER_SDIE(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="NDIE" access="RW" reset_value="0" description="NACK Detect Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_MIER_NDIE(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="1" name="ALIE" access="RW" reset_value="0" description="Arbitration Lost Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_MIER_ALIE(x)"/>
+    </bit_field>
+    <bit_field offset="12" width="1" name="FEIE" access="RW" reset_value="0" description="FIFO Error Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_MIER_FEIE(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="PLTIE" access="RW" reset_value="0" description="Pin Low Timeout Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_MIER_PLTIE(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="DMIE" access="RW" reset_value="0" description="Data Match Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_MIER_DMIE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="17" reset_value="0"/>
+  </register>
+  <register offset="0x1C" width="32" name="MDER" description="Master DMA Enable Register">
+    <alias type="CMSIS" value="MDER"/>
+    <bit_field offset="0" width="1" name="TDDE" access="RW" reset_value="0" description="Transmit Data DMA Enable">
+      <alias type="CMSIS" value="LPI2C_MDER_TDDE(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="RDDE" access="RW" reset_value="0" description="Receive Data DMA Enable">
+      <alias type="CMSIS" value="LPI2C_MDER_RDDE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="2" width="30" reset_value="0"/>
+  </register>
+  <register offset="0x20" width="32" name="MCFGR0" description="Master Configuration Register 0">
+    <alias type="CMSIS" value="MCFGR0"/>
+    <bit_field offset="0" width="1" name="HREN" access="RW" reset_value="0" description="Host Request Enable">
+      <alias type="CMSIS" value="LPI2C_MCFGR0_HREN(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="HRPOL" access="RW" reset_value="0" description="Host Request Polarity">
+      <alias type="CMSIS" value="LPI2C_MCFGR0_HRPOL(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="HRSEL" access="RW" reset_value="0" description="Host Request Select">
+      <alias type="CMSIS" value="LPI2C_MCFGR0_HRSEL(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="5" reset_value="0"/>
+    <bit_field offset="8" width="1" name="CIRFIFO" access="RW" reset_value="0" description="Circular FIFO Enable">
+      <alias type="CMSIS" value="LPI2C_MCFGR0_CIRFIFO(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="RDMO" access="RW" reset_value="0" description="Receive Data Match Only">
+      <alias type="CMSIS" value="LPI2C_MCFGR0_RDMO(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="10" width="22" reset_value="0"/>
+  </register>
+  <register offset="0x24" width="32" name="MCFGR1" description="Master Configuration Register 1">
+    <alias type="CMSIS" value="MCFGR1"/>
+    <bit_field offset="0" width="3" name="PRESCALE" access="RW" reset_value="0" description="Prescaler">
+      <alias type="CMSIS" value="LPI2C_MCFGR1_PRESCALE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="5" reset_value="0"/>
+    <bit_field offset="8" width="1" name="AUTOSTOP" access="RW" reset_value="0" description="Automatic STOP Generation">
+      <alias type="CMSIS" value="LPI2C_MCFGR1_AUTOSTOP(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="IGNACK" access="RW" reset_value="0" description="When set, the received NACK field is ignored and assumed to be ACK. This bit is required to be set in Ultra-Fast Mode.">
+      <alias type="CMSIS" value="LPI2C_MCFGR1_IGNACK(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="TIMECFG" access="RW" reset_value="0" description="Timeout Configuration">
+      <alias type="CMSIS" value="LPI2C_MCFGR1_TIMECFG(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="5" reset_value="0"/>
+    <bit_field offset="16" width="3" name="MATCFG" access="RW" reset_value="0" description="Match Configuration">
+      <alias type="CMSIS" value="LPI2C_MCFGR1_MATCFG(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="5" reset_value="0"/>
+    <bit_field offset="24" width="3" name="PINCFG" access="RW" reset_value="0" description="Pin Configuration">
+      <alias type="CMSIS" value="LPI2C_MCFGR1_PINCFG(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="5" reset_value="0"/>
+  </register>
+  <register offset="0x28" width="32" name="MCFGR2" description="Master Configuration Register 2">
+    <alias type="CMSIS" value="MCFGR2"/>
+    <bit_field offset="0" width="12" name="BUSIDLE" access="RW" reset_value="0" description="Bus Idle Timeout">
+      <alias type="CMSIS" value="LPI2C_MCFGR2_BUSIDLE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="12" width="4" reset_value="0"/>
+    <bit_field offset="16" width="4" name="FILTSCL" access="RW" reset_value="0" description="Glitch Filter SCL">
+      <alias type="CMSIS" value="LPI2C_MCFGR2_FILTSCL(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="20" width="4" reset_value="0"/>
+    <bit_field offset="24" width="4" name="FILTSDA" access="RW" reset_value="0" description="Glitch Filter SDA">
+      <alias type="CMSIS" value="LPI2C_MCFGR2_FILTSDA(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="28" width="4" reset_value="0"/>
+  </register>
+  <register offset="0x2C" width="32" name="MCFGR3" description="Master Configuration Register 3">
+    <alias type="CMSIS" value="MCFGR3"/>
+    <reserved_bit_field offset="0" width="8" reset_value="0"/>
+    <bit_field offset="8" width="12" name="PINLOW" access="RW" reset_value="0" description="Pin Low Timeout">
+      <alias type="CMSIS" value="LPI2C_MCFGR3_PINLOW(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="20" width="12" reset_value="0"/>
+  </register>
+  <register offset="0x40" width="32" name="MDMR" description="Master Data Match Register">
+    <alias type="CMSIS" value="MDMR"/>
+    <bit_field offset="0" width="8" name="MATCH0" access="RW" reset_value="0" description="Match 0 Value">
+      <alias type="CMSIS" value="LPI2C_MDMR_MATCH0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="8" reset_value="0"/>
+    <bit_field offset="16" width="8" name="MATCH1" access="RW" reset_value="0" description="Match 1 Value">
+      <alias type="CMSIS" value="LPI2C_MDMR_MATCH1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="24" width="8" reset_value="0"/>
+  </register>
+  <register offset="0x48" width="32" name="MCCR0" description="Master Clock Configuration Register 0">
+    <alias type="CMSIS" value="MCCR0"/>
+    <bit_field offset="0" width="6" name="CLKLO" access="RW" reset_value="0" description="Clock Low Period">
+      <alias type="CMSIS" value="LPI2C_MCCR0_CLKLO(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="CLKHI" access="RW" reset_value="0" description="Clock High Period">
+      <alias type="CMSIS" value="LPI2C_MCCR0_CLKHI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="6" name="SETHOLD" access="RW" reset_value="0" description="Setup Hold Delay">
+      <alias type="CMSIS" value="LPI2C_MCCR0_SETHOLD(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <bit_field offset="24" width="6" name="DATAVD" access="RW" reset_value="0" description="Data Valid Delay">
+      <alias type="CMSIS" value="LPI2C_MCCR0_DATAVD(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="30" width="2" reset_value="0"/>
+  </register>
+  <register offset="0x50" width="32" name="MCCR1" description="Master Clock Configuration Register 1">
+    <alias type="CMSIS" value="MCCR1"/>
+    <bit_field offset="0" width="6" name="CLKLO" access="RW" reset_value="0" description="Clock Low Period">
+      <alias type="CMSIS" value="LPI2C_MCCR1_CLKLO(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="6" name="CLKHI" access="RW" reset_value="0" description="Clock High Period">
+      <alias type="CMSIS" value="LPI2C_MCCR1_CLKHI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="6" name="SETHOLD" access="RW" reset_value="0" description="Setup Hold Delay">
+      <alias type="CMSIS" value="LPI2C_MCCR1_SETHOLD(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="22" width="2" reset_value="0"/>
+    <bit_field offset="24" width="6" name="DATAVD" access="RW" reset_value="0" description="Data Valid Delay">
+      <alias type="CMSIS" value="LPI2C_MCCR1_DATAVD(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="30" width="2" reset_value="0"/>
+  </register>
+  <register offset="0x58" width="32" name="MFCR" description="Master FIFO Control Register">
+    <alias type="CMSIS" value="MFCR"/>
+    <bit_field offset="0" width="8" name="TXWATER" access="RW" reset_value="0" description="Transmit FIFO Watermark">
+      <alias type="CMSIS" value="LPI2C_MFCR_TXWATER(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="8" reset_value="0"/>
+    <bit_field offset="16" width="8" name="RXWATER" access="RW" reset_value="0" description="Receive FIFO Watermark">
+      <alias type="CMSIS" value="LPI2C_MFCR_RXWATER(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="24" width="8" reset_value="0"/>
+  </register>
+  <register offset="0x5C" width="32" name="MFSR" description="Master FIFO Status Register">
+    <alias type="CMSIS" value="MFSR"/>
+    <bit_field offset="0" width="8" name="TXCOUNT" access="RO" reset_value="0" description="Transmit FIFO Count">
+      <alias type="CMSIS" value="LPI2C_MFSR_TXCOUNT(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="8" reset_value="0"/>
+    <bit_field offset="16" width="8" name="RXCOUNT" access="RO" reset_value="0" description="Receive FIFO Count">
+      <alias type="CMSIS" value="LPI2C_MFSR_RXCOUNT(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="24" width="8" reset_value="0"/>
+  </register>
+  <register offset="0x60" width="32" name="MTDR" description="Master Transmit Data Register">
+    <alias type="CMSIS" value="MTDR"/>
+    <bit_field offset="0" width="8" name="DATA" access="WO" reset_value="0" description="Transmit Data">
+      <alias type="CMSIS" value="LPI2C_MTDR_DATA(x)"/>
+    </bit_field>
+    <bit_field offset="8" width="3" name="CMD" access="WO" reset_value="0" description="Command Data">
+      <alias type="CMSIS" value="LPI2C_MTDR_CMD(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="21" reset_value="0"/>
+  </register>
+  <register offset="0x70" width="32" name="MRDR" description="Master Receive Data Register">
+    <alias type="CMSIS" value="MRDR"/>
+    <bit_field offset="0" width="8" name="DATA" access="RO" reset_value="0" description="Receive Data">
+      <alias type="CMSIS" value="LPI2C_MRDR_DATA(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <bit_field offset="14" width="1" name="RXEMPTY" access="RO" reset_value="0x1" description="RX Empty">
+      <alias type="CMSIS" value="LPI2C_MRDR_RXEMPTY(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="17" reset_value="0"/>
+  </register>
+  <register offset="0x110" width="32" name="SCR" description="Slave Control Register">
+    <alias type="CMSIS" value="SCR"/>
+    <bit_field offset="0" width="1" name="SEN" access="RW" reset_value="0" description="Slave Enable">
+      <alias type="CMSIS" value="LPI2C_SCR_SEN(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="RST" access="RW" reset_value="0" description="Software Reset">
+      <alias type="CMSIS" value="LPI2C_SCR_RST(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="2" width="2" reset_value="0"/>
+    <bit_field offset="4" width="1" name="FILTEN" access="RW" reset_value="0" description="Filter Enable">
+      <alias type="CMSIS" value="LPI2C_SCR_FILTEN(x)"/>
+    </bit_field>
+    <bit_field offset="5" width="1" name="FILTDZ" access="RW" reset_value="0" description="Filter Doze Enable">
+      <alias type="CMSIS" value="LPI2C_SCR_FILTDZ(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="6" width="2" reset_value="0"/>
+    <bit_field offset="8" width="1" name="RTF" access="WORZ" reset_value="0" description="Reset Transmit FIFO">
+      <alias type="CMSIS" value="LPI2C_SCR_RTF(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="RRF" access="WORZ" reset_value="0" description="Reset Receive FIFO">
+      <alias type="CMSIS" value="LPI2C_SCR_RRF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="10" width="22" reset_value="0"/>
+  </register>
+  <register offset="0x114" width="32" name="SSR" description="Slave Status Register">
+    <alias type="CMSIS" value="SSR"/>
+    <bit_field offset="0" width="1" name="TDF" access="RO" reset_value="0" description="Transmit Data Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_TDF(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="RDF" access="RO" reset_value="0" description="Receive Data Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_RDF(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="AVF" access="RO" reset_value="0" description="Address Valid Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_AVF(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="TAF" access="RO" reset_value="0" description="Transmit ACK Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_TAF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="4" reset_value="0"/>
+    <bit_field offset="8" width="1" name="RSF" access="W1C" reset_value="0" description="Repeated Start Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_RSF(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="SDF" access="W1C" reset_value="0" description="STOP Detect Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_SDF(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="BEF" access="W1C" reset_value="0" description="Bit Error Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_BEF(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="1" name="FEF" access="W1C" reset_value="0" description="FIFO Error Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_FEF(x)"/>
+    </bit_field>
+    <bit_field offset="12" width="1" name="AM0F" access="RO" reset_value="0" description="Address Match 0 Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_AM0F(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="AM1F" access="RO" reset_value="0" description="Address Match 1 Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_AM1F(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="GCF" access="RO" reset_value="0" description="General Call Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_GCF(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="SARF" access="RO" reset_value="0" description="SMBus Alert Response Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_SARF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="8" reset_value="0"/>
+    <bit_field offset="24" width="1" name="SBF" access="RO" reset_value="0" description="Slave Busy Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_SBF(x)"/>
+    </bit_field>
+    <bit_field offset="25" width="1" name="BBF" access="RO" reset_value="0" description="Bus Busy Flag">
+      <alias type="CMSIS" value="LPI2C_SSR_BBF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="26" width="6" reset_value="0"/>
+  </register>
+  <register offset="0x118" width="32" name="SIER" description="Slave Interrupt Enable Register">
+    <alias type="CMSIS" value="SIER"/>
+    <bit_field offset="0" width="1" name="TDIE" access="RW" reset_value="0" description="Transmit Data Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_TDIE(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="RDIE" access="RW" reset_value="0" description="Receive Data Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_RDIE(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="AVIE" access="RW" reset_value="0" description="Address Valid Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_AVIE(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="TAIE" access="RW" reset_value="0" description="Transmit ACK Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_TAIE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="4" reset_value="0"/>
+    <bit_field offset="8" width="1" name="RSIE" access="RW" reset_value="0" description="Repeated Start Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_RSIE(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="SDIE" access="RW" reset_value="0" description="STOP Detect Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_SDIE(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="BEIE" access="RW" reset_value="0" description="Bit Error Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_BEIE(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="1" name="FEIE" access="RW" reset_value="0" description="FIFO Error Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_FEIE(x)"/>
+    </bit_field>
+    <bit_field offset="12" width="1" name="AM0IE" access="RW" reset_value="0" description="Address Match 0 Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_AM0IE(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="AM1F" access="RW" reset_value="0" description="Address Match 1 Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_AM1F(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="GCIE" access="RW" reset_value="0" description="General Call Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_GCIE(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="SARIE" access="RW" reset_value="0" description="SMBus Alert Response Interrupt Enable">
+      <alias type="CMSIS" value="LPI2C_SIER_SARIE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="16" reset_value="0"/>
+  </register>
+  <register offset="0x11C" width="32" name="SDER" description="Slave DMA Enable Register">
+    <alias type="CMSIS" value="SDER"/>
+    <bit_field offset="0" width="1" name="TDDE" access="RW" reset_value="0" description="Transmit Data DMA Enable">
+      <alias type="CMSIS" value="LPI2C_SDER_TDDE(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="RDDE" access="RW" reset_value="0" description="Receive Data DMA Enable">
+      <alias type="CMSIS" value="LPI2C_SDER_RDDE(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="AVDE" access="RW" reset_value="0" description="Address Valid DMA Enable">
+      <alias type="CMSIS" value="LPI2C_SDER_AVDE(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="29" reset_value="0"/>
+  </register>
+  <register offset="0x124" width="32" name="SCFGR1" description="Slave Configuration Register 1">
+    <alias type="CMSIS" value="SCFGR1"/>
+    <bit_field offset="0" width="1" name="ADRSTALL" access="RW" reset_value="0" description="Address SCL Stall">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_ADRSTALL(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="RXSTALL" access="RW" reset_value="0" description="RX SCL Stall">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_RXSTALL(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="TXDSTALL" access="RW" reset_value="0" description="TX Data SCL Stall">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_TXDSTALL(x)"/>
+    </bit_field>
+    <bit_field offset="3" width="1" name="ACKSTALL" access="RW" reset_value="0" description="ACK SCL Stall">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_ACKSTALL(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="4" reset_value="0"/>
+    <bit_field offset="8" width="1" name="GCEN" access="RW" reset_value="0" description="General Call Enable">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_GCEN(x)"/>
+    </bit_field>
+    <bit_field offset="9" width="1" name="SAEN" access="RW" reset_value="0" description="SMBus Alert Enable">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_SAEN(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="TXCFG" access="RW" reset_value="0" description="Transmit Flag Configuration">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_TXCFG(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="1" name="RXCFG" access="RW" reset_value="0" description="Receive Data Configuration">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_RXCFG(x)"/>
+    </bit_field>
+    <bit_field offset="12" width="1" name="IGNACK" access="RW" reset_value="0" description="Ignore NACK">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_IGNACK(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="HSMEN" access="RW" reset_value="0" description="High Speed Mode Enable">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_HSMEN(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="3" name="ADDRCFG" access="RW" reset_value="0" description="Address Configuration">
+      <alias type="CMSIS" value="LPI2C_SCFGR1_ADDRCFG(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="19" width="13" reset_value="0"/>
+  </register>
+  <register offset="0x128" width="32" name="SCFGR2" description="Slave Configuration Register 2">
+    <alias type="CMSIS" value="SCFGR2"/>
+    <bit_field offset="0" width="4" name="CLKHOLD" access="RW" reset_value="0" description="Clock Hold Time">
+      <alias type="CMSIS" value="LPI2C_SCFGR2_CLKHOLD(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="4" reset_value="0"/>
+    <bit_field offset="8" width="6" name="DATAVD" access="RW" reset_value="0" description="Data Valid Delay">
+      <alias type="CMSIS" value="LPI2C_SCFGR2_DATAVD(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="14" width="2" reset_value="0"/>
+    <bit_field offset="16" width="4" name="FILTSCL" access="RW" reset_value="0" description="Glitch Filter SCL">
+      <alias type="CMSIS" value="LPI2C_SCFGR2_FILTSCL(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="20" width="4" reset_value="0"/>
+    <bit_field offset="24" width="4" name="FILTSDA" access="RW" reset_value="0" description="Glitch Filter SDA">
+      <alias type="CMSIS" value="LPI2C_SCFGR2_FILTSDA(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="28" width="4" reset_value="0"/>
+  </register>
+  <register offset="0x140" width="32" name="SAMR" description="Slave Address Match Register">
+    <alias type="CMSIS" value="SAMR"/>
+    <reserved_bit_field offset="0" width="1" reset_value="0"/>
+    <bit_field offset="1" width="10" name="ADDR0" access="RW" reset_value="0" description="Address 0 Value">
+      <alias type="CMSIS" value="LPI2C_SAMR_ADDR0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="6" reset_value="0"/>
+    <bit_field offset="17" width="10" name="ADDR1" access="RW" reset_value="0" description="Address 1 Value">
+      <alias type="CMSIS" value="LPI2C_SAMR_ADDR1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="27" width="5" reset_value="0"/>
+  </register>
+  <register offset="0x150" width="32" name="SASR" description="Slave Address Status Register">
+    <alias type="CMSIS" value="SASR"/>
+    <bit_field offset="0" width="11" name="RADDR" access="RO" reset_value="0" description="Received Address">
+      <alias type="CMSIS" value="LPI2C_SASR_RADDR(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="11" width="3" reset_value="0"/>
+    <bit_field offset="14" width="1" name="ANV" access="RO" reset_value="0x1" description="Address Not Valid">
+      <alias type="CMSIS" value="LPI2C_SASR_ANV(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="15" width="17" reset_value="0"/>
+  </register>
+  <register offset="0x154" width="32" name="STAR" description="Slave Transmit ACK Register">
+    <alias type="CMSIS" value="STAR"/>
+    <bit_field offset="0" width="1" name="TXNACK" access="RW" reset_value="0" description="Transmit NACK">
+      <alias type="CMSIS" value="LPI2C_STAR_TXNACK(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="1" width="31" reset_value="0"/>
+  </register>
+  <register offset="0x160" width="32" name="STDR" description="Slave Transmit Data Register">
+    <alias type="CMSIS" value="STDR"/>
+    <bit_field offset="0" width="8" name="DATA" access="WO" reset_value="0" description="Transmit Data">
+      <alias type="CMSIS" value="LPI2C_STDR_DATA(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="24" reset_value="0"/>
+  </register>
+  <register offset="0x170" width="32" name="SRDR" description="Slave Receive Data Register">
+    <alias type="CMSIS" value="SRDR"/>
+    <bit_field offset="0" width="8" name="DATA" access="RO" reset_value="0" description="Receive Data">
+      <alias type="CMSIS" value="LPI2C_SRDR_DATA(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="6" reset_value="0"/>
+    <bit_field offset="14" width="1" name="RXEMPTY" access="RO" reset_value="0x1" description="RX Empty">
+      <alias type="CMSIS" value="LPI2C_SRDR_RXEMPTY(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="SOF" access="RO" reset_value="0" description="Start Of Frame">
+      <alias type="CMSIS" value="LPI2C_SRDR_SOF(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="16" reset_value="0"/>
+  </register>
+</regs:peripheral>

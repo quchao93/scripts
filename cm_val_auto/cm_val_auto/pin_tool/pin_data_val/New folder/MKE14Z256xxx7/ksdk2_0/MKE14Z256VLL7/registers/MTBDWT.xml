@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0" width="32" name="CTRL" description="MTB DWT Control Register">
+    <alias type="CMSIS" value="CTRL"/>
+    <bit_field offset="0" width="28" name="DWTCFGCTRL" access="RO" reset_value="0xF000000" description="DWT configuration controls">
+      <alias type="CMSIS" value="MTBDWT_CTRL_DWTCFGCTRL(x)"/>
+    </bit_field>
+    <bit_field offset="28" width="4" name="NUMCMP" access="RO" reset_value="0x2" description="Number of comparators">
+      <alias type="CMSIS" value="MTBDWT_CTRL_NUMCMP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x20" width="32" name="COMP0" description="MTB_DWT Comparator Register">
+    <alias type="CMSIS" value="COMPARATOR[0].COMP"/>
+    <bit_field offset="0" width="32" name="COMP" access="RW" reset_value="0" description="Reference value for comparison">
+      <alias type="CMSIS" value="MTBDWT_COMP_COMP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x24" width="32" name="MASK0" description="MTB_DWT Comparator Mask Register">
+    <alias type="CMSIS" value="COMPARATOR[0].MASK"/>
+    <bit_field offset="0" width="5" name="MASK" access="RW" reset_value="0" description="MASK">
+      <alias type="CMSIS" value="MTBDWT_MASK_MASK(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="5" width="27" reset_value="0"/>
+  </register>
+  <register offset="0x28" width="32" name="FCT0" description="MTB_DWT Comparator Function Register 0">
+    <alias type="CMSIS" value="COMPARATOR[0].FCT"/>
+    <bit_field offset="0" width="4" name="FUNCTION" access="RW" reset_value="0" description="Function">
+      <alias type="CMSIS" value="MTBDWT_FCT_FUNCTION(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="4" reset_value="0"/>
+    <bit_field offset="8" width="1" name="DATAVMATCH" access="RW" reset_value="0" description="Data Value Match">
+      <alias type="CMSIS" value="MTBDWT_FCT_DATAVMATCH(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="9" width="1" reset_value="0"/>
+    <bit_field offset="10" width="2" name="DATAVSIZE" access="RW" reset_value="0" description="Data Value Size">
+      <alias type="CMSIS" value="MTBDWT_FCT_DATAVSIZE(x)"/>
+    </bit_field>
+    <bit_field offset="12" width="4" name="DATAVADDR0" access="RW" reset_value="0" description="Data Value Address 0">
+      <alias type="CMSIS" value="MTBDWT_FCT_DATAVADDR0(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="16" width="4" reset_value="0"/>
+    <reserved_bit_field offset="20" width="4" reset_value="0"/>
+    <bit_field offset="24" width="1" name="MATCHED" access="RO" reset_value="0" description="Comparator match">
+      <alias type="CMSIS" value="MTBDWT_FCT_MATCHED(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="25" width="7" reset_value="0"/>
+  </register>
+  <register offset="0x30" width="32" name="COMP1" description="MTB_DWT Comparator Register">
+    <alias type="CMSIS" value="COMPARATOR[1].COMP"/>
+    <bit_field offset="0" width="32" name="COMP" access="RW" reset_value="0" description="Reference value for comparison">
+      <alias type="CMSIS" value="MTBDWT_COMP_COMP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0x34" width="32" name="MASK1" description="MTB_DWT Comparator Mask Register">
+    <alias type="CMSIS" value="COMPARATOR[1].MASK"/>
+    <bit_field offset="0" width="5" name="MASK" access="RW" reset_value="0" description="MASK">
+      <alias type="CMSIS" value="MTBDWT_MASK_MASK(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="5" width="27" reset_value="0"/>
+  </register>
+  <register offset="0x38" width="32" name="FCT1" description="MTB_DWT Comparator Function Register 1">
+    <alias type="CMSIS" value="COMPARATOR[1].FCT"/>
+    <bit_field offset="0" width="4" name="FUNCTION" access="RW" reset_value="0" description="Function">
+      <alias type="CMSIS" value="MTBDWT_FCT_FUNCTION(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="4" width="20" reset_value="0"/>
+    <bit_field offset="24" width="1" name="MATCHED" access="RO" reset_value="0" description="Comparator match">
+      <alias type="CMSIS" value="MTBDWT_FCT_MATCHED(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="25" width="7" reset_value="0"/>
+  </register>
+  <register offset="0x200" width="32" name="TBCTRL" description="MTB_DWT Trace Buffer Control Register">
+    <alias type="CMSIS" value="TBCTRL"/>
+    <bit_field offset="0" width="1" name="ACOMP0" access="RW" reset_value="0" description="Action based on Comparator 0 match">
+      <alias type="CMSIS" value="MTBDWT_TBCTRL_ACOMP0(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="ACOMP1" access="RW" reset_value="0" description="Action based on Comparator 1 match">
+      <alias type="CMSIS" value="MTBDWT_TBCTRL_ACOMP1(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="2" width="26" reset_value="0"/>
+    <bit_field offset="28" width="4" name="NUMCOMP" access="RO" reset_value="0x2" description="Number of Comparators">
+      <alias type="CMSIS" value="MTBDWT_TBCTRL_NUMCOMP(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFC8" width="32" name="DEVICECFG" description="Device Configuration Register">
+    <alias type="CMSIS" value="DEVICECFG"/>
+    <bit_field offset="0" width="32" name="DEVICECFG" access="RO" reset_value="0" description="DEVICECFG">
+      <alias type="CMSIS" value="MTBDWT_DEVICECFG_DEVICECFG(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFCC" width="32" name="DEVICETYPID" description="Device Type Identifier Register">
+    <alias type="CMSIS" value="DEVICETYPID"/>
+    <bit_field offset="0" width="32" name="DEVICETYPID" access="RO" reset_value="0x4" description="DEVICETYPID">
+      <alias type="CMSIS" value="MTBDWT_DEVICETYPID_DEVICETYPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFD0" width="32" name="PERIPHID4" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID4"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTBDWT_PERIPHID4_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFD4" width="32" name="PERIPHID5" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID5"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTBDWT_PERIPHID5_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFD8" width="32" name="PERIPHID6" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID6"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTBDWT_PERIPHID6_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFDC" width="32" name="PERIPHID7" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID7"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTBDWT_PERIPHID7_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFE0" width="32" name="PERIPHID0" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID0"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTBDWT_PERIPHID0_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFE4" width="32" name="PERIPHID1" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID1"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTBDWT_PERIPHID1_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFE8" width="32" name="PERIPHID2" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID2"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTBDWT_PERIPHID2_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFEC" width="32" name="PERIPHID3" description="Peripheral ID Register">
+    <alias type="CMSIS" value="PERIPHID3"/>
+    <bit_field offset="0" width="32" name="PERIPHID" access="RO" reset_value="0" reset_mask="0" description="PERIPHID">
+      <alias type="CMSIS" value="MTBDWT_PERIPHID3_PERIPHID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFF0" width="32" name="COMPID0" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[0]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="MTBDWT_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFF4" width="32" name="COMPID1" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[1]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="MTBDWT_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFF8" width="32" name="COMPID2" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[2]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="MTBDWT_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+  <register offset="0xFFC" width="32" name="COMPID3" description="Component ID Register">
+    <alias type="CMSIS" value="COMPID[3]"/>
+    <bit_field offset="0" width="32" name="COMPID" access="RO" reset_value="0" reset_mask="0" description="Component ID">
+      <alias type="CMSIS" value="MTBDWT_COMPID_COMPID(x)"/>
+    </bit_field>
+  </register>
+</regs:peripheral>

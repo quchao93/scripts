@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<regs:peripheral xmlns:regs="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd http://swtools.freescale.net/XSD/registers/1.0/regsPeripheral.xsd">
+  <register offset="0x8" width="16" name="PLASC" description="Crossbar Switch (AXBS) Slave Configuration">
+    <alias type="CMSIS" value="PLASC"/>
+    <bit_field offset="0" width="8" name="ASC" access="RO" reset_value="0x7" description="Each bit in the ASC field indicates whether there is a corresponding connection to the crossbar switch's slave input port.">
+      <alias type="CMSIS" value="MCM_PLASC_ASC(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="8" reset_value="0"/>
+  </register>
+  <register offset="0xA" width="16" name="PLAMC" description="Crossbar Switch (AXBS) Master Configuration">
+    <alias type="CMSIS" value="PLAMC"/>
+    <bit_field offset="0" width="8" name="AMC" access="RO" reset_value="0x5" description="Each bit in the AMC field indicates whether there is a corresponding connection to the AXBS master input port.">
+      <alias type="CMSIS" value="MCM_PLAMC_AMC(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="8" width="8" reset_value="0"/>
+  </register>
+  <register offset="0xC" width="32" name="PLACR" description="Platform Control Register">
+    <alias type="CMSIS" value="PLACR"/>
+    <reserved_bit_field offset="0" width="9" reset_value="0x50"/>
+    <bit_field offset="9" width="1" name="ARB" access="RW" reset_value="0x1" description="Arbitration select">
+      <alias type="CMSIS" value="MCM_PLACR_ARB(x)"/>
+    </bit_field>
+    <bit_field offset="10" width="1" name="CFCC" access="WORZ" reset_value="0" description="Clear Flash Controller Cache">
+      <alias type="CMSIS" value="MCM_PLACR_CFCC(x)"/>
+    </bit_field>
+    <bit_field offset="11" width="1" name="DFCDA" access="RW" reset_value="0" description="Disable Flash Controller Data Caching">
+      <alias type="CMSIS" value="MCM_PLACR_DFCDA(x)"/>
+    </bit_field>
+    <bit_field offset="12" width="1" name="DFCIC" access="RW" reset_value="0" description="Disable Flash Controller Instruction Caching">
+      <alias type="CMSIS" value="MCM_PLACR_DFCIC(x)"/>
+    </bit_field>
+    <bit_field offset="13" width="1" name="DFCC" access="RW" reset_value="0" description="Disable Flash Controller Cache">
+      <alias type="CMSIS" value="MCM_PLACR_DFCC(x)"/>
+    </bit_field>
+    <bit_field offset="14" width="1" name="EFDS" access="RW" reset_value="0" description="Enable Flash Data Speculation">
+      <alias type="CMSIS" value="MCM_PLACR_EFDS(x)"/>
+    </bit_field>
+    <bit_field offset="15" width="1" name="DFCS" access="RW" reset_value="0" description="Disable Flash Controller Speculation">
+      <alias type="CMSIS" value="MCM_PLACR_DFCS(x)"/>
+    </bit_field>
+    <bit_field offset="16" width="1" name="ESFC" access="RW" reset_value="0" description="Enable Stalling Flash Controller">
+      <alias type="CMSIS" value="MCM_PLACR_ESFC(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="17" width="15" reset_value="0"/>
+  </register>
+  <register offset="0x40" width="32" name="CPO" description="Compute Operation Control Register">
+    <alias type="CMSIS" value="CPO"/>
+    <bit_field offset="0" width="1" name="CPOREQ" access="RW" reset_value="0" description="Compute Operation Request">
+      <alias type="CMSIS" value="MCM_CPO_CPOREQ(x)"/>
+    </bit_field>
+    <bit_field offset="1" width="1" name="CPOACK" access="RO" reset_value="0" description="Compute Operation Acknowledge">
+      <alias type="CMSIS" value="MCM_CPO_CPOACK(x)"/>
+    </bit_field>
+    <bit_field offset="2" width="1" name="CPOWOI" access="RW" reset_value="0" description="Compute Operation Wake-up on Interrupt">
+      <alias type="CMSIS" value="MCM_CPO_CPOWOI(x)"/>
+    </bit_field>
+    <reserved_bit_field offset="3" width="29" reset_value="0"/>
+  </register>
+</regs:peripheral>
