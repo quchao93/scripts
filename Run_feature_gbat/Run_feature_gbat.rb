@@ -157,8 +157,8 @@ class FeatureData
     path = Array.new
     pwd = Dir.pwd
     outlog = nil
-    generate_erroer = 0
     @feature_path.each do |feature_path|
+      generate_error = 0
       path = feature_path.split("/")
       npi = path[-3]                                          #获取 NPI 名字
       npi = npi.upcase
@@ -168,18 +168,18 @@ class FeatureData
           if sub != '.' && sub != '..'
             if File.file?("#{feature_path}/#{sub}")
               if File.extname(sub) == ".gbat"
-                $CMD = "agen64 #{sub}"
+                $CMD = "agen64 #{sub} -relaxFieldValueIds -allowInstParamRedefinition -relaxResetValues"
                 outlog = "#{pwd}/run_feature_error_logs/#{npi}_#{sub}_log.txt"
                 puts "\nRun #{npi} feature files"
-                puts "#{$CMD} -relaxFieldValueIds -allowInstParamRedefinition -relaxResetValues"
-                system("#{$CMD} -relaxFieldValueIds -allowInstParamRedefinition -relaxResetValues > #{outlog}")
+                puts $CMD
+                system("#{$CMD} > #{outlog}")
                 IO.foreach(outlog) do |line|
                   if line =~ /agen: Total:/ && line =~ /ERRORS/
-                    generate_erroer = 1
+                    generate_error = 1
                     @status = 1
                   end
                 end
-                if generate_erroer == 0
+                if generate_error == 0
                   puts "Run #{npi} #{sub} successfully"
                   File.delete(outlog) if File::exists?(outlog)
                 else
