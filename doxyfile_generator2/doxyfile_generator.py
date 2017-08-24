@@ -19,7 +19,12 @@ dir_msdk = '/bin/generator/records/'
 #components file name
 file_components = 'components.yml'
 #template file name
-file_doxyfile_template = 'Doxyfile_lib_PDF_RM'
+rm_doxyfile_template = 'Doxyfile_lib_PDF_RM'
+changelog_doxyfile_template = 'Doxyfile_lib_PDF_ChangeLog'
+#Not include middleware list
+not_include_middle = ['emv', 'fatfs', 'lwip', 'mbedtls', 'multicore', 'usb', 'wolfssl']
+#suffix for multicore. Need to be update, if there are more suffix.
+suffix_for_multicore = ['', '_cm0plus', '_cm4', '_M0P', '_M4', '_CORE0', '_CORE1']
 
 ## Read the options input by using the command line.
 def __read_options():
@@ -31,7 +36,7 @@ def __read_options():
     # Options
     parser.add_argument('-c', '--chipname', help='The chip name. A chip name is needed for every generaion to distinguish itself from others.')
     parser.add_argument('-r', '--rootdir', default=None, help="The root directory, which is the directory of the SDK project. If you have edited the 'rootdir' in the py file, you do not need to concern about it in the command line.")
-    # parser.add_argument('-t', '--type', help="The function type of the Doxyfile-Generator. 'rm' for Reference Manual Doxyfile and 'changelog' for ChangeLog Doxyfile.")
+    parser.add_argument('-t', '--type', help="The function type of the Doxyfile-Generator. 'rm' for Reference Manual Doxyfile and 'changelog' for ChangeLog Doxyfile.")
     
     return parser.parse_args()
 
@@ -40,11 +45,13 @@ def __get_components_files(chip_name, componentsdir):
     components_files_list = []
     for (dirpath, dirnames, filenames) in os.walk(componentsdir):
         for name in dirnames:
-            if (chip_name in name):
-                # targetfile = os.path.join(dirpath, name) + '/' + file_components
-                targetfile = dirpath + '/' + name + '/' + file_components
-                if os.path.isfile(targetfile):
-                    components_files_list.append(targetfile)
+            for suffix in suffix_for_multicore:
+                target_name = chip_name + suffix
+                if (target_name == name):
+                    # targetfile = os.path.join(dirpath, name) + '/' + file_components
+                    targetfile = dirpath + '/' + name + '/' + file_components
+                    if os.path.isfile(targetfile):
+                        components_files_list.append(targetfile)
     if  len(components_files_list) > 1:
         print "There are multiple components.yml files!"
         for components_file in components_files_list:
@@ -72,38 +79,45 @@ def __get_components_list(components_files_list):
     ##Filter duplicate    component    
     all_components = set(components_in_file)
     for component in all_components:
-        if re.match(r'^- msdk/.*drivers.*yml$', component) != None:
+        if re.match(r'^- bin/generator/records/msdk/components/(cmsis_|)drivers/.*yml$', component) != None:
             searchobj = re.sub('^- ', '', component, 1)
             # searchobj = re.sub('/', r'\\', searchobj)
             searchobj = searchobj.strip('\n')
-            components_dir_list.append(rootdir + dir_msdk + searchobj)
-    # print len(components_dir_list)
-    # for components_dir in components_dir_list:
-        # print components_dir
+            components_dir_list.append(rootdir + '/' + searchobj)
+        # elif re.match(r'^- bin/generator/records/msdk/components/middlewares/.*yml$', component) != None:
+            # for middleware in not_include_middle:
+                # if re.match(middleware, component) == None:
+                    # searchobj = re.sub('^- ', '', component, 1)
+                    # searchobj = searchobj.strip('\n')
+                    # components_dir_list.append(rootdir + '/' + searchobj)
+        elif re.match(r'^- bin/generator/records/msdk/components/utilities/.*yml$', component) != None:
+            searchobj = re.sub('^- ', '', component, 1)
+            searchobj = searchobj.strip('\n')
+            components_dir_list.append(rootdir + '/' + searchobj)
     return components_dir_list
 
 #process driver.yml to get the driver path
 def __process_components_list(chip_name, components_list):
     components_dir = []
-    driver_name = ''
+    component_name = ''
     path = ''
     for component in components_list:
         # (filepath,tempfilename) = os.path.split(component)
         # (filename,extension) = os.path.splitext(tempfilename)
-        # driver_name = filename.replace('drv_', 'driver.')
+        # component_name = filename.replace('drv_', 'driver.')
         file = open(component, 'r')
         for line in file.readlines():
-            if re.match('^driver.*:', line) != None:
-                driver_name = line.strip(':\n')
+            if re.match('^(driver|utility|utilities).*:', line) != None:
+                component_name = line.strip(':\n')
                 break
         file.close
         file = open(component, 'r')
         yml = yaml.load(file)
-        # print "**************************************************"
-        # print driver_name
-        path = yml[driver_name]['contents']['cc-include'][0]['path']
+        # print component_name
+        # print yml
+        path = yml[component_name]['contents']['cc-include'][0]['path']
         if '${platform_devices_soc_name}' in path:
-            path = yml[driver_name]['contents']['files'][0]['source']
+            path = yml[component_name]['contents']['files'][0]['source']
             path = path.replace('${platform_devices_soc_name}', chip_name)
         # print path
         components_dir.append(path)
@@ -130,22 +144,20 @@ def __add_input_information(chip_name, components_dir_list, feature_dic):
         components_dir_list.append('platform/drivers/power')
     
     #Add utilities
-    components_dir_list.append('platform/utilities/debug_console')
-    components_dir_list.append('platform/utilities/notifier')
-    components_dir_list.append('platform/utilities/shell')
+    # components_dir_list.append('platform/utilities/debug_console')
+    # components_dir_list.append('platform/utilities/notifier')
+    # components_dir_list.append('platform/utilities/shell')
     
     #Add middleware
     if feature_dic.has_key('FSL_FEATURE_SOC_DMAMUX_COUNT') or feature_dic.has_key('FSL_FEATURE_SOC_DMA_COUNT') or feature_dic.has_key('FSL_FEATURE_SOC_EDMA_COUNT'):
-        components_dir_list.append('platform/middleware/dma_manager')
+        components_dir_list.append('middleware/dma_manager')
     if feature_dic.has_key('FSL_FEATURE_SOC_MMCAU_COUNT'):
-        components_dir_list.append('platform/middleware/mmcau')
+        components_dir_list.append('middleware/mmcau')
     if feature_dic.has_key('FSL_FEATURE_SOC_SDHC_COUNT') or feature_dic.has_key('FSL_FEATURE_SOC_DSPI_COUNT') or feature_dic.has_key('FSL_FEATURE_SOC_SPI_COUNT'):
-        components_dir_list.append('platform/middleware/sdmmc')
-    # for component in components_dir_list:
-        # print component
+        components_dir_list.append('middleware/sdmmc')
     return components_dir_list
     
-def __formate_input(all_inputdata):
+def __format_input(all_inputdata):
     input_data = []
     for num, data in enumerate(all_inputdata):
         if (num == 0):
@@ -153,34 +165,32 @@ def __formate_input(all_inputdata):
         else:
             pre_fixdir = space
         input_data.append(pre_fixdir + fixdir + data)
-    # for data in input_data:
-        # print data
     return input_data
     
-def __formate_feature(feature_dic):
+def __format_feature(feature_dic):
     feature_data = []
     for num, data in enumerate(feature_dic):
-        # if (num == 0):
-            # pre_fixdir = 'PREDEFINED             = '
-        # else:
-            # pre_fixdir = space
         pre_fixdir = space
         feature = pre_fixdir + fixdir + data + '=' + feature_dic[data]
         feature_data.append(feature)
-    # for feature in feature_data:
-        # print feature
     return feature_data
 
 #generate doxyfile for specific soc
-def __generate_doxyfile(chip_name, file_doxyfile_template, input_data, feature_data):
-    target_doxyfile = file_doxyfile_template + '_' + chip_name
+def __generate_doxyfile(chip_name, function_type, input_data, feature_data):
     
+    if function_type == 'rm':
+        file_doxyfile_template = 'Doxyfile_lib_PDF_RM'
+    elif function_type == 'changelog':
+        file_doxyfile_template = 'Doxyfile_lib_PDF_ChangeLog'
+    else:
+        print "Please enter a valid function type!\ne.g. '-t rm' or '-t changelog'.\n"
+        sys.exit()
+
     # Firstly, open the template file to read all lines in.
     f_file_doxyfile = open(file_doxyfile_template, 'r')
     lines = f_file_doxyfile.readlines()
     f_file_doxyfile.close()
-    
-    # Secondly, open the output file and write data in.
+    target_doxyfile = file_doxyfile_template + '_' + chip_name
     # Define two flags for targeting the INPUT lines
     flag_find_input = False
     flag_find_end_input = False
@@ -249,6 +259,11 @@ if __name__ == '__main__':
         sys.exit()
     else:
         chip_name = the_args.chipname
+    if the_args.type == None:
+        print 'You need to give a function type for this Doxyfile generaion.\n\"rm\" for Reference Manual Doxyfile and \"changelog\" for ChangeLog Doxyfile,such as python doxyfile_generator.py -c MK10D10 -t rm.'
+        sys.exit()
+    else:
+        function_type = the_args.type.lower()
     if the_args.rootdir == None:
         rootdir = rootdir
     else:
@@ -274,13 +289,13 @@ if __name__ == '__main__':
     components_dir_list = __process_components_list(chip_name, components_list)
     #Add other useful information, like:clock.dox, power.dox, utilities and middleware
     all_inputdata = __add_input_information(chip_name, components_dir_list, feature_dic)
-    #Formate the input information
-    input_data = __formate_input(all_inputdata)
-    #Formate the feature information
-    feature_data = __formate_feature(feature_dic)
+    #Format the input information
+    input_data = __format_input(all_inputdata)
+    #Format the feature information
+    feature_data = __format_feature(feature_dic)
     
     #Generate doxyfile
-    doxyfile = __generate_doxyfile(chip_name, file_doxyfile_template, input_data, feature_data)
+    doxyfile = __generate_doxyfile(chip_name, function_type, input_data, feature_data)
     
     print '\nGenerate doxyfile sucessed!'
     

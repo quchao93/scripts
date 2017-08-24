@@ -39,11 +39,7 @@ usage: Modify the SoC set and function type defined in the bash file (doxyfile_g
 
 III. How it works
 =================
-The Doxyfile-Generator tool summarizes the information of data in the yaml files from generator, feature header files and the specific Doxyfile requirements of Changlog/RM, to auto-prepare the Doxyfiles for input SoCs.
-
-For the summary of feature header files, Doxyfile-Generator uses customized mapping yml files for driver and middleware mapping respectively, and a feature_parser script which parses and analyzes the yml file. The generator itself also takes the SoC generator yml files and the different requrirements for the Changelog(Release Note)/Reference Manual respectively into consideration.
-
-For the new IPs supports and current IPs maintenance, just add/modify the IP name together with its existing conditions in map_features2drivers.yml and map_features2middlewares.yml by following the yaml rule will be enough. For more details, please consult the comments in the yml mapping files.
+The Doxyfile-Generator tool summarizes the information of data in the yaml files from generator, feature header files and the specific Doxyfile requirements of RM, to auto-prepare the Doxyfiles for input SoCs.
 
 IV. Change log
 ==============
@@ -54,5 +50,5 @@ IV. Change log
                - Fix wrong rtos INPUT typo.
   - 8/5/2017: -Modify to adopt to new generator and use new way to get drivers and features information
 Note:
-Please contact Zejiang Yu (zejiang.yu@nxp.com) for help when you need any detailed information or you have any question, difficulty or advice regarding the tool.
+Please contact Zejiang Yu (zejiang.yu@nxp.com)/Chao Qu (chao.qu@nxp.com)for help when you need any detailed information or you have any question, difficulty or advice regarding the tool.
 Thanks in advance.

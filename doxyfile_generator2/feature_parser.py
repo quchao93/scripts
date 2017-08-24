@@ -16,7 +16,6 @@ class FeatureParser:
         for file in files:
             if '_features.h' in file:
                 featurefile_list.append(rootdir + '/devices/' + chip_name + '/' + file)
-        # print "******************************************************"
         if  len(featurefile_list) > 1:
             print "\nThere are multiple feature file!"
             for featurefile in featurefile_list:
@@ -34,7 +33,7 @@ class FeatureParser:
     def get_feature_dic(self, featurefile_list):
         issue = 0
         feature_dic = {}
-        file_output = open('feature_not_be_process.txt', 'w')
+        file_output = open('can_not_be_processed_feature.txt', 'w')
         for featurefile in featurefile_list:
             file_output.write('\n\nThe file is: ' + featurefile + '\n\n')
             f_feature = open(featurefile, 'r')
@@ -51,14 +50,12 @@ class FeatureParser:
                 elif re.search(r'(#define)\s*(FSL_FEATURE_.*)\s*(\(.*\))',line) != None:
                     file_output.write('Line: ' + str(num) + '   ' + line)
                     issue = issue + 1
-                    # unprocess_lines.append('Line: ' + str(num) + '   ' + line.strip('\n'))
             f_feature.close
-        # print '**************************************************'
         # for (feature, value) in feature_dic.items():
             # print feature + '=' + value + '\\'
             # file_output.write(feature + '=' + value + '\\\n')
+        file_output.close
         if issue != 0:
-            # print '**************************************************'
             print "\nWaring: Some features' value are not processed, please see them in feature_not_be_process.txt."
             print 'You can process them maunually and add them into doxyfile.'
         return feature_dic
