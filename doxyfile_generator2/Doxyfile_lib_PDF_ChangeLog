@@ -32,7 +32,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "Kinetis SDK v.2.0 API Reference Manual"
+PROJECT_NAME           = "MCUXpresso SDK API Reference Manual"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
@@ -793,8 +793,8 @@ RECURSIVE              = YES
 # Note that relative paths are relative to the directory from which doxygen is
 # run.
 
-EXCLUDE                = ../../middleware/sdmmc/inc/fsl_sdmmc.h \
-                         ../../middleware/sdmmc/inc/fsl_specification.h
+EXCLUDE                = ../../../middleware/sdmmc/inc/fsl_sdmmc.h \
+                         ../../../middleware/sdmmc/inc/fsl_specification.h
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
@@ -860,7 +860,7 @@ IMAGE_PATH             = ../common/trademarks/FS_COLOR_LOGOSM_JPG.jpg \
                          . \
                          Kinetis_SDK_Block_Diagram.png \
                          kpsdk_guide01.png \
-                         ../../platform/drivers/src/tsi/doxygen
+                         ../../../platform/drivers/src/tsi/doxygen
 
 # The INPUT_FILTER tag can be used to specify a program that doxygen should
 # invoke to filter for each input file. Doxygen will invoke the filter program

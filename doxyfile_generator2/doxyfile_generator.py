@@ -20,14 +20,12 @@ file_components = 'components.yml'
 #template file name
 rm_doxyfile_template = 'Doxyfile_lib_PDF_RM'
 changelog_doxyfile_template = 'Doxyfile_lib_PDF_ChangeLog'
-#Not include middleware list
-not_include_middle = ['emv', 'fatfs', 'lwip', 'mbedtls', 'multicore', 'usb', 'wolfssl']
 #suffix for multicore. Need to be update, if there are more suffix.
 suffix_for_multicore = ['', '_cm0plus', '_cm4', '_M0P', '_M4', '_CORE0', '_CORE1']
-#middleware list
+#middleware list. Need to be update, if there are more middlewares.
 middleware_list_dic = {'aws_iot': ['middleware/aws_iot', 'middleware/aws_iot'], 'emv': ['', 'middleware/emv'], 'emwin': ['middleware/emwin', 'middleware/emwin'], 'fatfs': ['', 'middleware/fatfs'],
 'lwip': ['', 'middleware/lwip'], 'mbedtls': ['', 'middleware/mbedtls'], 'mmcau': ['middleware/mmcau', 'middleware/mmcau'], 'multicore': ['', 'middleware/multicore'],
-'ntag_i2c_plus': ['middleware/ntag_i2c_plus', 'middleware/ntag_i2c_plus'], 'sdmmc': ['middleware/sdmmc', 'middleware/sdmmc'], 'usb': ['', 'middleware/usb'], 'wifi_qca': ['middleware/wifi_qca', 'middleware/wifi_qca'], 'wolfssl': ['', 'middleware/wolfssl'], 'freertos': ['', 'middleware/rtos']}
+'ntag_i2c_plus': ['middleware/ntag_i2c_plus', 'middleware/ntag_i2c_plus'], 'sdmmc': ['middleware/sdmmc', 'middleware/sdmmc'], 'usb': ['', 'middleware/usb'], 'wifi_qca': ['middleware/wifi_qca', 'middleware/wifi_qca'], 'wolfssl': ['', 'middleware/wolfssl'], 'freertos': ['', 'rtos']}
  
 
 ## Read the options input by using the command line.
@@ -52,7 +50,6 @@ def __get_components_files(chip_name, componentsdir):
             for suffix in suffix_for_multicore:
                 target_name = chip_name + suffix
                 if (target_name == name):
-                    # targetfile = os.path.join(dirpath, name) + '/' + file_components
                     targetfile = dirpath + '/' + name + '/' + file_components
                     if os.path.isfile(targetfile):
                         components_files_list.append(targetfile)
@@ -86,19 +83,18 @@ def __get_components_list(components_files_list):
     for component in all_components:
         if re.match(r'^- bin/generator/records/msdk/components/(drivers|cmsis_drivers|utilities)/.*yml$', component) != None:
             searchobj = re.sub('^- ', '', component, 1)
-            # searchobj = re.sub('/', r'\\', searchobj)
             searchobj = searchobj.strip('\n')
             components_dir_list.append(rootdir + '/' + searchobj)
         elif re.search(r'^- bin/generator/records/msdk/components/middlewares/(.*?)(/.*yml$)', component) != None:
             target_middleware = re.search(r'^- bin/generator/records/msdk/components/middlewares/(.*?)(/.*yml)', component).group(1)
-            # print component
-            print target_middleware
+            # print target_middleware
             if function_type == 'rm':
-                if middleware_list_dic.has_key(target_middleware):
-                    if middleware_list_dic[target_middleware][0] != '':
-                        middleware_dir_list.append(middleware_list_dic[target_middleware][0])
-                else:
-                    print '\nWarning:  Not find middleware:' + target_middleware + '. Please update middleware_list_dic in script.'
+                # if middleware_list_dic.has_key(target_middleware):
+                    # if middleware_list_dic[target_middleware][0] != '':
+                        # middleware_dir_list.append(middleware_list_dic[target_middleware][0])
+                # else:
+                    # print '\nWarning:  Not find middleware:' + target_middleware + '. Please update middleware_list_dic in script.'
+                pass
             elif function_type == 'changelog':
                 if middleware_list_dic.has_key(target_middleware):
                     if middleware_list_dic[target_middleware][1] != '':
@@ -129,7 +125,13 @@ def __process_components_list(chip_name, components_list, middleware_list):
         # print component_name
         # print yml
         try:
+            number = len(yml[component_name]['contents']['cc-include'])
+            if number > 1:
+                for i in range(number):
+                    multi_path = yml[component_name]['contents']['cc-include'][i]['path']
+                    components_dir.append(multi_path)
             path = yml[component_name]['contents']['cc-include'][0]['path']
+            # print path
         except KeyError:
             try:
                 filename = yml[component_name]['contents']['files'][0]['source']
@@ -137,8 +139,8 @@ def __process_components_list(chip_name, components_list, middleware_list):
                 # print path
             except KeyError:
                 print "\nWarning: Not find path for :" + component_name
-        if '${platform_devices_soc_name}' in path:
-            path = yml[component_name]['contents']['files'][0]['source']
+        if 'devices/${platform_devices_soc_name}' in path:
+            path = 'devices/${platform_devices_soc_name}/drivers'
             path = path.replace('${platform_devices_soc_name}', chip_name)
         # print path
         components_dir.append(path)
@@ -146,12 +148,9 @@ def __process_components_list(chip_name, components_list, middleware_list):
 
     #Add middleware dictory 
     components_dir = components_dir + middleware_list
-    # components_dir.extend(middleware_list)
     #Remove duplicate elements
     components_dir_list = list(set(components_dir))
     components_dir_list.sort()
-    # print '----------------------'
-    # print components_dir_list
     return components_dir_list
     
 #Add additional information, including clock.dox power.dox 
@@ -170,18 +169,6 @@ def __add_input_information(chip_name, components_dir_list, feature_dic):
     if power_driver in components_dir_list:
         components_dir_list.append('platform/drivers/power')
     
-    #Add utilities
-    # components_dir_list.append('platform/utilities/debug_console')
-    # components_dir_list.append('platform/utilities/notifier')
-    # components_dir_list.append('platform/utilities/shell')
-    
-    #Add middleware
-    # if feature_dic.has_key('FSL_FEATURE_SOC_DMAMUX_COUNT') or feature_dic.has_key('FSL_FEATURE_SOC_DMA_COUNT') or feature_dic.has_key('FSL_FEATURE_SOC_EDMA_COUNT'):
-        # components_dir_list.append('middleware/dma_manager')
-    # if feature_dic.has_key('FSL_FEATURE_SOC_MMCAU_COUNT'):
-        # components_dir_list.append('middleware/mmcau')
-    # if feature_dic.has_key('FSL_FEATURE_SOC_SDHC_COUNT') or feature_dic.has_key('FSL_FEATURE_SOC_DSPI_COUNT') or feature_dic.has_key('FSL_FEATURE_SOC_SPI_COUNT'):
-        # components_dir_list.append('middleware/sdmmc')
     return components_dir_list
     
 def __format_input(all_inputdata):
