@@ -1,0 +1,718 @@
+*******************************************************************************
+          IAR   BUILD   FINISH
+*******************************************************************************
+14  builds failed:
+
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\mu\interrupt\core0\iar --Debug
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: mu_interrupt_core0 - Debug
+Updating build tree...
+startup_K32W042S1M2_cm4.s
+board.c 
+fsl_common.c 
+clock_config.c 
+fsl_debug_console.c 
+fsl_log.c 
+fsl_clock.c 
+fsl_gpio.c 
+fsl_io.c 
+fsl_lpuart.c 
+fsl_mu.c 
+fsl_str.c 
+fsl_msmc.c 
+mu_interrupt_core0.c 
+system_K32W042S1M2_cm4.c 
+pin_mux.c 
+Linking
+C:\Users\B58848\AppData\Local\Temp\EW29E7.tmp(1) : Fatal Error[Li001]: could not open file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\mu\interrupt\core0\iar/../../core1/iar/debug/mu_interrupt_core1.bin"
+Error while running Linker
+
+Total number of errors: 1
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\mu\interrupt\core0\iar --Release
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: mu_interrupt_core0 - Release
+Updating build tree...
+startup_K32W042S1M2_cm4.s
+clock_config.c 
+board.c 
+fsl_common.c 
+fsl_clock.c 
+fsl_debug_console.c 
+fsl_gpio.c 
+fsl_io.c 
+fsl_msmc.c 
+fsl_mu.c 
+fsl_lpuart.c 
+fsl_log.c 
+mu_interrupt_core0.c 
+pin_mux.c 
+fsl_str.c 
+system_K32W042S1M2_cm4.c 
+Linking
+C:\Users\B58848\AppData\Local\Temp\EW47C3.tmp(1) : Fatal Error[Li001]: could not open file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\mu\interrupt\core0\iar/../../core1/iar/release/mu_interrupt_core1.bin"
+Error while running Linker
+
+Total number of errors: 1
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\mu\polling\core0\iar --Debug
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: mu_polling_core0 - Debug
+Updating build tree...
+startup_K32W042S1M2_cm4.s
+fsl_clock.c 
+board.c 
+clock_config.c 
+fsl_common.c 
+fsl_debug_console.c 
+fsl_gpio.c 
+fsl_io.c 
+fsl_log.c 
+fsl_lpuart.c 
+fsl_msmc.c 
+fsl_mu.c 
+fsl_str.c 
+mu_polling_core0.c 
+pin_mux.c 
+system_K32W042S1M2_cm4.c 
+Linking
+C:\Users\B58848\AppData\Local\Temp\EWC1B3.tmp(1) : Fatal Error[Li001]: could not open file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\mu\polling\core0\iar/../../core1/iar/debug/mu_polling_core1.bin"
+Error while running Linker
+
+Total number of errors: 1
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\mu\polling\core0\iar --Release
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: mu_polling_core0 - Release
+Updating build tree...
+startup_K32W042S1M2_cm4.s
+fsl_common.c 
+fsl_clock.c 
+clock_config.c 
+board.c 
+fsl_debug_console.c 
+fsl_gpio.c 
+fsl_log.c 
+fsl_lpuart.c 
+fsl_msmc.c 
+fsl_io.c 
+fsl_mu.c 
+mu_polling_core0.c 
+pin_mux.c 
+system_K32W042S1M2_cm4.c 
+fsl_str.c 
+Linking
+C:\Users\B58848\AppData\Local\Temp\EWDFDD.tmp(1) : Fatal Error[Li001]: could not open file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\mu\polling\core0\iar/../../core1/iar/release/mu_polling_core1.bin"
+Error while running Linker
+
+Total number of errors: 1
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\sema42\dual_core\core0\iar --Debug
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: sema42_core0 - Debug
+Updating build tree...
+startup_K32W042S1M2_cm4.s
+fsl_common.c 
+clock_config.c 
+fsl_clock.c 
+board.c 
+fsl_log.c 
+fsl_io.c 
+fsl_gpio.c 
+fsl_debug_console.c 
+fsl_msmc.c 
+fsl_lpuart.c 
+fsl_sema42.c 
+fsl_str.c 
+fsl_xrdc.c 
+fsl_mu.c 
+pin_mux.c 
+system_K32W042S1M2_cm4.c 
+sema42_core0.c 
+Linking
+C:\Users\B58848\AppData\Local\Temp\EWC721.tmp(1) : Fatal Error[Li001]: could not open file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\sema42\dual_core\core0\iar/../../core1/iar/debug/sema42_core1.bin"
+Error while running Linker
+
+Total number of errors: 1
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\sema42\dual_core\core0\iar --Release
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: sema42_core0 - Release
+Updating build tree...
+startup_K32W042S1M2_cm4.s
+clock_config.c 
+fsl_common.c 
+board.c 
+fsl_clock.c 
+fsl_debug_console.c 
+fsl_gpio.c 
+fsl_log.c 
+fsl_lpuart.c 
+fsl_msmc.c 
+fsl_io.c 
+fsl_mu.c 
+fsl_str.c 
+fsl_sema42.c 
+fsl_xrdc.c 
+system_K32W042S1M2_cm4.c 
+sema42_core0.c 
+pin_mux.c 
+Linking
+C:\Users\B58848\AppData\Local\Temp\EWEA3B.tmp(1) : Fatal Error[Li001]: could not open file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\driver_examples\sema42\dual_core\core0\iar/../../core1/iar/release/sema42_core1.bin"
+Error while running Linker
+
+Total number of errors: 1
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cppproject_generator_templates\iar\cm0plus --Debug
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: $[project_name] - Debug
+Updating build tree...
+startup_K32W042S1M2_cm0plus.s
+Could not open file: 'C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\iar\startup_K32W042S1M2_cm0plus.s'
+Error while running Assembler
+fsl_gpio.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_gpio.c"
+Error while running C/C++ Compiler
+fsl_debug_console.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_debug_console.c"
+Error while running C/C++ Compiler
+fsl_common.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_common.c"
+Error while running C/C++ Compiler
+fsl_clock.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_clock.c"
+Error while running C/C++ Compiler
+fsl_io.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_io.c"
+Error while running C/C++ Compiler
+fsl_log.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_log.c"
+Error while running C/C++ Compiler
+fsl_lpuart.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_lpuart.c"
+Error while running C/C++ Compiler
+fsl_msmc.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_msmc.c"
+Error while running C/C++ Compiler
+fsl_str.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_str.c"
+Error while running C/C++ Compiler
+system_K32W042S1M2_cm0plus.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\system_K32W042S1M2_cm0plus.c"
+Error while running C/C++ Compiler
+
+Total number of errors: 11
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cppproject_generator_templates\iar\cm0plus --Release
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: $[project_name] - Release
+Updating build tree...
+startup_K32W042S1M2_cm0plus.s
+Could not open file: 'C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\iar\startup_K32W042S1M2_cm0plus.s'
+Error while running Assembler
+fsl_debug_console.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_debug_console.c"
+Error while running C/C++ Compiler
+fsl_clock.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_clock.c"
+Error while running C/C++ Compiler
+fsl_common.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_common.c"
+Error while running C/C++ Compiler
+fsl_gpio.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_gpio.c"
+Error while running C/C++ Compiler
+fsl_io.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_io.c"
+Error while running C/C++ Compiler
+fsl_str.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_str.c"
+Error while running C/C++ Compiler
+system_K32W042S1M2_cm0plus.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\system_K32W042S1M2_cm0plus.c"
+Error while running C/C++ Compiler
+fsl_log.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_log.c"
+Error while running C/C++ Compiler
+fsl_msmc.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_msmc.c"
+Error while running C/C++ Compiler
+fsl_lpuart.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_lpuart.c"
+Error while running C/C++ Compiler
+
+Total number of errors: 11
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cppproject_generator_templates\iar\cm4 --Debug
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: $[project_name] - Debug
+Updating build tree...
+startup_K32W042S1M2_cm4.s
+Could not open file: 'C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\iar\startup_K32W042S1M2_cm4.s'
+Error while running Assembler
+fsl_common.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_common.c"
+Error while running C/C++ Compiler
+fsl_gpio.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_gpio.c"
+Error while running C/C++ Compiler
+fsl_clock.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_clock.c"
+Error while running C/C++ Compiler
+fsl_debug_console.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_debug_console.c"
+Error while running C/C++ Compiler
+fsl_msmc.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_msmc.c"
+Error while running C/C++ Compiler
+fsl_io.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_io.c"
+Error while running C/C++ Compiler
+fsl_log.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_log.c"
+Error while running C/C++ Compiler
+fsl_lpuart.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_lpuart.c"
+Error while running C/C++ Compiler
+system_K32W042S1M2_cm4.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\system_K32W042S1M2_cm4.c"
+Error while running C/C++ Compiler
+fsl_str.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_str.c"
+Error while running C/C++ Compiler
+
+Total number of errors: 11
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cppproject_generator_templates\iar\cm4 --Release
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: $[project_name] - Release
+Updating build tree...
+startup_K32W042S1M2_cm4.s
+Could not open file: 'C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\iar\startup_K32W042S1M2_cm4.s'
+Error while running Assembler
+fsl_debug_console.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_debug_console.c"
+Error while running C/C++ Compiler
+fsl_gpio.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_gpio.c"
+Error while running C/C++ Compiler
+fsl_io.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_io.c"
+Error while running C/C++ Compiler
+fsl_clock.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_clock.c"
+Error while running C/C++ Compiler
+fsl_common.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_common.c"
+Error while running C/C++ Compiler
+fsl_lpuart.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_lpuart.c"
+Error while running C/C++ Compiler
+fsl_msmc.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_msmc.c"
+Error while running C/C++ Compiler
+fsl_str.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_str.c"
+Error while running C/C++ Compiler
+fsl_log.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_log.c"
+Error while running C/C++ Compiler
+system_K32W042S1M2_cm4.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\system_K32W042S1M2_cm4.c"
+Error while running C/C++ Compiler
+
+Total number of errors: 11
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cproject_generator_templates\iar\cm0plus --Debug
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: $[project_name] - Debug
+Updating build tree...
+startup_K32W042S1M2_cm0plus.s
+Could not open file: 'C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\iar\startup_K32W042S1M2_cm0plus.s'
+Error while running Assembler
+fsl_debug_console.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_debug_console.c"
+Error while running C/C++ Compiler
+fsl_clock.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_clock.c"
+Error while running C/C++ Compiler
+fsl_common.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_common.c"
+Error while running C/C++ Compiler
+fsl_gpio.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_gpio.c"
+Error while running C/C++ Compiler
+fsl_log.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_log.c"
+Error while running C/C++ Compiler
+fsl_io.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_io.c"
+Error while running C/C++ Compiler
+fsl_msmc.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_msmc.c"
+Error while running C/C++ Compiler
+fsl_lpuart.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_lpuart.c"
+Error while running C/C++ Compiler
+system_K32W042S1M2_cm0plus.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\system_K32W042S1M2_cm0plus.c"
+Error while running C/C++ Compiler
+fsl_str.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_str.c"
+Error while running C/C++ Compiler
+
+Total number of errors: 11
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cproject_generator_templates\iar\cm0plus --Release
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: $[project_name] - Release
+Updating build tree...
+startup_K32W042S1M2_cm0plus.s
+Could not open file: 'C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\iar\startup_K32W042S1M2_cm0plus.s'
+Error while running Assembler
+fsl_debug_console.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_debug_console.c"
+Error while running C/C++ Compiler
+fsl_gpio.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_gpio.c"
+Error while running C/C++ Compiler
+fsl_common.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_common.c"
+Error while running C/C++ Compiler
+fsl_log.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_log.c"
+Error while running C/C++ Compiler
+fsl_io.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_io.c"
+Error while running C/C++ Compiler
+fsl_lpuart.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_lpuart.c"
+Error while running C/C++ Compiler
+fsl_clock.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_clock.c"
+Error while running C/C++ Compiler
+fsl_str.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_str.c"
+Error while running C/C++ Compiler
+fsl_msmc.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_msmc.c"
+Error while running C/C++ Compiler
+system_K32W042S1M2_cm0plus.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\system_K32W042S1M2_cm0plus.c"
+Error while running C/C++ Compiler
+
+Total number of errors: 11
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cproject_generator_templates\iar\cm4 --Debug
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: $[project_name] - Debug
+Updating build tree...
+startup_K32W042S1M2_cm4.s
+Could not open file: 'C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\iar\startup_K32W042S1M2_cm4.s'
+Error while running Assembler
+fsl_gpio.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_gpio.c"
+Error while running C/C++ Compiler
+fsl_io.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_io.c"
+Error while running C/C++ Compiler
+fsl_common.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_common.c"
+Error while running C/C++ Compiler
+fsl_clock.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_clock.c"
+Error while running C/C++ Compiler
+fsl_debug_console.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_debug_console.c"
+Error while running C/C++ Compiler
+fsl_log.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_log.c"
+Error while running C/C++ Compiler
+fsl_str.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_str.c"
+Error while running C/C++ Compiler
+system_K32W042S1M2_cm4.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\system_K32W042S1M2_cm4.c"
+Error while running C/C++ Compiler
+fsl_lpuart.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_lpuart.c"
+Error while running C/C++ Compiler
+fsl_msmc.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_msmc.c"
+Error while running C/C++ Compiler
+
+Total number of errors: 11
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cproject_generator_templates\iar\cm4 --Release
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: $[project_name] - Release
+Updating build tree...
+startup_K32W042S1M2_cm4.s
+Could not open file: 'C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\iar\startup_K32W042S1M2_cm4.s'
+Error while running Assembler
+fsl_clock.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_clock.c"
+Error while running C/C++ Compiler
+fsl_common.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_common.c"
+Error while running C/C++ Compiler
+fsl_debug_console.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_debug_console.c"
+Error while running C/C++ Compiler
+fsl_gpio.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_gpio.c"
+Error while running C/C++ Compiler
+fsl_msmc.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_msmc.c"
+Error while running C/C++ Compiler
+fsl_lpuart.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\drivers\fsl_lpuart.c"
+Error while running C/C++ Compiler
+system_K32W042S1M2_cm4.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\system_K32W042S1M2_cm4.c"
+Error while running C/C++ Compiler
+fsl_io.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_io.c"
+Error while running C/C++ Compiler
+fsl_log.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_log.c"
+Error while running C/C++ Compiler
+fsl_str.c 
+Fatal Error[Pe1696]: cannot open source file "C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\devices\K32W042S1M2\utilities\fsl_str.c"
+Error while running C/C++ Compiler
+
+Total number of errors: 11
+Total number of warnings: 0
+
+
+ ERROR, Command failed: make
+
+
+-----------------------------------------------------------
+*******************************************************************************
+Projects with warnings:
+
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\multicore_examples\rpmsg_lite_pingpong_rtos\cm0plus\iar --Debug
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: rpmsg_lite_pingpong_rtos_cm0plus - Debug
+Updating build tree...
+portasm.s
+startup_K32W042S1M2_cm0plus.s
+croutine.c 
+clock_config.c 
+env_freertos.c 
+board.c 
+event_groups.c 
+fsl_clock.c 
+fsl_common.c 
+fsl_debug_console.c 
+fsl_gpio.c 
+fsl_io.c 
+fsl_log.c 
+fsl_lpuart.c 
+fsl_msmc.c 
+fsl_mu.c 
+fsl_str.c 
+fsl_tickless_systick.c 
+heap_3.c 
+llist.c 
+list.c 
+mcmgr.c 
+platform.c 
+main_core1.c 
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\multicore_examples\rpmsg_lite_pingpong_rtos\cm0plus\main_core1.c(60) : Warning[Pe177]: variable "helloMsg" was declared but never referenced
+port.c 
+pin_mux.c 
+mcmgr_internal_core_api_k32w0x2s.c 
+queue.c 
+rpmsg_ns.c 
+rpmsg_lite.c 
+rpmsg_queue.c 
+tasks.c 
+timers.c 
+system_K32W042S1M2_cm0plus.c 
+virtqueue.c 
+Linking
+rpmsg_lite_pingpong_rtos_cm0plus.out
+Converting
+
+Total number of errors: 0
+Total number of warnings: 1
+
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\multicore_examples\rpmsg_lite_pingpong_rtos\cm0plus\iar --Release
+
+     IAR Command Line Build Utility V8.0.8.4892
+     Copyright 2002-2017 IAR Systems AB.
+
+Building configuration: rpmsg_lite_pingpong_rtos_cm0plus - Release
+Updating build tree...
+portasm.s
+startup_K32W042S1M2_cm0plus.s
+env_freertos.c 
+croutine.c 
+fsl_clock.c 
+event_groups.c 
+board.c 
+clock_config.c 
+fsl_io.c 
+fsl_debug_console.c 
+fsl_gpio.c 
+fsl_common.c 
+fsl_msmc.c 
+fsl_log.c 
+fsl_lpuart.c 
+fsl_tickless_systick.c 
+heap_3.c 
+fsl_mu.c 
+llist.c 
+fsl_str.c 
+list.c 
+mcmgr.c 
+pin_mux.c 
+platform.c 
+mcmgr_internal_core_api_k32w0x2s.c 
+port.c 
+main_core1.c 
+C:\Users\B58848\Desktop\Package\60\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\multicore_examples\rpmsg_lite_pingpong_rtos\cm0plus\main_core1.c(60) : Warning[Pe177]: variable "helloMsg" was declared but never referenced
+rpmsg_ns.c 
+rpmsg_queue.c 
+queue.c 
+rpmsg_lite.c 
+system_K32W042S1M2_cm0plus.c 
+timers.c 
+tasks.c 
+virtqueue.c 
+Linking
+rpmsg_lite_pingpong_rtos_cm0plus.out
+Converting
+
+Total number of errors: 0
+Total number of warnings: 1
+
+
+-----------------------------------------------------------

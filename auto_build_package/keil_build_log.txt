@@ -1,0 +1,384 @@
+*******************************************************************************
+          KEIL   BUILD   FINISH
+*******************************************************************************
+9  builds failed:
+
+C:\Users\B58848\Desktop\Package\78\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\cmsis_driver_examples\lpi2c\edma_b2b_transfer\master\cm0plus\mdk --Release
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'cmsis_lpi2c_edma_b2b_transfer_master Release'
+assembling startup_K32W042S1M2_cm0plus.s...
+compiling system_K32W042S1M2_cm0plus.c...
+compiling fsl_intmux.c...
+compiling fsl_lpuart.c...
+compiling fsl_gpio.c...
+compiling fsl_edma.c...
+compiling fsl_clock.c...
+compiling fsl_dmamux.c...
+compiling fsl_lpi2c_cmsis.c...
+compiling fsl_lpi2c.c...
+compiling fsl_lpi2c_edma.c...
+compiling fsl_common.c...
+compiling fsl_msmc.c...
+compiling fsl_debug_console.c...
+compiling fsl_str.c...
+Error: A9555E: Failed to check out a license.License server machine is down or not responding.
+ See the system administrator about starting the license server system, or
+ make sure you're referring to the right host (see LM_LICENSE_FILE).
+Feature:       mdk_pro_compiler5
+Hostname:      10.192.224.202
+License path:  8224@10.192.224.202;c:\program files\arm\licenses\license.dat;
+FlexNet Licensing error:-96,491
+For further information, refer to the FlexNet Licensing documentation,
+available at "www.flexerasoftware.com".
+Check that your license details are correct in the License Management dialog of MDK. Additional information is available at:
+ http://www.keil.com/support/man/docs/license/license_management.htm
+ If you need further help, provide this complete error report to your supplier or license.support@arm.com.
+ - ARMLMD_LICENSE_FILE: '8224@10.192.224.202'
+ - LM_LICENSE_FILE: unset
+ - ARM_TOOL_VARIANT: unset
+ - ARM_PRODUCT_PATH: unset
+ - Product location: C:\Keil_v5\ARM\sw\mappings
+ - Toolchain location: C:\Keil_v5\ARM\ARMCC\Bin
+ - Selected tool variant: mdk_pro_flex
+ - Checkout feature: mdk_pro_compiler5
+ - Feature version: 5.0201609
+ - Flex error code: -96
+Product: MDK Professional 5.23 (Flex)
+Component: ARM Compiler 5.06 update 4 (build 422)
+Tool: armasm [4d35cf]
+compiling fsl_io.c...
+compiling fsl_log.c...
+compiling board.c...
+compiling pin_mux.c...
+compiling clock_config.c...
+compiling cmsis_lpi2c_edma_b2b_transfer_master.c...
+linking...
+release\cmsis_lpi2c_edma_b2b_transfer_master.out: error: L6002U: Could not open file release\fsl_str.o: No such file or directory
+Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
+"release\cmsis_lpi2c_edma_b2b_transfer_master.out" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:56
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\78\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cppproject_generator_templates\mdk\cm0plus --Debug
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '$[project_name] Debug'
+assembling startup_K32W042S1M2_cm0plus.s...
+startup_K32W042S1M2_cm0plus.s: error: A1023E: File "../../../../../devices/K32W042S1M2/arm/startup_K32W042S1M2_cm0plus.s" could not be opened: No such file or directory
+compiling fsl_lpuart.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c: 0 warnings, 1 error
+compiling system_K32W042S1M2_cm0plus.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm0plus.c": No such file or directory
+../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm0plus.c: 0 warnings, 1 error
+compiling fsl_gpio.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c: 0 warnings, 1 error
+compiling fsl_common.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_common.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_common.c: 0 warnings, 1 error
+compiling fsl_msmc.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c: 0 warnings, 1 error
+compiling fsl_clock.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_clock.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_clock.c: 0 warnings, 1 error
+compiling fsl_debug_console.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c: 0 warnings, 1 error
+compiling fsl_io.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_io.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_io.c: 0 warnings, 1 error
+compiling fsl_log.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_log.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_log.c: 0 warnings, 1 error
+compiling fsl_str.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_str.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_str.c: 0 warnings, 1 error
+"debug\cppproject_templates.out" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\78\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cppproject_generator_templates\mdk\cm0plus --Release
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '$[project_name] Release'
+assembling startup_K32W042S1M2_cm0plus.s...
+startup_K32W042S1M2_cm0plus.s: error: A1023E: File "../../../../../devices/K32W042S1M2/arm/startup_K32W042S1M2_cm0plus.s" could not be opened: No such file or directory
+compiling fsl_lpuart.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c: 0 warnings, 1 error
+compiling system_K32W042S1M2_cm0plus.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm0plus.c": No such file or directory
+../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm0plus.c: 0 warnings, 1 error
+compiling fsl_gpio.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c: 0 warnings, 1 error
+compiling fsl_msmc.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c: 0 warnings, 1 error
+compiling fsl_common.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_common.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_common.c: 0 warnings, 1 error
+compiling fsl_clock.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_clock.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_clock.c: 0 warnings, 1 error
+compiling fsl_debug_console.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c: 0 warnings, 1 error
+compiling fsl_io.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_io.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_io.c: 0 warnings, 1 error
+compiling fsl_log.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_log.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_log.c: 0 warnings, 1 error
+compiling fsl_str.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_str.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_str.c: 0 warnings, 1 error
+"release\cppproject_templates.out" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\78\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cppproject_generator_templates\mdk\cm4 --Debug
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '$[project_name] Debug'
+assembling startup_K32W042S1M2_cm4.s...
+startup_K32W042S1M2_cm4.s: error: A1023E: File "../../../../../devices/K32W042S1M2/arm/startup_K32W042S1M2_cm4.s" could not be opened: No such file or directory
+compiling system_K32W042S1M2_cm4.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm4.c": No such file or directory
+../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm4.c: 0 warnings, 1 error
+compiling fsl_lpuart.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c: 0 warnings, 1 error
+compiling fsl_gpio.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c: 0 warnings, 1 error
+compiling fsl_common.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_common.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_common.c: 0 warnings, 1 error
+compiling fsl_msmc.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c: 0 warnings, 1 error
+compiling fsl_debug_console.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c: 0 warnings, 1 error
+compiling fsl_clock.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_clock.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_clock.c: 0 warnings, 1 error
+compiling fsl_io.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_io.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_io.c: 0 warnings, 1 error
+compiling fsl_str.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_str.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_str.c: 0 warnings, 1 error
+compiling fsl_log.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_log.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_log.c: 0 warnings, 1 error
+"debug\cppproject_templates.out" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\78\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cppproject_generator_templates\mdk\cm4 --Release
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '$[project_name] Release'
+assembling startup_K32W042S1M2_cm4.s...
+startup_K32W042S1M2_cm4.s: error: A1023E: File "../../../../../devices/K32W042S1M2/arm/startup_K32W042S1M2_cm4.s" could not be opened: No such file or directory
+compiling system_K32W042S1M2_cm4.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm4.c": No such file or directory
+../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm4.c: 0 warnings, 1 error
+compiling fsl_lpuart.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c: 0 warnings, 1 error
+compiling fsl_gpio.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c: 0 warnings, 1 error
+compiling fsl_common.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_common.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_common.c: 0 warnings, 1 error
+compiling fsl_msmc.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c: 0 warnings, 1 error
+compiling fsl_clock.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_clock.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_clock.c: 0 warnings, 1 error
+compiling fsl_io.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_io.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_io.c: 0 warnings, 1 error
+compiling fsl_debug_console.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c: 0 warnings, 1 error
+compiling fsl_str.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_str.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_str.c: 0 warnings, 1 error
+compiling fsl_log.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_log.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_log.c: 0 warnings, 1 error
+"release\cppproject_templates.out" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\78\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cproject_generator_templates\mdk\cm0plus --Debug
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '$[project_name] Debug'
+assembling startup_K32W042S1M2_cm0plus.s...
+startup_K32W042S1M2_cm0plus.s: error: A1023E: File "../../../../../devices/K32W042S1M2/arm/startup_K32W042S1M2_cm0plus.s" could not be opened: No such file or directory
+compiling fsl_lpuart.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c: 0 warnings, 1 error
+compiling fsl_gpio.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c: 0 warnings, 1 error
+compiling system_K32W042S1M2_cm0plus.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm0plus.c": No such file or directory
+../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm0plus.c: 0 warnings, 1 error
+compiling fsl_common.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_common.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_common.c: 0 warnings, 1 error
+compiling fsl_msmc.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c: 0 warnings, 1 error
+compiling fsl_clock.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_clock.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_clock.c: 0 warnings, 1 error
+compiling fsl_debug_console.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c: 0 warnings, 1 error
+compiling fsl_io.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_io.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_io.c: 0 warnings, 1 error
+compiling fsl_log.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_log.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_log.c: 0 warnings, 1 error
+compiling fsl_str.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_str.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_str.c: 0 warnings, 1 error
+"debug\cproject_templates.out" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:03
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\78\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cproject_generator_templates\mdk\cm0plus --Release
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '$[project_name] Release'
+assembling startup_K32W042S1M2_cm0plus.s...
+startup_K32W042S1M2_cm0plus.s: error: A1023E: File "../../../../../devices/K32W042S1M2/arm/startup_K32W042S1M2_cm0plus.s" could not be opened: No such file or directory
+compiling system_K32W042S1M2_cm0plus.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm0plus.c": No such file or directory
+../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm0plus.c: 0 warnings, 1 error
+compiling fsl_lpuart.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c: 0 warnings, 1 error
+compiling fsl_msmc.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c: 0 warnings, 1 error
+compiling fsl_common.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_common.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_common.c: 0 warnings, 1 error
+compiling fsl_gpio.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c: 0 warnings, 1 error
+compiling fsl_debug_console.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c: 0 warnings, 1 error
+compiling fsl_io.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_io.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_io.c: 0 warnings, 1 error
+compiling fsl_clock.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_clock.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_clock.c: 0 warnings, 1 error
+compiling fsl_str.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_str.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_str.c: 0 warnings, 1 error
+compiling fsl_log.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_log.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_log.c: 0 warnings, 1 error
+"release\cproject_templates.out" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\78\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cproject_generator_templates\mdk\cm4 --Debug
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '$[project_name] Debug'
+assembling startup_K32W042S1M2_cm4.s...
+startup_K32W042S1M2_cm4.s: error: A1023E: File "../../../../../devices/K32W042S1M2/arm/startup_K32W042S1M2_cm4.s" could not be opened: No such file or directory
+compiling system_K32W042S1M2_cm4.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm4.c": No such file or directory
+../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm4.c: 0 warnings, 1 error
+compiling fsl_lpuart.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c: 0 warnings, 1 error
+compiling fsl_common.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_common.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_common.c: 0 warnings, 1 error
+compiling fsl_gpio.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c: 0 warnings, 1 error
+compiling fsl_msmc.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c: 0 warnings, 1 error
+compiling fsl_clock.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_clock.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_clock.c: 0 warnings, 1 error
+compiling fsl_debug_console.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c: 0 warnings, 1 error
+compiling fsl_io.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_io.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_io.c: 0 warnings, 1 error
+compiling fsl_log.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_log.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_log.c: 0 warnings, 1 error
+compiling fsl_str.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_str.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_str.c: 0 warnings, 1 error
+"debug\cproject_templates.out" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:03
+
+-----------------------------------------------------------
+C:\Users\B58848\Desktop\Package\78\SDK_2.0_FRDM-K32W042\boards\frdmk32w042\project_template\cproject_generator_templates\mdk\cm4 --Release
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '$[project_name] Release'
+assembling startup_K32W042S1M2_cm4.s...
+startup_K32W042S1M2_cm4.s: error: A1023E: File "../../../../../devices/K32W042S1M2/arm/startup_K32W042S1M2_cm4.s" could not be opened: No such file or directory
+compiling fsl_lpuart.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_lpuart.c: 0 warnings, 1 error
+compiling system_K32W042S1M2_cm4.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm4.c": No such file or directory
+../../../../../devices/K32W042S1M2/system_K32W042S1M2_cm4.c: 0 warnings, 1 error
+compiling fsl_gpio.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_gpio.c: 0 warnings, 1 error
+compiling fsl_common.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_common.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_common.c: 0 warnings, 1 error
+compiling fsl_msmc.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_msmc.c: 0 warnings, 1 error
+compiling fsl_clock.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/drivers/fsl_clock.c": No such file or directory
+../../../../../devices/K32W042S1M2/drivers/fsl_clock.c: 0 warnings, 1 error
+compiling fsl_io.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_io.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_io.c: 0 warnings, 1 error
+compiling fsl_debug_console.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_debug_console.c: 0 warnings, 1 error
+compiling fsl_log.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_log.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_log.c: 0 warnings, 1 error
+compiling fsl_str.c...
+"no source": Error:  #5: cannot open source input file "../../../../../devices/K32W042S1M2/utilities/fsl_str.c": No such file or directory
+../../../../../devices/K32W042S1M2/utilities/fsl_str.c: 0 warnings, 1 error
+"release\cproject_templates.out" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
+
+-----------------------------------------------------------
+*******************************************************************************
+** No warnings detected.
